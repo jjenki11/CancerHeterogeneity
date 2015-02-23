@@ -4,6 +4,6 @@ public class Driver
 {
 	public static void main(String[] args) 
 	{
-		DataSet genes = new DataSet("ge", "stuff.txt");
+		DataSet genes = new DataSet("ge", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\mRNA_Gene_expression2.txt");
 	}
 }

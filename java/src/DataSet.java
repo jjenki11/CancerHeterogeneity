@@ -102,11 +102,8 @@ public class DataSet {
 	class GeneExpression
 	{		
 		public GeneExpression(String filename)
-		{
-			
-			ArrayList<String> str = readList(filename);
-			
-			
+		{			
+			ArrayList<Gene> str = readGeneList(filename);			
 		}
 	}
 	
@@ -115,7 +112,8 @@ public class DataSet {
 	CancerNucleotideVariation cnv;
 	GeneExpression ge;
 	
-	public DataSet(String type, String filename){
+	public DataSet(String type, String filename)
+	{
 		if(type == "ds"){
 			ds = new DrugSensitivity(filename);
 		}
@@ -130,18 +128,56 @@ public class DataSet {
 		}
 	}
 	
-	public ArrayList<String> readList( String filename ){
+	public ArrayList<Gene> readGeneList( String filename )
+	{
 		System.out.println("file = "+filename);
-		ArrayList<String> theList = new ArrayList<String>();
+		ArrayList<Gene> theList = new ArrayList<Gene>();
+		Gene aGene;
+		String[] values;
 		
+		int counterYES = 0;
+		int counterNO = 0;
 		try {
 		    BufferedReader in = new BufferedReader(new FileReader(filename));
 		    String str;    
 		    str = in.readLine();    	
 		    while ((str = in.readLine()) != null) {
 		    	//theList.add(str.substring(0,str.length()));
-		    	theList.add(str);
-		    	System.out.println(str);
+		    	aGene = new Gene();
+		    	values = str.split(",");
+	    	
+		    	aGene.setIlluminaID(values[0]);
+		    	aGene.setGeneSymbol(values[1]);
+		    	
+		    	aGene.setCombinedID(aGene.getIlluminaID(), aGene.getGeneSymbol());
+		    	
+		    	double[] clones = new double[6];
+		    	clones[0] = Double.parseDouble(values[2]);
+		    	clones[1] = Double.parseDouble(values[3]);
+		    	clones[2] = Double.parseDouble(values[4]);
+		    	clones[3] = Double.parseDouble(values[5]);
+		    	clones[4] = Double.parseDouble(values[6]);
+		    	clones[5] = Double.parseDouble(values[7]);
+		    		    	
+		    	aGene.setCloneValues(clones);
+		    	
+		    	if(aGene.isSignificant()){
+		    		//System.out.println("GENE ADDED");
+		    		ArrayList<String> imp = aGene.whichAreSignificant();
+		    		
+		    		System.out.println("For gene "+aGene.getCombinedID()+", the important clones are: { " + imp.toString() + " }");
+		    		
+		    		theList.add(aGene);
+		    		
+		    		counterYES ++;
+		    	} else {
+		    		counterNO ++;
+		    		//System.out.println("GENE NOT ADDED");
+		    	}
+		    	
+		    	//theList.add(aGene);
+
+		    	//System.out.println(str);
 		    }
 		    in.close();
 		} catch (IOException e) {
@@ -149,6 +185,8 @@ public class DataSet {
 		    System.out.println("File Read Error in writelist");
 		    System.exit(0);
 		}			
+		System.out.println("Significant: "+ counterYES);
+		System.out.println("Not significant: "+ counterNO);
 		return theList;
 	}
 	
