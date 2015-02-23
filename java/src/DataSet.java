@@ -103,8 +103,48 @@ public class DataSet {
 	{		
 		public GeneExpression(String filename)
 		{			
-			ArrayList<Gene> str = readGeneList(filename);			
+			ArrayList<Gene> geneList = readGeneList(filename);
+			
+			BTree<String, Gene> combinedIDTree = new BTree<String, Gene>();
+			BTree<String, ArrayList<Gene>> geneTree = new BTree<String, ArrayList<Gene>>();
+			
+			combinedIDTree 	= makeCombinedIDTree(geneList); 
+			geneTree 		= makeGeneTree(geneList);
 		}
+		
+		
+		public BTree<String, Gene> makeCombinedIDTree(ArrayList<Gene> geneList)
+		{
+			BTree<String, Gene> geneTree = new BTree<String, Gene>();
+			for(int i =0;i<geneList.size();i++)
+			{
+				geneTree.put(geneList.get(i).Combined_ID, geneList.get(i));
+			}
+			return geneTree;
+		}
+		
+		public BTree<String, ArrayList<Gene>> makeGeneTree(ArrayList<Gene> geneList)
+		{
+			BTree<String, ArrayList<Gene>> geneTree = new BTree<String, ArrayList<Gene>>();
+			ArrayList<Gene> l;
+			for(int i =0;i<geneList.size();i++)
+			{
+				if(geneTree.get(geneList.get(i).Gene_Symbol) == null)
+				{
+					l = new ArrayList<Gene>();
+					l.add(geneList.get(i));
+					geneTree.put(geneList.get(i).Gene_Symbol, l);
+				}
+				else
+				{
+					l = geneTree.get(geneList.get(i).Gene_Symbol);
+					l.add(geneList.get(i));
+					geneTree.put(geneList.get(i).Gene_Symbol, l);
+				}				
+			}
+			return geneTree;
+		}
+		
 	}
 	
 	DrugSensitivity ds;
@@ -152,6 +192,7 @@ public class DataSet {
 		    	aGene.setCombinedID(aGene.getIlluminaID(), aGene.getGeneSymbol());
 		    	
 		    	double[] clones = new double[6];
+		    	
 		    	clones[0] = Double.parseDouble(values[2]);
 		    	clones[1] = Double.parseDouble(values[3]);
 		    	clones[2] = Double.parseDouble(values[4]);
@@ -161,23 +202,17 @@ public class DataSet {
 		    		    	
 		    	aGene.setCloneValues(clones);
 		    	
-		    	if(aGene.isSignificant()){
-		    		//System.out.println("GENE ADDED");
-		    		ArrayList<String> imp = aGene.whichAreSignificant();
-		    		
-		    		System.out.println("For gene "+aGene.getCombinedID()+", the important clones are: { " + imp.toString() + " }");
-		    		
-		    		theList.add(aGene);
-		    		
+		    	if(aGene.isSignificant())
+		    	{
+		    		ArrayList<String> imp = aGene.whichAreSignificant();		    		
+		    		System.out.println("For gene "+aGene.getCombinedID()+", the important clones are: { " + imp.toString() + " }");		    		
+		    		theList.add(aGene);		    		
 		    		counterYES ++;
-		    	} else {
+		    	} 
+		    	else 
+		    	{
 		    		counterNO ++;
-		    		//System.out.println("GENE NOT ADDED");
 		    	}
-		    	
-		    	//theList.add(aGene);
-
-		    	//System.out.println(str);
 		    }
 		    in.close();
 		} catch (IOException e) {
