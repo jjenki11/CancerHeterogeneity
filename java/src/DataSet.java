@@ -1,5 +1,8 @@
 package cancer_heterogeneity;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class DataSet {
@@ -96,9 +99,21 @@ public class DataSet {
 		}		
 	}
 	
+	class GeneExpression
+	{		
+		public GeneExpression(String filename)
+		{
+			
+			ArrayList<String> str = readList(filename);
+			
+			
+		}
+	}
+	
 	DrugSensitivity ds;
 	SingleNucleotideLevel snl;
 	CancerNucleotideVariation cnv;
+	GeneExpression ge;
 	
 	public DataSet(String type, String filename){
 		if(type == "ds"){
@@ -110,6 +125,31 @@ public class DataSet {
 		if(type == "cnv"){
 			cnv = new CancerNucleotideVariation(filename);
 		}
+		if(type == "ge"){
+			ge = new GeneExpression(filename);
+		}
+	}
+	
+	public ArrayList<String> readList( String filename ){
+		System.out.println("file = "+filename);
+		ArrayList<String> theList = new ArrayList<String>();
+		
+		try {
+		    BufferedReader in = new BufferedReader(new FileReader(filename));
+		    String str;    
+		    str = in.readLine();    	
+		    while ((str = in.readLine()) != null) {
+		    	//theList.add(str.substring(0,str.length()));
+		    	theList.add(str);
+		    	System.out.println(str);
+		    }
+		    in.close();
+		} catch (IOException e) {
+			System.out.println("BAD FILE WAS > " + filename);
+		    System.out.println("File Read Error in writelist");
+		    System.exit(0);
+		}			
+		return theList;
 	}
 	
 	
