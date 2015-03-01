@@ -15,6 +15,12 @@ public class DataSet {
 		
 	}
 	
+	class DrugTypes{
+		public DrugTypes(String filename){
+			
+		}
+	}
+	
 	class SingleNucleotideLevel{		
 		/**
 		 * Some internal tools here ~
@@ -218,8 +224,10 @@ public class DataSet {
 		    System.out.println("File Read Error in writelist");
 		    System.exit(0);
 		}			
-		System.out.println("Significant: "+ counterYES);
-		System.out.println("Not significant: "+ counterNO);
+		//System.out.println("Significant: "+ counterYES);
+		//System.out.println("Not significant: "+ counterNO);
+		System.out.println("Kept:\t\t"+counterYES);
+		System.out.println("Discareded:\t\t\t"+counterNO);
 		return theList;
 	}
 	
@@ -307,11 +315,14 @@ public class DataSet {
 		    System.out.println("File Read Error in writelist");
 		    System.exit(0);
 		}			
-		
+		/*
 		System.out.println("Added after filter: "+ counterYES);
 		System.out.println("Not added because of EVAL 1: "+ counterNO);
 		System.out.println("Snips thrown out because of EVAL 2: "+ thrownOutSnips);
 		System.out.println("Total thrown out: "+ (counterNO + thrownOutSnips));
+		*/
+		System.out.println("Kept:\t\t"+counterYES);
+		System.out.println("Discareded:\t\t\t"+counterNO);
 		return theList;
 	}
 	
@@ -407,12 +418,16 @@ public class DataSet {
 			System.out.println("BAD FILE WAS > " + filename);
 		    System.out.println("File Read Error in writelist");
 		    System.exit(0);
-		}			
+		}	
+		/*
 		System.out.println("Total lost in gene desert: "+geneDesert);
 		System.out.println("Total missing CP: "+missingCP);
 		System.out.println("Total thrown out snips: "+thrownOutSnips);
 		System.out.println("Kept: "+ counterYES);
 		System.out.println("Total not kept: "+ counterNO);
+		*/
+		System.out.println("Kept:\t\t"+counterYES);
+		System.out.println("Discareded:\t\t\t"+counterNO);
 		
 		return theList;
 	}
