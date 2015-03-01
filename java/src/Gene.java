@@ -91,7 +91,7 @@ public class Gene
 		{
 			if(Math.abs((geneValues.get(i).value - median)) >= 0.58)
 			{
-				printSignificantCloneName(i);
+				//printSignificantCloneName(i);
 				return true;
 			}
 		}
