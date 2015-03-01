@@ -22,54 +22,49 @@ public class DataSet {
 		 * 1) Variance score to exclude  bad quality reads
 		 * 2) Coverage numbers to obtain variance ratio
 		 */
-		public SingleNucleotideLevel(String filename){
+		public SingleNucleotideLevel(String filename, String type)
+		{
 			// Do something with the file
-		}
-		
-		public float varianceScore(/*Reads r*/){
-			// i am assuming to find z score
-			return 0.0f;
+			ArrayList<Mutation> mutationList = readSNLList(filename, type);
 			
+			BTree<String, Mutation> combinedIDTree = new BTree<String, Mutation>();
+			BTree<String, ArrayList<Mutation>> mutationTree = new BTree<String, ArrayList<Mutation>>();
+			
+			combinedIDTree 	= makeCombinedIDTree(mutationList); 
+			mutationTree 	= makeMutationTree(mutationList);
 		}
-		public float coverageNumbers(/*ArrayList<float> values*/){
-			// obtain variance ratio from values
-			return 0.0f;
-		}
-		
-		public boolean isFalsePositive(float varianceScore, float varianceRatio){
-			if(varianceScore > varianceRatio){
-				return true;
-			} else {
-				return false;
+				
+		public BTree<String, ArrayList<Mutation>> makeMutationTree(ArrayList<Mutation> mutationList)
+		{
+			BTree<String, ArrayList<Mutation>> mutationTree = new BTree<String, ArrayList<Mutation>>();
+			ArrayList<Mutation> l;
+			for(int i =0;i<mutationList.size();i++)
+			{
+				if(mutationTree.get(mutationList.get(i).gene_name) == null)
+				{
+					l = new ArrayList<Mutation>();
+					l.add(mutationList.get(i));
+					mutationTree.put(mutationList.get(i).gene_name, l);
+				}
+				else
+				{
+					l = mutationTree.get(mutationList.get(i).gene_name);
+					l.add(mutationList.get(i));
+					mutationTree.put(mutationList.get(i).gene_name, l);
+				}				
 			}
+			return mutationTree;
 		}
 		
-		public boolean filterMutationsWithScore(float score){
-			return (score >= 30);
-		}
-		
-		public boolean filterReads(float count){
-			return (count >= 8);
-		}
-		
-		public boolean filterSNPS(String dbsnp){
-			ArrayList<String> columnY = null;
-			return columnY.contains(dbsnp);
-		}
-		
-		public boolean filterMutations(ArrayList<String> reads){
-			float varianceFrequency = reads.size() / coverageNumbers();
-			return (varianceFrequency >= 0.18);
-		}
-		
-		public ArrayList<String> getMutations(){
-			
-			// filter 8 individual mutation report .xlsx files
-			
-			// return list of potential cancer mutations
-			
-			return null;
-		}
+		public BTree<String, Mutation> makeCombinedIDTree(ArrayList<Mutation> mutationList)
+		{
+			BTree<String, Mutation> mutationTree = new BTree<String, Mutation>();
+			for(int i =0;i<mutationList.size();i++)
+			{
+				mutationTree.put(mutationList.get(i).Combined_ID, mutationList.get(i));
+			}
+			return mutationTree;
+		}		
 		
 	}
 	
@@ -77,7 +72,8 @@ public class DataSet {
 		
 		
 		
-		public CancerNucleotideVariation(String filename){
+		public CancerNucleotideVariation(String filename)
+		{
 			// Do something with the file
 		}
 		// Filters out normal (non-cancer) dna  variations by comparing
@@ -152,13 +148,13 @@ public class DataSet {
 	CancerNucleotideVariation cnv;
 	GeneExpression ge;
 	
-	public DataSet(String type, String filename)
+	public DataSet(String type, String filename, String opt)
 	{
 		if(type == "ds"){
 			ds = new DrugSensitivity(filename);
 		}
 		if(type == "snl"){
-			snl = new SingleNucleotideLevel(filename);
+			snl = new SingleNucleotideLevel(filename, opt);
 		}
 		if(type == "cnv"){
 			cnv = new CancerNucleotideVariation(filename);
@@ -222,6 +218,98 @@ public class DataSet {
 		}			
 		System.out.println("Significant: "+ counterYES);
 		System.out.println("Not significant: "+ counterNO);
+		return theList;
+	}
+	
+	public ArrayList<Mutation> readSNLList( String filename, String cloneType )
+	{
+		System.out.println("file = "+filename);
+		ArrayList<Mutation> theList = new ArrayList<Mutation>();
+		Mutation aMutation;
+		String[] values;
+		
+		int counterYES = 0;
+		int counterNO = 0;
+		int thrownOutSnips = 0;
+		try {
+		    BufferedReader in = new BufferedReader(new FileReader(filename));
+		    String str;    
+		    str = in.readLine();    	
+		    while ((str = in.readLine()) != null) 
+		    {
+		    	aMutation = new Mutation();
+		    	values = str.split(",");
+		    	
+		    	aMutation.clone_type=cloneType;
+		    	aMutation.chrom=values[1];
+		    	aMutation.left=values[2];
+		    	aMutation.right=values[3];
+		    	aMutation.ref_seq=values[4];
+		    	aMutation.var_type=values[5];
+		    	aMutation.zygosity=values[6];
+				aMutation.var_seq_1=values[7];
+				aMutation.var_seq_2=values[8];				
+				aMutation.var_score=values[9];
+				aMutation.not_ref_score=values[10];
+				aMutation.coverage=values[11];
+				aMutation.read_count_1=values[12];
+				aMutation.read_count_2=values[13];
+				aMutation.gene_name=values[15];
+				aMutation.transcript_name=values[16];
+				aMutation.where_in_transcript=values[17];
+				aMutation.change_type_1=values[18];
+				aMutation.ref_peptide_1=values[19];
+				aMutation.var_peptide_1=values[20];
+				aMutation.change_type_2=values[21];
+				aMutation.ref_peptide_2=values[22];
+				aMutation.var_peptide_2=values[23];
+				aMutation.dbsnp=values[24];
+				
+				if(values.length < 26)
+				{
+					aMutation.dbsnp_build= "NA";
+				} 
+				else 
+				{
+					aMutation.dbsnp_build=values[25];	
+				}
+				
+				// EVAL 1 
+				if(
+					(Double.parseDouble(aMutation.var_score) < 30.0)     ||
+					(Double.parseDouble(aMutation.not_ref_score) < 30.0) ||
+					(Double.parseDouble(aMutation.read_count_1) < 8.0)   ||
+					(Double.parseDouble(aMutation.read_count_2) < 8.0)   ||
+					(Double.parseDouble(aMutation.read_count_1)/ Double.parseDouble(aMutation.coverage) < 0.18) ||
+					(aMutation.gene_name == " ")
+				) 
+				{
+					counterNO++;
+				}			
+				// EVAL 2
+				else if((aMutation.dbsnp.length()) >= 2) //really we were checking if there is a non-empty DBSNP but the char in the 'empty' ones is not null or a space
+				{
+					thrownOutSnips++;		
+				}
+				else
+				{
+					counterYES++;
+					aMutation.Combined_ID = aMutation.gene_name+aMutation.left;
+					theList.add(aMutation);
+					System.out.println(str);
+				}				
+		    }
+		    in.close();
+		} catch (IOException e) {
+			System.out.println("BAD FILE WAS > " + filename);
+		    System.out.println("File Read Error in writelist");
+		    System.exit(0);
+		}			
+		
+		System.out.println("Added after filter: "+ counterYES);
+		System.out.println("Not added because of EVAL 1: "+ counterNO);
+		System.out.println("Snips thrown out because of EVAL 2: "+ thrownOutSnips);
+		System.out.println("Total thrown out: "+ (counterNO + thrownOutSnips));
 		return theList;
 	}
 	
