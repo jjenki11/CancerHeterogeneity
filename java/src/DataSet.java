@@ -5,33 +5,162 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class DataSet {
+public class DataSet 
+{
 	
-	class DrugSensitivity{
+	CHUtilities utils;	// define our utilities class to be used in DataSet file reading, etc
+	
+	
+	// This is the Drug Sensitivity Dataset object
+	class DrugSensitivityData
+	{
+		BTree<String, DrugSensitivity> sensTree;
 		
-		public DrugSensitivity(String filename){
+		ArrayList<String> sample_id_list;
+		
+		public DrugSensitivityData(String filename)
+		{
 			// Do something with the file
+			ArrayList<DrugSensitivity> sensList = utils.readData.readSensitivityList(filename);
+			sample_id_list = new ArrayList<String>();
+			sensTree = new BTree<String, DrugSensitivity>();
+			sensTree = makeSensTree(sensList);
 		}
 		
-	}
+		public BTree<String, DrugSensitivity> makeSensTree(ArrayList<DrugSensitivity> drugList)
+		{
+			BTree<String, DrugSensitivity> sensTree = new BTree<String, DrugSensitivity>();
+			for(int i =0;i<drugList.size();i++)
+			{
+				sample_id_list.add(drugList.get(i).sample_ID);
+				sensTree.put(drugList.get(i).sample_ID, drugList.get(i));
+			}
+			return sensTree;
+		}
+		
+	} DrugSensitivityData ds;
 	
-	class DrugTypes{
-		public DrugTypes(String filename){
+	class DrugTypes
+	{
+		BTree<String, DrugType> typeTree;
+		
+		
+		public DrugTypes(String filename)
+		{
+			ArrayList<DrugType> drugList = utils.readData.readDrugTypeList(filename);
+			typeTree = new BTree<String, DrugType>();
+			
+			typeTree = makeTypeTree(drugList);			
 			
 		}
-	}
+		public BTree<String, DrugType> makeTypeTree(ArrayList<DrugType> drugList)
+		{
+			BTree<String, DrugType> mutationTree = new BTree<String, DrugType>();
+			for(int i =0;i<drugList.size();i++)
+			{
+				mutationTree.put(drugList.get(i).sample_ID, drugList.get(i));
+			}
+			return mutationTree;
+		}	
+		
+	} DrugTypes dt;
+	
+	// This is the Drug Efficacy object
+	
+	class DrugEfficacyObj
+	{
+		// a is sens, b is type		
+		
+		ArrayList<DrugEfficacy> effList;
+		public DrugEfficacyObj(DataSet a, DataSet b)
+		{
+			//ArrayList<DrugEfficacy> effList = utils.readData.read
+			effList = new ArrayList<DrugEfficacy>();
+			effList = performMerge(a,b);
+			
+			printEfficacyObjects();
+		}
+		
+		public ArrayList<DrugEfficacy> performMerge(DataSet a, DataSet b)
+		{
+			ArrayList<String> sid_list = a.ds.sample_id_list;
+			
+			int len = sid_list.size();
+			ArrayList<DrugEfficacy> effs = new ArrayList<DrugEfficacy>();
+			DrugEfficacy de;
+			
+			DrugSensitivity dss;
+			DrugType dtt;
+			
+			for(int i = 0; i < len; i++)
+			{
+				dss = a.ds.sensTree.get(sid_list.get(i));
+				dtt = b.dt.typeTree.get(sid_list.get(i));
+				de = new DrugEfficacy();
+				
+				de.protocol=dss.protocol;
+				de.sample_ID_sens=dss.sample_ID;		
+				de.DATA0=dss.DATA0;
+				de.DATA1=dss.DATA1;
+				de.DATA2=dss.DATA2;
+				de.DATA3=dss.DATA3;
+				de.DATA4=dss.DATA4;
+				de.DATA5=dss.DATA5;
+				de.DATA6=dss.DATA6;
+				de.DATA7=dss.DATA7;
+				de.DATA8=dss.DATA8;
+				de.DATA9=dss.DATA9;
+				de.DATA10=dss.DATA10;		
+				de.C0=dss.C0;
+				de.C1=dss.C1;
+				de.C2=dss.C2;
+				de.C3=dss.C3;
+				de.C4=dss.C4;
+				de.C5=dss.C5;
+				de.C6=dss.C6;
+				de.C7=dss.C7;
+				de.C8=dss.C8;
+				de.C9=dss.C9;
+				de.C10=dss.C10;
+				de.gene_sens=dss.gene;		
+				
+				de.sample_ID_type=dtt.sample_ID;
+				de.gene_symbol_type=dtt.gene_symbol;
+				de.sample_name=dtt.sample_name;
+				de.ncgc_UID=dtt.ncgc_UID;
+				de.pri_mech_action=dtt.pri_mech_action;
+				effs.add(de);
+			}			
+			return effs;			
+		}
+		
+		public void printEfficacyObjects()
+		{
+			
+			for(int i = 0;i < effList.size(); i++)
+			{
+				System.out.println(effList.get(i).getStrings());
+			}
+			
+		}
+		
+		
+		
+	} DrugEfficacyObj de;
+	
+	
+	// This is the DNA Mutations Dataset Object
 	
 	class SingleNucleotideLevel{		
 		/**
 		 * Some internal tools here ~
 		 * 
-		 * 1) Variance score to exclude  bad quality reads
-		 * 2) Coverage numbers to obtain variance ratio
+		 * 
 		 */
 		public SingleNucleotideLevel(String filename, String type)
 		{
 			// Do something with the file
-			ArrayList<Mutation> mutationList = readSNLList(filename, type);
+			ArrayList<Mutation> mutationList = utils.readData.readSNLList(filename, type);
 			
 			BTree<String, Mutation> combinedIDTree = new BTree<String, Mutation>();
 			BTree<String, ArrayList<Mutation>> mutationTree = new BTree<String, ArrayList<Mutation>>();
@@ -71,8 +200,7 @@ public class DataSet {
 			}
 			return mutationTree;
 		}		
-		
-	}
+	} SingleNucleotideLevel snl;
 	
 	class CancerNucleotideVariation
 	{		
@@ -80,7 +208,7 @@ public class DataSet {
 		public CancerNucleotideVariation(String filename, String type)
 		{
 			// Do something with the file
-			ArrayList<Cancer> mutationList = readCancerList(filename, type);
+			ArrayList<Cancer> cancerList = utils.readData.readCancerList(filename, type);
 		}
 		// Filters out normal (non-cancer) dna  variations by comparing
 		// to healthy sister
@@ -98,13 +226,15 @@ public class DataSet {
 			 * }
 			 */			
 		}		
-	}
+	} CancerNucleotideVariation cnv;
 	
+	
+	// This is the mRNA expression Dataset object
 	class GeneExpression
 	{		
 		public GeneExpression(String filename)
 		{			
-			ArrayList<Gene> geneList                = readGeneList(filename);			
+			ArrayList<Gene> geneList                = utils.readData.readGeneList(filename);			
 			BTree<String, Gene> combinedIDTree      = new BTree<String, Gene>();
 			BTree<String, ArrayList<Gene>> geneTree = new BTree<String, ArrayList<Gene>>();			
 			combinedIDTree 	                        = makeCombinedIDTree(geneList); 
@@ -142,18 +272,19 @@ public class DataSet {
 			}
 			return geneTree;
 		}		
-	}
+	} GeneExpression ge;	
+
 	
-	DrugSensitivity ds;
-	SingleNucleotideLevel snl;
-	CancerNucleotideVariation cnv;
-	GeneExpression ge;
-	
-	public DataSet(String type, String filename, String opt)
+	public DataSet(String type, String filename, String opt, DataSet a, DataSet b)
 	{
+		utils = new CHUtilities();
 		if(type == "ds")
 		{
-			ds = new DrugSensitivity(filename);
+			ds = new DrugSensitivityData(filename);
+		}
+		if(type == "dt")
+		{
+			dt = new DrugTypes(filename);
 		}
 		if(type == "snl")
 		{
@@ -167,270 +298,14 @@ public class DataSet {
 		{
 			ge = new GeneExpression(filename);
 		}
-	}
-	
-	public ArrayList<Gene> readGeneList( String filename )
-	{
-		System.out.println("file = "+filename);
-		ArrayList<Gene> theList = new ArrayList<Gene>();
-		Gene aGene;
-		String[] values;
-		
-		int counterYES = 0;
-		int counterNO = 0;
-		try {
-		    BufferedReader in = new BufferedReader(new FileReader(filename));
-		    String str;    
-		    str = in.readLine();    	
-		    while ((str = in.readLine()) != null) 
-		    {
-		    	//theList.add(str.substring(0,str.length()));
-		    	aGene = new Gene();
-		    	values = str.split(",");
-	    	
-		    	aGene.setIlluminaID(values[0]);
-		    	aGene.setGeneSymbol(values[1]);
-		    	
-		    	aGene.setCombinedID(aGene.getIlluminaID(), aGene.getGeneSymbol());
-		    	
-		    	double[] clones = new double[6];
-		    	
-		    	clones[0] = Double.parseDouble(values[2]);
-		    	clones[1] = Double.parseDouble(values[3]);
-		    	clones[2] = Double.parseDouble(values[4]);
-		    	clones[3] = Double.parseDouble(values[5]);
-		    	clones[4] = Double.parseDouble(values[6]);
-		    	clones[5] = Double.parseDouble(values[7]);
-		    		    	
-		    	aGene.setCloneValues(clones);
-		    	
-		    	if(aGene.isSignificant())
-		    	{
-		    		ArrayList<String> imp = aGene.whichAreSignificant();		    		
-		    		//System.out.println("For gene "+aGene.getCombinedID()+", the important clones are: { " + imp.toString() + " }");		    		
-		    		theList.add(aGene);		    		
-		    		counterYES ++;
-		    	} 
-		    	else 
-		    	{
-		    		counterNO ++;
-		    	}
-		    }
-		    in.close();
-		} 
-		catch (IOException e) 
+		if(type == "ef")
 		{
-			System.out.println("BAD FILE WAS > " + filename);
-		    System.out.println("File Read Error in writelist");
-		    System.exit(0);
-		}			
-		//System.out.println("Significant: "+ counterYES);
-		//System.out.println("Not significant: "+ counterNO);
-		System.out.println("Kept:\t\t"+counterYES);
-		System.out.println("Discareded:\t\t\t"+counterNO);
-		return theList;
+			de = new DrugEfficacyObj(a, b);
+		}
+		
 	}
 	
-	public ArrayList<Mutation> readSNLList( String filename, String cloneType )
-	{
-		System.out.println("file = "+filename);
-		ArrayList<Mutation> theList = new ArrayList<Mutation>();
-		Mutation aMutation;
-		String[] values;
-		
-		int counterYES = 0;
-		int counterNO = 0;
-		int thrownOutSnips = 0;
-		try {
-		    BufferedReader in = new BufferedReader(new FileReader(filename));
-		    String str;    
-		    str = in.readLine();    	// take out the header file
-		    while ((str = in.readLine()) != null) 
-		    {
-		    	aMutation = new Mutation();
-		    	values = str.split(",");
-		    	
-		    	aMutation.clone_type=cloneType;
-		    	aMutation.chrom=values[1];
-		    	aMutation.left=values[2];
-		    	aMutation.right=values[3];
-		    	aMutation.ref_seq=values[4];
-		    	aMutation.var_type=values[5];
-		    	aMutation.zygosity=values[6];
-				aMutation.var_seq_1=values[7];
-				aMutation.var_seq_2=values[8];				
-				aMutation.var_score=values[9];
-				aMutation.not_ref_score=values[10];
-				aMutation.coverage=values[11];
-				aMutation.read_count_1=values[12];
-				aMutation.read_count_2=values[13];
-				aMutation.gene_name=values[15];
-				aMutation.transcript_name=values[16];
-				aMutation.where_in_transcript=values[17];
-				aMutation.change_type_1=values[18];
-				aMutation.ref_peptide_1=values[19];
-				aMutation.var_peptide_1=values[20];
-				aMutation.change_type_2=values[21];
-				aMutation.ref_peptide_2=values[22];
-				aMutation.var_peptide_2=values[23];
-				aMutation.dbsnp=values[24];
-				
-				if(values.length < 26)
-				{
-					aMutation.dbsnp_build= "NA";
-				} 
-				else 
-				{
-					aMutation.dbsnp_build=values[25];	
-				}
-				
-				// EVAL 1 
-				if(
-					(Double.parseDouble(aMutation.var_score) < 30.0)     										 ||
-					(Double.parseDouble(aMutation.not_ref_score) < 30.0) 										 ||
-					(Double.parseDouble(aMutation.read_count_1) < 8.0)   										 ||
-					(Double.parseDouble(aMutation.read_count_2) < 8.0)   										 ||
-					(Double.parseDouble(aMutation.read_count_1) / Double.parseDouble(aMutation.coverage) < 0.18) ||
-					(aMutation.gene_name == " ")
-				) 
-				{
-					counterNO++;
-				}			
-				// EVAL 2
-				else if((aMutation.dbsnp.length()) >= 2) //really we were checking if there is a non-empty DBSNP but the char in the 'empty' ones is not null or a space
-				{
-					thrownOutSnips++;		
-				}
-				else
-				{
-					counterYES++;
-					aMutation.Combined_ID = aMutation.gene_name+aMutation.left;
-					theList.add(aMutation);
-					//System.out.println(str);
-				}				
-		    }
-		    in.close();
-		} catch (IOException e) {
-			System.out.println("BAD FILE WAS > " + filename);
-		    System.out.println("File Read Error in writelist");
-		    System.exit(0);
-		}			
-		/*
-		System.out.println("Added after filter: "+ counterYES);
-		System.out.println("Not added because of EVAL 1: "+ counterNO);
-		System.out.println("Snips thrown out because of EVAL 2: "+ thrownOutSnips);
-		System.out.println("Total thrown out: "+ (counterNO + thrownOutSnips));
-		*/
-		System.out.println("Kept:\t\t"+counterYES);
-		System.out.println("Discareded:\t\t\t"+counterNO);
-		return theList;
-	}
-	
-	public ArrayList<Cancer> readCancerList( String filename, String type )
-	{
-		System.out.println("file = "+filename);
-		ArrayList<Cancer> theList = new ArrayList<Cancer>();
-		Cancer aCancer;
-		String[] values;
-		
-		int counterYES = 0;
-		int counterNO = 0;
-		
-		int sharedCP = 0;
-		int missingCP = 0;
-		
-		int geneDesert = 0;
-		int thrownOutSnips = 0;
-		
-		try {
-		    BufferedReader in = new BufferedReader(new FileReader(filename));
-		    String str;    
-		    str = in.readLine();    	
-		    while ((str = in.readLine()) != null) 
-		    {
 
-		    	aCancer = new Cancer();
-		    	values = str.split(",");
-		    	
-		    	aCancer.clone_type = type;
-		    	aCancer.chrom=values[0];
-		    	aCancer.left_cancer=values[1];
-		    	aCancer.left_normal=values[2];
-		    	aCancer.right_cancer=values[3];
-		    	aCancer.right_normal=values[4];
-		    	aCancer.ref_cancer=values[5];
-		    	aCancer.ref_normal=values[6];
-		    	aCancer.kind_cancer=values[7];
-		    	aCancer.kind_normal=values[8];
-		    	aCancer.var_seq_cancer=values[9];
-		    	aCancer.var_seq_normal=values[10];
-		    	aCancer.coverage_cancer=values[11];
-		    	aCancer.coverage_normal=values[12];
-		    	aCancer.conservation=values[13];
-		    	aCancer.gene=values[14];
-		    	aCancer.where_in_gene=values[15];
-		    	aCancer.annot_cancer=values[16];
-		    	aCancer.annot_normal=values[17];
-		    	
-				if(values.length < 19)
-				{
-					aCancer.dbsnp= "NA";
-				} 
-				else 
-				{
-					aCancer.dbsnp=values[18];	
-				}
-				
-				
-				if(aCancer.left_normal.length() >= 2)
-				{
-					missingCP++;
-					counterNO++;
-				} 
-				else if(!(aCancer.gene.length() >= 2))
-				{
-					geneDesert++;
-					counterNO++;
-				}
-				else if((aCancer.dbsnp) == "NA") //really we were checking if there is a non-empty DBSNP but the char in the 'empty' ones is not null or a space
-				{
-					thrownOutSnips++;		
-					counterNO++;
-				}
-				else if(Double.parseDouble(aCancer.coverage_cancer) < 8.0)
-				{
-					counterNO++;
-				}
-				else
-				{
-					theList.add(aCancer);
-					counterYES++;
-					//System.out.println(str);
-				}
-		    	
-		    	//aCancer.Combined_ID;
-
-		    }
-		    in.close();
-		} 
-		catch (IOException e) 
-		{
-			System.out.println("BAD FILE WAS > " + filename);
-		    System.out.println("File Read Error in writelist");
-		    System.exit(0);
-		}	
-		/*
-		System.out.println("Total lost in gene desert: "+geneDesert);
-		System.out.println("Total missing CP: "+missingCP);
-		System.out.println("Total thrown out snips: "+thrownOutSnips);
-		System.out.println("Kept: "+ counterYES);
-		System.out.println("Total not kept: "+ counterNO);
-		*/
-		System.out.println("Kept:\t\t"+counterYES);
-		System.out.println("Discareded:\t\t\t"+counterNO);
-		
-		return theList;
-	}
 	
 	
 }
