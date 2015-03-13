@@ -104,6 +104,40 @@ public class CHUtilities
 			
 		}
 		
+		public boolean checkSignificance(DrugSensitivity ds)
+		{
+			//  Make an array of float numbers to perform sig. check
+			float[] data = {
+					Float.parseFloat(ds.DATA1), // 0
+					Float.parseFloat(ds.DATA2),
+					Float.parseFloat(ds.DATA3),
+					Float.parseFloat(ds.DATA4),
+					Float.parseFloat(ds.DATA5),
+					Float.parseFloat(ds.DATA6),
+					Float.parseFloat(ds.DATA7),
+					Float.parseFloat(ds.DATA8),
+					Float.parseFloat(ds.DATA9),
+					Float.parseFloat(ds.DATA10)  // 9
+			};
+			
+			float[] diffs = {
+					data[1] - data[0], // 0
+					data[2] - data[1],
+					data[3] - data[2],
+					data[4] - data[3],
+					data[5] - data[4],
+					data[6] - data[5],
+					data[7] - data[6],
+					data[8] - data[7],
+					data[9] - data[8]  // 8
+			};
+			
+			System.out.println("Derivatives over concentration for ("+ds.sample_ID+"): \n" +
+				diffs[0] + ", " +diffs[1] + ", " + diffs[2] + ", " +diffs[3] + ", " +diffs[4] + ", " +diffs[5] + ", " +diffs[6] + ", " +diffs[7] + ", " +diffs[8] + "\n");
+			
+			return true;
+		}
+		
 	}
 	
 	/**
@@ -589,10 +623,17 @@ public class CHUtilities
 			    	//aDrugSensitivity.smi=values[32];
 			    			
 			    	// insert if statements to determine 'significance'
+			    	if(evaluateData.checkSignificance(aDrugSensitivity)){
+				    	counterYES++;				    	
+				    	theList.add(aDrugSensitivity);
+			    	}
+			    	else
+			    	{
+			    		counterNO++;
+			    	}
 			    	
-			    	counterYES++;
 			    	
-			    	theList.add(aDrugSensitivity);
+
 			    	
 			    }
 			    in.close();
