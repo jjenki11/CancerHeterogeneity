@@ -78,7 +78,7 @@ public class DataSet
 			effList = new ArrayList<DrugEfficacy>();
 			effList = performMerge(a,b);
 			
-			printEfficacyObjects();
+			//printEfficacyObjects();
 		}
 		
 		public ArrayList<DrugEfficacy> performMerge(DataSet a, DataSet b)
@@ -157,13 +157,18 @@ public class DataSet
 		 * 
 		 * 
 		 */
+		BTree<String, Mutation> combinedIDTree;
+		BTree<String, ArrayList<Mutation>> mutationTree;
+		ArrayList<String> combined_id_list;
+		
 		public SingleNucleotideLevel(String filename, String type)
 		{
 			// Do something with the file
+			combined_id_list = new ArrayList<String>();
 			ArrayList<Mutation> mutationList = utils.readData.readSNLList(filename, type);
 			
-			BTree<String, Mutation> combinedIDTree = new BTree<String, Mutation>();
-			BTree<String, ArrayList<Mutation>> mutationTree = new BTree<String, ArrayList<Mutation>>();
+			combinedIDTree = new BTree<String, Mutation>();
+			mutationTree = new BTree<String, ArrayList<Mutation>>();
 			
 			combinedIDTree 	= makeCombinedIDTree(mutationList); 
 			mutationTree 	= makeMutationTree(mutationList);
@@ -196,6 +201,7 @@ public class DataSet
 			BTree<String, Mutation> mutationTree = new BTree<String, Mutation>();
 			for(int i =0;i<mutationList.size();i++)
 			{
+				combined_id_list.add(mutationList.get(i).Combined_ID);
 				mutationTree.put(mutationList.get(i).Combined_ID, mutationList.get(i));
 			}
 			return mutationTree;
@@ -204,14 +210,32 @@ public class DataSet
 	
 	class CancerNucleotideVariation
 	{		
-		
+		ArrayList<String> combined_id_list;
+		BTree<String, Cancer> cancerTree;
 		public CancerNucleotideVariation(String filename, String type)
 		{
 			// Do something with the file
+			combined_id_list = new ArrayList<String>();
 			ArrayList<Cancer> cancerList = utils.readData.readCancerList(filename, type);
+			cancerTree = new BTree<String, Cancer>();
+			cancerTree = makeCombinedIDTree(cancerList);
 		}
 		// Filters out normal (non-cancer) dna  variations by comparing
 		// to healthy sister
+		
+		public BTree<String, Cancer> makeCombinedIDTree(ArrayList<Cancer> cancerList)
+		{
+			BTree<String, Cancer> cancerTree = new BTree<String, Cancer>();
+			for(int i =0;i<cancerList.size();i++)
+			{
+
+				combined_id_list.add(cancerList.get(i).Combined_ID);
+				cancerTree.put(cancerList.get(i).Combined_ID, cancerList.get(i));
+				//System.out.println("COMBINED CANCER ID: " + cancerList.get(i).Combined_ID);
+				
+			}
+			return cancerTree;
+		}		
 		
 		public void filterCoLocatedMutations(/*DNA , HealthySisterDataSet*/)
 		{			
@@ -227,6 +251,109 @@ public class DataSet
 			 */			
 		}		
 	} CancerNucleotideVariation cnv;
+	
+	
+	class CancerMutationObj
+	{
+		ArrayList<CancerMutation> cMutationList;
+		
+		public CancerMutationObj(DataSet a, DataSet b, String label)
+		{
+			
+			cMutationList = new ArrayList<CancerMutation>();
+			cMutationList = performMerge(a,b,label);
+			//printCancerMutationObjects();
+		}
+		
+		public ArrayList<CancerMutation> performMerge(DataSet a, DataSet b, String l)
+		{
+			ArrayList<String> sid_list = new ArrayList<String>();
+			System.out.println("Now merging SNL and CNV files for: "+l);
+			sid_list = a.snl.combined_id_list;
+			
+			int len = sid_list.size();
+			ArrayList<CancerMutation> muts = new ArrayList<CancerMutation>();
+			CancerMutation cm;
+			
+			Mutation mut;
+			Cancer can;
+			
+			int reject = 0;
+			int kept = 0;
+			
+			for(int i = 0; i < len; i++)
+			{
+				mut=new Mutation();
+				can=new Cancer();
+				mut = a.snl.combinedIDTree.get(sid_list.get(i));
+				//System.out.println(mut.Combined_ID);
+				
+				can = b.cnv.cancerTree.get(sid_list.get(i));
+				//System.out.println("Size of cancer tree: " + b.cnv.cancerTree.size() + " |  Size of mutation tree: "+a.snl.combinedIDTree.size());
+				
+				
+				cm = new CancerMutation();
+				
+				/*From snl*/
+				if(	(can != null) && (mut != null) && 
+						(can.Combined_ID.trim().equals(mut.Combined_ID.trim())) // this was the problem.... :(
+				){
+					System.out.println("mutation key: "+(mut == null ? "NOTHING" : mut.Combined_ID) + "   |||   cancer key: "+(can == null ? "NOTHING" : can.Combined_ID));
+					cm.Combined_ID=mut.Combined_ID;
+					cm.clone_type=mut.clone_type;
+					cm.chrom=mut.chrom;
+					cm.left=mut.left;
+					cm.right=mut.right;
+					cm.ref_seq=mut.ref_seq;
+					cm.var_type=mut.var_type;
+					cm.zygosity=mut.zygosity;
+					cm.var_seq_1=mut.var_seq_1;
+					cm.var_seq_2=mut.var_seq_2;
+					cm.var_score=mut.var_score;
+					cm.not_ref_score=mut.not_ref_score;
+					cm.coverage=mut.coverage;
+					cm.read_count_1=mut.read_count_1;
+					cm.read_count_2=mut.read_count_2;
+					cm.gene_name=mut.gene_name;
+					cm.transcript_name=mut.transcript_name;
+					cm.where_in_transcript=mut.where_in_transcript;
+					cm.change_type_1=mut.change_type_1;
+					cm.ref_peptide_1=mut.ref_peptide_1;
+					cm.var_peptide_1=mut.var_peptide_1;
+					cm.change_type_2=mut.change_type_2;
+					cm.ref_peptide_2=mut.ref_peptide_2;
+					cm.var_peptide_2=mut.var_peptide_2;
+					cm.dbsnp=mut.dbsnp;
+					cm.dbsnp_build=mut.dbsnp_build;
+					
+					/*From cnv*/
+					cm.kind_cancer=can.kind_cancer;
+					cm.ref_cancer=can.ref_cancer;
+					cm.var_seq_cancer=can.var_seq_cancer;
+					
+					muts.add(cm);
+					kept++;
+				}
+				else
+				{
+					reject++;
+					
+				}
+			}			
+			System.out.println("Kept: "+kept);
+			System.out.println("Rejected: "+reject);
+			return muts;			
+		}
+		
+		public void printCancerMutationObjects()
+		{			
+			for(int i = 0;i < cMutationList.size(); i++)
+			{
+				System.out.println(cMutationList.get(i).getStrings());
+			}			
+		}
+		
+	} CancerMutationObj cmo;
 	
 	
 	// This is the mRNA expression Dataset object
@@ -301,6 +428,10 @@ public class DataSet
 		if(type == "ef")
 		{
 			de = new DrugEfficacyObj(a, b);
+		}
+		if(type == "cm")
+		{
+			cmo = new CancerMutationObj(a, b, opt);
 		}
 		
 	}

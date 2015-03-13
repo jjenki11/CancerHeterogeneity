@@ -44,5 +44,13 @@ public class Driver
 		DataSet effG8 = new DataSet("ef", "", "", sensG8, drugTypes);
 		DataSet effG9 = new DataSet("ef", "", "", sensG9, drugTypes);
 		
+		//  Cancer mutation combined data
+		DataSet cmC5 = new DataSet("cm", "", "C5", mutationC5, cancerC5);
+		DataSet cmC8 = new DataSet("cm", "", "C8", mutationC8, cancerC8);
+		DataSet cmD10 = new DataSet("cm", "", "D10", mutationD10, cancerD10);
+		DataSet cmF2 = new DataSet("cm", "", "F2", mutationF2, cancerF2);
+		DataSet cmG8 = new DataSet("cm", "", "G8", mutationG8, cancerG8);
+		DataSet cmG9 = new DataSet("cm", "", "G9", mutationG9, cancerG9);
+		
 	}
 }

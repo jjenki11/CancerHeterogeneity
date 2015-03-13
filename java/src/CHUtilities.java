@@ -308,7 +308,8 @@ public class CHUtilities
 						(Double.parseDouble(aMutation.read_count_1) < 8.0)   										 ||
 						(Double.parseDouble(aMutation.read_count_2) < 8.0)   										 ||
 						(Double.parseDouble(aMutation.read_count_1) / Double.parseDouble(aMutation.coverage) < 0.18) ||
-						(aMutation.gene_name == " ")
+						(aMutation.gene_name == " ")																 ||
+						(aMutation.gene_name.trim().length() < 2)
 					) 
 					{
 						counterNO++;
@@ -321,7 +322,7 @@ public class CHUtilities
 					else
 					{
 						counterYES++;
-						aMutation.Combined_ID = aMutation.gene_name+aMutation.left;
+						aMutation.Combined_ID = /*aMutation.gene_name +*/ aMutation.left;
 						theList.add(aMutation);
 						//System.out.println(str);
 					}				
@@ -370,6 +371,8 @@ public class CHUtilities
 			    	aCancer = new Cancer();
 			    	values = str.split(",");
 			    	
+			    	
+			    	
 			    	aCancer.clone_type = type;
 			    	aCancer.chrom=values[0];
 			    	aCancer.left_cancer=values[1];
@@ -390,6 +393,8 @@ public class CHUtilities
 			    	aCancer.annot_cancer=values[16];
 			    	aCancer.annot_normal=values[17];
 			    	
+			    	
+			    	
 					if(values.length < 19)
 					{
 						aCancer.dbsnp= "NA";
@@ -405,7 +410,7 @@ public class CHUtilities
 						missingCP++;
 						counterNO++;
 					} 
-					else if(!(aCancer.gene.length() >= 2))
+					else if(!(aCancer.gene.trim().length() >= 2))
 					{
 						geneDesert++;
 						counterNO++;
@@ -421,6 +426,7 @@ public class CHUtilities
 					}
 					else
 					{
+						aCancer.Combined_ID = /*aCancer.gene +*/ aCancer.left_cancer;
 						theList.add(aCancer);
 						counterYES++;
 						//System.out.println(str);
@@ -480,6 +486,7 @@ public class CHUtilities
 			    	// insert conditional to add to list...
 			    	
 			    	theList.add(aDrugType);
+			    	counterYES++;
 			    }
 			    in.close();
 			} 

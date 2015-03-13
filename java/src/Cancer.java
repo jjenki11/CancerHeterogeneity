@@ -26,8 +26,8 @@ public class Cancer
 	
 	public Cancer()
 	{		
-		Combined_ID="";
-		clone_type="";
+	  Combined_ID="";
+	  clone_type="";
 	  chrom="";
 	  left_cancer="";
 	  left_normal="";
