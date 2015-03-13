@@ -5,36 +5,41 @@ public class Driver
 	public static void main(String[] args) 
 	{		
 		//	mRNA Gene Expression data
-		DataSet genes = new DataSet("ge", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\mRNA_Gene_expression2.txt", "", null, null);
+		
+		String basePath = "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\"; // JEFF
+		
+		//String basePath = ""; // RUTGER
+		
+		DataSet genes = new DataSet("ge", basePath+"mRNA_Gene_expression2.txt", "", null, null);
 		
 		//	Single Nucleotide Level data
-		DataSet mutationC5 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\C5.txt", "C5", null, null);
-		DataSet mutationC8 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\C8.txt", "C8", null, null);
-		DataSet mutationD10 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\D10.txt", "D10", null, null);
-		DataSet mutationF2 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\F2.txt", "F2", null, null);
-		DataSet mutationG8 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\G8.txt", "G8", null, null);
-		DataSet mutationG9 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\G9.txt", "G9", null, null);
-		DataSet mutationOt8873 = new DataSet("snl", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\snl\\Ot8873.txt", "Ot8873", null, null);
+		DataSet mutationC5 = new DataSet("snl",  basePath+"snl\\C5.txt", "C5", null, null);
+		DataSet mutationC8 = new DataSet("snl",  basePath+"snl\\C8.txt", "C8", null, null);
+		DataSet mutationD10 = new DataSet("snl",  basePath+"snl\\D10.txt", "D10", null, null);
+		DataSet mutationF2 = new DataSet("snl", basePath+"snl\\F2.txt", "F2", null, null);
+		DataSet mutationG8 = new DataSet("snl", basePath+"snl\\G8.txt", "G8", null, null);
+		DataSet mutationG9 = new DataSet("snl", basePath+"snl\\G9.txt", "G9", null, null);
+		DataSet mutationOt8873 = new DataSet("snl", basePath+"snl\\Ot8873.txt", "Ot8873", null, null);
 
 		//	Cancer Nucleotide Variation data
-		DataSet cancerC5 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\C5.txt", "C5", null, null);
-		DataSet cancerC8 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\C8.txt", "C8", null, null);
-		DataSet cancerD10 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\D10.txt", "D10", null, null);
-		DataSet cancerF2 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\F2.txt", "F2", null, null);
-		DataSet cancerG8 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\G8.txt", "G8", null, null);
-		DataSet cancerG9 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\G9.txt", "G9", null, null);
-		DataSet cancerOt8873 = new DataSet("cnv", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\cnv\\Ot8873.txt", "Ot8873", null, null);
+		DataSet cancerC5 = new DataSet("cnv", basePath+"cnv\\C5.txt", "C5", null, null);
+		DataSet cancerC8 = new DataSet("cnv", basePath+"cnv\\C8.txt", "C8", null, null);
+		DataSet cancerD10 = new DataSet("cnv", basePath+"cnv\\D10.txt", "D10", null, null);
+		DataSet cancerF2 = new DataSet("cnv", basePath+"cnv\\F2.txt", "F2", null, null);
+		DataSet cancerG8 = new DataSet("cnv", basePath+"cnv\\G8.txt", "G8", null, null);
+		DataSet cancerG9 = new DataSet("cnv", basePath+"cnv\\G9.txt", "G9", null, null);
+		DataSet cancerOt8873 = new DataSet("cnv", basePath+"cnv\\Ot8873.txt", "Ot8873", null, null);
 		
 		//	Drug Type data
-		DataSet drugTypes = new DataSet("dt", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\type_of_drugs.txt","", null, null);
+		DataSet drugTypes = new DataSet("dt", basePath+"drug_data\\type_of_drugs.txt","", null, null);
 		
 		//	Drug Sensitivity data
-		DataSet sensC5 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\C5.txt","C5", null, null);
-		DataSet sensC8 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\C8.txt","C8", null, null);
-		DataSet sensD10 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\D10.txt","D10", null, null);
-		DataSet sensF2 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\F2.txt","F2", null, null);
-		DataSet sensG8 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\G8.txt","G8", null, null);
-		DataSet sensG9 = new DataSet("ds", "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\drug_data\\G9.txt","G9", null, null);
+		DataSet sensC5 = new DataSet("ds", basePath+"drug_data\\C5.txt","C5", null, null);
+		DataSet sensC8 = new DataSet("ds", basePath+"drug_data\\C8.txt","C8", null, null);
+		DataSet sensD10 = new DataSet("ds", basePath+"drug_data\\D10.txt","D10", null, null);
+		DataSet sensF2 = new DataSet("ds", basePath+"drug_data\\F2.txt","F2", null, null);
+		DataSet sensG8 = new DataSet("ds", basePath+"drug_data\\G8.txt","G8", null, null);
+		DataSet sensG9 = new DataSet("ds", basePath+"drug_data\\G9.txt","G9", null, null);
 		
 		//	Drug Efficacy data
 		DataSet effC5 = new DataSet("ef", "", "", sensC5, drugTypes);
