@@ -38,6 +38,8 @@ public class DrugEfficacy
 	String ncgc_UID;
 	String pri_mech_action;
 	
+	String combined_ID;
+	
 	public DrugEfficacy()
 	{
 		protocol="";
@@ -70,6 +72,7 @@ public class DrugEfficacy
 		sample_name="";
 		ncgc_UID="";
 		pri_mech_action="";
+		combined_ID="";
 	}
 	
 	public String getStrings()

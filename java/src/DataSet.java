@@ -71,14 +71,21 @@ public class DataSet
 	{
 		// a is sens, b is type		
 		
+		BTree<String, DrugEfficacy> combinedTree;
+		BTree<String, ArrayList<DrugEfficacy>> mechTree;
+		BTree<String, ArrayList<DrugEfficacy>> geneTree;
+		
 		ArrayList<DrugEfficacy> effList;
 		public DrugEfficacyObj(DataSet a, DataSet b)
 		{
 			//ArrayList<DrugEfficacy> effList = utils.readData.read
 			effList = new ArrayList<DrugEfficacy>();
-			effList = performMerge(a,b);
-			
+			effList = performMerge(a,b);			
 			//printEfficacyObjects();
+			
+			geneTree = buildGeneTree(effList);
+			mechTree = buildMechanismTree(effList);
+			combinedTree = buildCombinedTree(effList);
 		}
 		
 		public ArrayList<DrugEfficacy> performMerge(DataSet a, DataSet b)
@@ -92,8 +99,11 @@ public class DataSet
 			DrugSensitivity dss;
 			DrugType dtt;
 			
+			boolean missingName;
+			
 			for(int i = 0; i < len; i++)
 			{
+				missingName = false;
 				dss = a.ds.sensTree.get(sid_list.get(i));
 				dtt = b.dt.typeTree.get(sid_list.get(i));
 				de = new DrugEfficacy();
@@ -129,9 +139,85 @@ public class DataSet
 				de.sample_name=dtt.sample_name;
 				de.ncgc_UID=dtt.ncgc_UID;
 				de.pri_mech_action=dtt.pri_mech_action;
-				effs.add(de);
+				
+				if((de.gene_sens == null) && (de.gene_symbol_type == null))
+				{
+					System.out.println("BOTH GENE NAMES WERE NULL! DO NOT ADD ME");
+					missingName = true;
+				}
+				else if((de.gene_sens == null) && (de.gene_symbol_type != null))
+				{
+					de.gene_sens = de.gene_symbol_type;
+				}
+				else if((de.gene_sens != null) && (de.gene_symbol_type == null))
+				{
+					de.gene_symbol_type = de.gene_sens;
+				}
+				else
+				{
+					//System.out.println("FOUND BOTH NAMES!");
+				}
+				if(!missingName)
+				{
+					de.combined_ID = de.gene_symbol_type+de.pri_mech_action;				
+					effs.add(de);
+				}
 			}			
 			return effs;			
+		}
+		
+		public BTree<String, ArrayList<DrugEfficacy>> buildGeneTree(ArrayList<DrugEfficacy> list)
+		{
+			BTree<String, ArrayList<DrugEfficacy>> geneTree = new BTree<String, ArrayList<DrugEfficacy>>();
+			ArrayList<DrugEfficacy> l;
+			for(int i =0;i<list.size();i++)
+			{
+				if(geneTree.get(list.get(i).gene_symbol_type) == null)
+				{
+					l = new ArrayList<DrugEfficacy>();
+					l.add(list.get(i));
+					geneTree.put(list.get(i).gene_symbol_type, l);
+				}
+				else
+				{
+					l = geneTree.get(list.get(i).gene_symbol_type);
+					l.add(list.get(i));
+					geneTree.put(list.get(i).gene_symbol_type, l);
+				}				
+			}
+			return geneTree;
+		}
+		
+		public BTree<String, ArrayList<DrugEfficacy>> buildMechanismTree(ArrayList<DrugEfficacy> list)
+		{
+			BTree<String, ArrayList<DrugEfficacy>> priTree = new BTree<String, ArrayList<DrugEfficacy>>();
+			ArrayList<DrugEfficacy> l;
+			for(int i =0;i<list.size();i++)
+			{
+				if(priTree.get(list.get(i).pri_mech_action) == null)
+				{
+					l = new ArrayList<DrugEfficacy>();
+					l.add(list.get(i));
+					priTree.put(list.get(i).pri_mech_action, l);
+				}
+				else
+				{
+					l = priTree.get(list.get(i).pri_mech_action);
+					l.add(list.get(i));
+					priTree.put(list.get(i).pri_mech_action, l);
+				}				
+			}
+			return priTree;
+		}
+		
+		public BTree<String, DrugEfficacy> buildCombinedTree(ArrayList<DrugEfficacy> list)
+		{
+			BTree<String, DrugEfficacy> combTree = new BTree<String, DrugEfficacy>();
+			for(int i =0;i<list.size();i++)
+			{
+				combTree.put(list.get(i).combined_ID, list.get(i));
+			}
+			return combTree;
 		}
 		
 		public void printEfficacyObjects()
@@ -218,21 +304,18 @@ public class DataSet
 			combined_id_list = new ArrayList<String>();
 			ArrayList<Cancer> cancerList = utils.readData.readCancerList(filename, type);
 			cancerTree = new BTree<String, Cancer>();
-			cancerTree = makeCombinedIDTree(cancerList);
+			cancerTree = makeCombinedIDTree(cancerList,type);
 		}
 		// Filters out normal (non-cancer) dna  variations by comparing
 		// to healthy sister
 		
-		public BTree<String, Cancer> makeCombinedIDTree(ArrayList<Cancer> cancerList)
+		public BTree<String, Cancer> makeCombinedIDTree(ArrayList<Cancer> cancerList, String type)
 		{
 			BTree<String, Cancer> cancerTree = new BTree<String, Cancer>();
 			for(int i =0;i<cancerList.size();i++)
 			{
-
 				combined_id_list.add(cancerList.get(i).Combined_ID);
-				cancerTree.put(cancerList.get(i).Combined_ID, cancerList.get(i));
-				//System.out.println("COMBINED CANCER ID: " + cancerList.get(i).Combined_ID);
-				
+				cancerTree.put(cancerList.get(i).Combined_ID, cancerList.get(i));				
 			}
 			return cancerTree;
 		}		
@@ -296,9 +379,9 @@ public class DataSet
 				
 				/*From snl*/
 				if(	(can != null) && (mut != null) && 
-						(can.Combined_ID.trim().equals(mut.Combined_ID.trim())) // this was the problem.... :(
+						(can.Combined_ID.equals(mut.Combined_ID)) // this was the problem.... :(
 				){
-					System.out.println("mutation key: "+(mut == null ? "NOTHING" : mut.Combined_ID) + "   |||   cancer key: "+(can == null ? "NOTHING" : can.Combined_ID));
+					//System.out.println("mutation key: "+(mut == null ? "NOTHING" : mut.Combined_ID) + "   |||   cancer key: "+(can == null ? "NOTHING" : can.Combined_ID));
 					cm.Combined_ID=mut.Combined_ID;
 					cm.clone_type=mut.clone_type;
 					cm.chrom=mut.chrom;

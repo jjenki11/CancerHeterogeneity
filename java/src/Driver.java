@@ -57,5 +57,10 @@ public class Driver
 		DataSet cmG8 = new DataSet("cm", "", "G8", mutationG8, cancerG8);
 		DataSet cmG9 = new DataSet("cm", "", "G9", mutationG9, cancerG9);
 		
+		/*
+		System.out.println("FINDING Kras_145195291");		
+		System.out.println("FROM CNV: "+ cancerG9.cnv.cancerTree.get("Kras_145195291"));		
+		System.out.println("FROM SNL: "+ mutationG9.snl.combinedIDTree.get("Kras_145195291"));
+		*/
 	}
 }

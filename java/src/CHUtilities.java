@@ -5,7 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.StringTokenizer;
+import java.util.TreeMap;
 
 
 /**
@@ -107,8 +109,9 @@ public class CHUtilities
 		public boolean checkSignificance(DrugSensitivity ds)
 		{
 			//  Make an array of float numbers to perform sig. check
-			float[] data = {
-					Float.parseFloat(ds.DATA1), // 0
+			double[] data = {
+					Float.parseFloat(ds.DATA0), // 0
+					Float.parseFloat(ds.DATA1),
 					Float.parseFloat(ds.DATA2),
 					Float.parseFloat(ds.DATA3),
 					Float.parseFloat(ds.DATA4),
@@ -117,10 +120,22 @@ public class CHUtilities
 					Float.parseFloat(ds.DATA7),
 					Float.parseFloat(ds.DATA8),
 					Float.parseFloat(ds.DATA9),
-					Float.parseFloat(ds.DATA10)  // 9
-			};
-			
-			float[] diffs = {
+					Float.parseFloat(ds.DATA10)  // 10
+			};			
+			double[] conc = {
+					Float.parseFloat(ds.C0), // 0
+					Float.parseFloat(ds.C1),
+					Float.parseFloat(ds.C2),
+					Float.parseFloat(ds.C3),
+					Float.parseFloat(ds.C4),
+					Float.parseFloat(ds.C5),
+					Float.parseFloat(ds.C6),
+					Float.parseFloat(ds.C7),
+					Float.parseFloat(ds.C8),
+					Float.parseFloat(ds.C9),
+					Float.parseFloat(ds.C10)  // 10
+			};			
+			double[] dataDiffs = {
 					data[1] - data[0], // 0
 					data[2] - data[1],
 					data[3] - data[2],
@@ -129,15 +144,121 @@ public class CHUtilities
 					data[6] - data[5],
 					data[7] - data[6],
 					data[8] - data[7],
-					data[9] - data[8]  // 8
-			};
-			
-			System.out.println("Derivatives over concentration for ("+ds.sample_ID+"): \n" +
-				diffs[0] + ", " +diffs[1] + ", " + diffs[2] + ", " +diffs[3] + ", " +diffs[4] + ", " +diffs[5] + ", " +diffs[6] + ", " +diffs[7] + ", " +diffs[8] + "\n");
-			
-			return true;
-		}
-		
+					data[9] - data[8],
+					data[10]- data[9]  // 9
+			};			
+			double[] concDiffs = {
+					conc[1] - conc[0], // 0
+					conc[2] - conc[1],
+					conc[3] - conc[2],
+					conc[4] - conc[3],
+					conc[5] - conc[4],
+					conc[6] - conc[5],
+					conc[7] - conc[6],
+					conc[8] - conc[7],
+					conc[9] - conc[8],
+					conc[10]- conc[9]  // 9
+			};			
+			double[] slopes = {
+					dataDiffs[0] / concDiffs[0],
+					dataDiffs[1] / concDiffs[1],
+					dataDiffs[2] / concDiffs[2],
+					dataDiffs[3] / concDiffs[3],
+					dataDiffs[4] / concDiffs[4],
+					dataDiffs[5] / concDiffs[5],
+					dataDiffs[6] / concDiffs[6],
+					dataDiffs[7] / concDiffs[7],
+					dataDiffs[8] / concDiffs[8],
+					dataDiffs[9] / concDiffs[9]
+			};			
+			double top = (double)data[0];
+			double bot = (double)data[10];			
+			double mid = (top + bot) / 2.0;
+			double ec50 = 0.0;			
+			boolean found = false;
+			for(int i = 0; i < data.length; i++)
+			{
+				if( (!found) && ((int)(mid - data[i]) == 0) ){
+					ec50 = (double)conc[i];
+					found = true;
+					//System.out.println("FOUND THE MATCH @ index "+i+" with value: "+ec50);
+				}
+			}
+			double hill = Math.signum(bot - top);
+			double[] cFit = new double[11];
+			ArrayList<Double> fits = new ArrayList<Double>();
+			double tmp = 0.0;
+			double ev = 0.0;
+			double bt = ((top - bot));
+			for(int i = 0; i < conc.length; i++)
+			{
+				tmp = conc[i];				
+				ev = (Math.pow(10.0, ((ec50 - tmp)*hill)));
+				fits.add(bot + (bt / (1.0 +ev)));
+			}			
+			boolean foundPositive = false;			
+			double avg = 0.0;			
+			for(int i = 0; i < data.length; i++)
+			{
+				avg = avg + data[i];
+			}			
+			avg= avg/fits.size();
+			double[] meanDiffs = new double[11];			
+			String[] stuff = {"","","","","","","","","","",""};
+			String lilStuff = "";
+			for(int i = 0; i < fits.size(); i++)
+			{
+				meanDiffs[i] = (data[i] - avg);// - (avg - fits.get(i));
+				if(meanDiffs[i] == 0){
+					stuff[i] = "=";
+					lilStuff+="=";
+				} else if (meanDiffs[i] > 0){
+					stuff[i] = "+";
+					lilStuff+="+";
+				} else if (meanDiffs[i] < 0){
+					stuff[i] = "-";
+					lilStuff+="-";
+				}
+				else {
+					System.out.println("WTF?");
+					stuff[i] = "WTF";
+				}
+			}
+			String val = lilStuff.substring(7, 11);			
+			double first7avg = 0.0;
+			double last4avg  = 0.0;			
+			for(int i = 0; i < 7; i++)
+			{
+				first7avg+=data[i];
+			}
+			for(int i = 7; i < 11; i++)
+			{
+				last4avg+=data[i];
+			}			
+			first7avg/=7;
+			last4avg/=4;			
+			double avgDiff = first7avg - last4avg;		
+		    Map<Character, Float> m = new TreeMap<Character, Float>();
+		    for (char c : val.toCharArray()) {
+		        if (m.containsKey(c))
+		            m.put(c, m.get(c) + 1);
+		        else
+		            m.put(c, 1f);
+		    }
+		    for (char c : val.toCharArray()) {
+		        float freq = m.get(c) / val.length();
+		        if(c == '-'){
+		        	if(((m.get(c) / val.length()) >= .75) && (avgDiff >= 30)){
+		        		//System.out.println(ds.sample_ID + " Difference in first7 and last 4 avg: " + avgDiff);
+		        		return true;
+		        	} else {
+		        		//System.out.println("THERE ARE NOT 3 or MORE - in last 4 characters");
+		        		return false;
+		        	}
+		        }
+		    }
+			return false;
+		}		
 	}
 	
 	/**
@@ -356,10 +477,10 @@ public class CHUtilities
 					else
 					{
 						counterYES++;
-						aMutation.Combined_ID = /*aMutation.gene_name +*/ aMutation.left;
+						aMutation.Combined_ID = aMutation.gene_name + "_" + aMutation.left;
 						theList.add(aMutation);
 						//System.out.println(str);
-					}				
+					}
 			    }
 			    in.close();
 			} catch (IOException e) {
@@ -449,25 +570,25 @@ public class CHUtilities
 						geneDesert++;
 						counterNO++;
 					}
-					else if((aCancer.dbsnp) == "NA") //really we were checking if there is a non-empty DBSNP but the char in the 'empty' ones is not null or a space
+					
+					else if(!(aCancer.dbsnp).equals("NA")) //really we were checking if there is a non-empty DBSNP but the char in the 'empty' ones is not null or a space
 					{
 						thrownOutSnips++;		
 						counterNO++;
 					}
+					
 					else if(Double.parseDouble(aCancer.coverage_cancer) < 8.0)
 					{
 						counterNO++;
 					}
+					
 					else
 					{
-						aCancer.Combined_ID = /*aCancer.gene +*/ aCancer.left_cancer;
+						aCancer.Combined_ID = aCancer.gene + "_" + aCancer.left_cancer;
 						theList.add(aCancer);
 						counterYES++;
 						//System.out.println(str);
 					}
-			    	
-			    	//aCancer.Combined_ID;
-
 			    }
 			    in.close();
 			} 
@@ -598,43 +719,34 @@ public class CHUtilities
 			    	aDrugSensitivity.DATA7= (values[9]);
 			    	aDrugSensitivity.DATA8= (values[10]);
 			    	aDrugSensitivity.DATA9= (values[11]);
-			    	aDrugSensitivity.DATA10= (values[12]);
+			    	aDrugSensitivity.DATA10=(values[12]);
 					
 
-			    	aDrugSensitivity.C0= (values[13]);
-			    	aDrugSensitivity.C1= (values[14]);
-			    	aDrugSensitivity.C2= (values[15]);
-			    	aDrugSensitivity.C3= (values[16]);
-			    	aDrugSensitivity.C4= (values[17]);
-			    	aDrugSensitivity.C5= (values[18]);
-			    	aDrugSensitivity.C6= (values[19]);
-			    	aDrugSensitivity.C7= (values[20]);
-			    	aDrugSensitivity.C8= (values[21]);
-			    	aDrugSensitivity.C9= (values[22]);
-			    	aDrugSensitivity.C10= (values[23]);
+			    	aDrugSensitivity.C0= ((Double)Math.log10(Double.parseDouble(values[13]))).toString();
+			    	aDrugSensitivity.C1= ((Double)Math.log10(Double.parseDouble(values[14]))).toString();
+			    	aDrugSensitivity.C2= ((Double)Math.log10(Double.parseDouble(values[15]))).toString();
+			    	aDrugSensitivity.C3= ((Double)Math.log10(Double.parseDouble(values[16]))).toString();
+			    	aDrugSensitivity.C4= ((Double)Math.log10(Double.parseDouble(values[17]))).toString();
+			    	aDrugSensitivity.C5= ((Double)Math.log10(Double.parseDouble(values[18]))).toString();
+			    	aDrugSensitivity.C6= ((Double)Math.log10(Double.parseDouble(values[19]))).toString();
+			    	aDrugSensitivity.C7= ((Double)Math.log10(Double.parseDouble(values[20]))).toString();
+			    	aDrugSensitivity.C8= ((Double)Math.log10(Double.parseDouble(values[21]))).toString();
+			    	aDrugSensitivity.C9= ((Double)Math.log10(Double.parseDouble(values[22]))).toString();
+			    	aDrugSensitivity.C10= ((Double)Math.log10(Double.parseDouble(values[23]))).toString();
 					
-					
-			    	//aDrugSensitivity.sample_name=values[24];
-			    	//System.out.println(values[31]);
 			    	aDrugSensitivity.gene=values[24];
-			    	
-			    	//System.exit(0);
-			    	
-			    	//aDrugSensitivity.smi=values[32];
 			    			
 			    	// insert if statements to determine 'significance'
 			    	if(evaluateData.checkSignificance(aDrugSensitivity)){
 				    	counterYES++;				    	
+				    	//System.out.println("GOOD GUY: "+aDrugSensitivity.sample_ID);
 				    	theList.add(aDrugSensitivity);
 			    	}
 			    	else
 			    	{
+			    		//System.out.println("BAD GUY: "+aDrugSensitivity.sample_ID);
 			    		counterNO++;
-			    	}
-			    	
-			    	
-
-			    	
+			    	}			    	
 			    }
 			    in.close();
 			} 
