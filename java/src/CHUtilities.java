@@ -1,8 +1,11 @@
 package cancer_heterogeneity;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Map;
@@ -33,6 +36,7 @@ public class CHUtilities
 	Evaluation evaluateData = new Evaluation();
 	MergeData mergeData = new  MergeData();
 	ReadData readData = new ReadData();
+	WriteData writeData = new WriteData();
 	
 	/**
 	 * FIltering class
@@ -329,6 +333,23 @@ public class CHUtilities
 		}
 	}
 	
+	class WriteData
+	{
+		public WriteData()
+		{
+			
+		}
+		
+		public boolean writeList( String filename, String text ) throws IOException{
+	    	Writer out = new BufferedWriter(new FileWriter(filename, true));
+	    	out.append(text);
+	    	out.write("\r\n");
+	    	out.close();	
+	    	return true;
+		}	
+	}
+	
+	
 	/**
 	 * Read data utils for each file type
 	 */
@@ -342,15 +363,17 @@ public class CHUtilities
 		// mRNA expression util
 		public ArrayList<Gene> readGeneList( String filename )
 		{
-			System.out.println("file = "+filename);
+			System.out.println("file = "+filename+"mRNA_Gene_expression2.txt");
 			ArrayList<Gene> theList = new ArrayList<Gene>();
 			Gene aGene;
 			String[] values;
 			
 			int counterYES = 0;
 			int counterNO = 0;
+			int counterUNIQUE = 0;
+			int counterANY = 0;
 			try {
-			    BufferedReader in = new BufferedReader(new FileReader(filename));
+			    BufferedReader in = new BufferedReader(new FileReader(filename+"mRNA_Gene_expression2.txt"));
 			    String str;    
 			    str = in.readLine();    	
 			    while ((str = in.readLine()) != null) 
@@ -377,9 +400,35 @@ public class CHUtilities
 			    	
 			    	if(aGene.isSignificant())
 			    	{
-			    		ArrayList<String> imp = aGene.whichAreSignificant();		    		
+			    		ArrayList<String> imp = aGene.whichAreSignificant();		
+			    		if(imp.size() == 1){
+			    			
+			    			String[] vals = imp.get(0).split(",");
+			    			
+			    			String name = vals[0];
+			    			String ill  = vals[1];
+			    			String gene = vals[2];
+			    			String val  = vals[3];
+			    			
+			    			writeData.writeList(
+			    					filename+"results\\significant_expr\\significant_expr_unique_clone_"+name+".txt", 
+			    					ill+","+gene+","+val
+			    			);
+			    			
+			    			counterUNIQUE++;
+			    			
+			    		}
+			    		
+			    		if(imp.size() >= 1){
+			    			for(int i = 0; i < imp.size(); i++)
+		    				writeData.writeList(
+		    						filename+"results\\significant_expr\\significant_expr_all_clone.txt", 
+			    					imp.get(i).toString()
+			    			);			    		
+		    				counterANY++;
+			    		}
 			    		//System.out.println("For gene "+aGene.getCombinedID()+", the important clones are: { " + imp.toString() + " }");		    		
-			    		theList.add(aGene);		    		
+			    		theList.add(aGene);
 			    		counterYES ++;
 			    	} 
 			    	else 
@@ -391,14 +440,15 @@ public class CHUtilities
 			} 
 			catch (IOException e) 
 			{
-				System.out.println("BAD FILE WAS > " + filename);
+				System.out.println("BAD FILE WAS > " + filename+"mRNA_Gene_expression2.txt");
 			    System.out.println("File Read Error in writelist");
 			    System.exit(0);
 			}			
-			//System.out.println("Significant: "+ counterYES);
-			//System.out.println("Not significant: "+ counterNO);
+			System.out.println("UNIQUE-> : "+ counterUNIQUE);
+			System.out.println("ANY # OF CLONES: "+ counterANY);
 			System.out.println("Kept:\t\t"+counterYES);
 			System.out.println("Discareded:\t\t\t"+counterNO);
+			
 			return theList;
 		}
 		
@@ -478,7 +528,21 @@ public class CHUtilities
 					{
 						counterYES++;
 						aMutation.Combined_ID = aMutation.gene_name + "_" + aMutation.left;
+						
+						/*
+						 * 
+						 * Key (Gene+Location ID)
+						 * ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
+						 */
+						/*
+						writeData.writeList(
+		    					"C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\results\\cancer_mutations_"+l+".txt", 
+		    					
+		    			);
+						*/
+						
 						theList.add(aMutation);
+						
 						//System.out.println(str);
 					}
 			    }
@@ -525,9 +589,6 @@ public class CHUtilities
 
 			    	aCancer = new Cancer();
 			    	values = str.split(",");
-			    	
-			    	
-			    	
 			    	aCancer.clone_type = type;
 			    	aCancer.chrom=values[0];
 			    	aCancer.left_cancer=values[1];
@@ -547,9 +608,6 @@ public class CHUtilities
 			    	aCancer.where_in_gene=values[15];
 			    	aCancer.annot_cancer=values[16];
 			    	aCancer.annot_normal=values[17];
-			    	
-			    	
-			    	
 					if(values.length < 19)
 					{
 						aCancer.dbsnp= "NA";
@@ -709,29 +767,28 @@ public class CHUtilities
 			    	aDrugSensitivity.HILL= (values[7]);
 			    	aDrugSensitivity.MAXR= (values[8]);*/
 					
-			    	aDrugSensitivity.DATA0= (values[2]);
-			    	aDrugSensitivity.DATA1= (values[3]);
-			    	aDrugSensitivity.DATA2= (values[4]);
-			    	aDrugSensitivity.DATA3= (values[5]);
-			    	aDrugSensitivity.DATA4= (values[6]);
-			    	aDrugSensitivity.DATA5= (values[7]);
-			    	aDrugSensitivity.DATA6= (values[8]);
-			    	aDrugSensitivity.DATA7= (values[9]);
-			    	aDrugSensitivity.DATA8= (values[10]);
-			    	aDrugSensitivity.DATA9= (values[11]);
-			    	aDrugSensitivity.DATA10=(values[12]);
-					
+			    	aDrugSensitivity.DATA0 = (values[2]);
+			    	aDrugSensitivity.DATA1 = (values[3]);
+			    	aDrugSensitivity.DATA2 = (values[4]);
+			    	aDrugSensitivity.DATA3 = (values[5]);
+			    	aDrugSensitivity.DATA4 = (values[6]);
+			    	aDrugSensitivity.DATA5 = (values[7]);
+			    	aDrugSensitivity.DATA6 = (values[8]);
+			    	aDrugSensitivity.DATA7 = (values[9]);
+			    	aDrugSensitivity.DATA8 = (values[10]);
+			    	aDrugSensitivity.DATA9 = (values[11]);
+			    	aDrugSensitivity.DATA10=(values[12]);					
 
-			    	aDrugSensitivity.C0= ((Double)Math.log10(Double.parseDouble(values[13]))).toString();
-			    	aDrugSensitivity.C1= ((Double)Math.log10(Double.parseDouble(values[14]))).toString();
-			    	aDrugSensitivity.C2= ((Double)Math.log10(Double.parseDouble(values[15]))).toString();
-			    	aDrugSensitivity.C3= ((Double)Math.log10(Double.parseDouble(values[16]))).toString();
-			    	aDrugSensitivity.C4= ((Double)Math.log10(Double.parseDouble(values[17]))).toString();
-			    	aDrugSensitivity.C5= ((Double)Math.log10(Double.parseDouble(values[18]))).toString();
-			    	aDrugSensitivity.C6= ((Double)Math.log10(Double.parseDouble(values[19]))).toString();
-			    	aDrugSensitivity.C7= ((Double)Math.log10(Double.parseDouble(values[20]))).toString();
-			    	aDrugSensitivity.C8= ((Double)Math.log10(Double.parseDouble(values[21]))).toString();
-			    	aDrugSensitivity.C9= ((Double)Math.log10(Double.parseDouble(values[22]))).toString();
+			    	aDrugSensitivity.C0 = ((Double)Math.log10(Double.parseDouble(values[13]))).toString();
+			    	aDrugSensitivity.C1 = ((Double)Math.log10(Double.parseDouble(values[14]))).toString();
+			    	aDrugSensitivity.C2 = ((Double)Math.log10(Double.parseDouble(values[15]))).toString();
+			    	aDrugSensitivity.C3 = ((Double)Math.log10(Double.parseDouble(values[16]))).toString();
+			    	aDrugSensitivity.C4 = ((Double)Math.log10(Double.parseDouble(values[17]))).toString();
+			    	aDrugSensitivity.C5 = ((Double)Math.log10(Double.parseDouble(values[18]))).toString();
+			    	aDrugSensitivity.C6 = ((Double)Math.log10(Double.parseDouble(values[19]))).toString();
+			    	aDrugSensitivity.C7 = ((Double)Math.log10(Double.parseDouble(values[20]))).toString();
+			    	aDrugSensitivity.C8 = ((Double)Math.log10(Double.parseDouble(values[21]))).toString();
+			    	aDrugSensitivity.C9 = ((Double)Math.log10(Double.parseDouble(values[22]))).toString();
 			    	aDrugSensitivity.C10= ((Double)Math.log10(Double.parseDouble(values[23]))).toString();
 					
 			    	aDrugSensitivity.gene=values[24];
@@ -774,6 +831,7 @@ public class CHUtilities
 		 evaluateData = new Evaluation();
 		 mergeData    = new MergeData();
 		 readData	  = new ReadData();
+		 writeData    = new WriteData();
 	}
 
 }

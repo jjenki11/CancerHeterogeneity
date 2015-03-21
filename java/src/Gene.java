@@ -23,9 +23,24 @@ public class Gene
 	double[] value;
 	ArrayList<GeneValue> geneValues;
 	
+	double[] medDiffValues;
+	String medDiffs = "";
+	
 	public Gene( )
 	{		
 		geneValues = new ArrayList<GeneValue>();
+	}
+	
+	
+	public String getGeneValues(){
+		String str = "";
+		for(int i = 0; i < geneValues.size(); i++){
+			str+= geneValues.get(i).value;
+			if(i != geneValues.size()-1){
+				str+=",";
+			}
+		}
+		return str;
 	}
 	
 	public String getIlluminaID( )
@@ -71,6 +86,7 @@ public class Gene
 		for(int i=0; i < geneValues.size(); i++){
 			tempArr[i] = geneValues.get(i).value;
 		}
+		medDiffs="";
 		Arrays.sort(tempArr);
 	
 		double median;
@@ -82,14 +98,22 @@ public class Gene
 		{
 		    median = tempArr[tempArr.length/2];
 		}
+		for(int i = 0; i < geneValues.size(); i++){
+			//medDiffValues[i] = geneValues.get(i).value - median;
+			medDiffs+=(geneValues.get(i).value - median);
+			if(i != geneValues.size()-1){
+				medDiffs+=",";
+			}
+		}
 		return median;
-	}
+	}	
+	
 	public boolean isSignificant()
 	{
 		double median = getMedian();
 		for(int i =0; i < geneValues.size(); i++)
 		{
-			if(Math.abs((geneValues.get(i).value - median)) >= 0.58)
+			if(Math.abs((geneValues.get(i).value - median)) >= /*0.58*/1)
 			{
 				//printSignificantCloneName(i);
 				return true;
@@ -97,15 +121,19 @@ public class Gene
 		}
 		return false;
 	}	
+	
 	public ArrayList<String> whichAreSignificant()
 	{
 		double median = getMedian();
 		ArrayList<String> important = new ArrayList<String>();
+		
 		for(int i =0; i < geneValues.size(); i++)
 		{
-			if(Math.abs((geneValues.get(i).value - median)) >= 0.58)
+			if( (((geneValues.get(i).value - median)) >= /*0.58*/1) || 
+			   (((geneValues.get(i).value - median)) <= /*-0.58*/-1))
 			{
-				important.add(geneValues.get(i).name);
+				//important.add(this.Combined_ID+","+medDiffs);
+				important.add(this.geneValues.get(i).name+","+Combined_ID+","+((geneValues.get(i).value - median)));
 			}
 		}
 		return important;

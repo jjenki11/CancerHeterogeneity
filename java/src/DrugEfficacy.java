@@ -2,7 +2,6 @@ package cancer_heterogeneity;
 
 public class DrugEfficacy 
 {
-	
 	String protocol;
 	String sample_ID_sens;
 	
@@ -78,37 +77,37 @@ public class DrugEfficacy
 	public String getStrings()
 	{
 		String list = ""+
-				protocol+ ", " +
-				sample_ID_sens+ ", " +		
-				DATA0+ ", " +
-				DATA1+ ", " +
-				DATA2+ ", " +
-				DATA3+ ", " +
-				DATA4+ ", " +
-				DATA5+ ", " +
-				DATA6+ ", " +
-				DATA7+ ", " +
-				DATA8+ ", " +
-				DATA9+ ", " +
-				DATA10+ ", " +		
-				C0+ ", " +
-				C1+ ", " +
-				C2+ ", " +
-				C3+ ", " +
-				C4+ ", " +
-				C5+ ", " +
-				C6+ ", " +
-				C7+ ", " +
-				C8+ ", " +
-				C9+ ", " +
-				C10+ ", " +
-				gene_sens+ ", " +		
-				sample_ID_type+ ", " +
-				gene_symbol_type+ ", " +
-				sample_name+ ", " +
-				ncgc_UID+ ", " +
-				pri_mech_action
-				;
+			protocol+ ", " +
+			sample_ID_sens+ ", " +		
+			DATA0+ ", " +
+			DATA1+ ", " +
+			DATA2+ ", " +
+			DATA3+ ", " +
+			DATA4+ ", " +
+			DATA5+ ", " +
+			DATA6+ ", " +
+			DATA7+ ", " +
+			DATA8+ ", " +
+			DATA9+ ", " +
+			DATA10+ ", " +		
+			C0+ ", " +
+			C1+ ", " +
+			C2+ ", " +
+			C3+ ", " +
+			C4+ ", " +
+			C5+ ", " +
+			C6+ ", " +
+			C7+ ", " +
+			C8+ ", " +
+			C9+ ", " +
+			C10+ ", " +
+			gene_sens+ ", " +		
+			sample_ID_type+ ", " +
+			gene_symbol_type+ ", " +
+			sample_name+ ", " +
+			ncgc_UID+ ", " +
+			pri_mech_action
+			;
 
 		return list;
 	}

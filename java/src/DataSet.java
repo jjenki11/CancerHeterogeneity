@@ -340,11 +340,17 @@ public class DataSet
 	{
 		ArrayList<CancerMutation> cMutationList;
 		
+		ArrayList<String> mutationIDs;
+		
+		BTree<String, CancerMutation> cMutationTree;
+		
 		public CancerMutationObj(DataSet a, DataSet b, String label)
 		{
-			
+			mutationIDs = new ArrayList<String>();
 			cMutationList = new ArrayList<CancerMutation>();
+			cMutationTree = new BTree<String, CancerMutation>();
 			cMutationList = performMerge(a,b,label);
+			
 			//printCancerMutationObjects();
 		}
 		
@@ -373,7 +379,6 @@ public class DataSet
 				
 				can = b.cnv.cancerTree.get(sid_list.get(i));
 				//System.out.println("Size of cancer tree: " + b.cnv.cancerTree.size() + " |  Size of mutation tree: "+a.snl.combinedIDTree.size());
-				
 				
 				cm = new CancerMutation();
 				
@@ -413,6 +418,17 @@ public class DataSet
 					cm.kind_cancer=can.kind_cancer;
 					cm.ref_cancer=can.ref_cancer;
 					cm.var_seq_cancer=can.var_seq_cancer;
+					boolean foundit = false;
+					for(int aa = 0; aa < mutationIDs.size(); aa++){
+						if(mutationIDs.get(aa).equals(cm.Combined_ID)){
+							foundit = true;
+						}
+					}
+					if(!foundit)
+					{
+						mutationIDs.add(cm.Combined_ID);
+					}
+					cMutationTree.put(cm.Combined_ID, cm);
 					
 					muts.add(cm);
 					kept++;
@@ -483,9 +499,101 @@ public class DataSet
 			return geneTree;
 		}		
 	} GeneExpression ge;	
+	
+	class MacroDataObject
+	{
+		
+		
+		public MacroDataObject(ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids, String fn) throws IOException
+		{
+			int nTrees = trees.size();
+			int nIDs = ids.size();
+			
+			BTree<String,CancerMutation> currTree = new BTree<String, CancerMutation>();
+			ArrayList<String> currList = new ArrayList<String>();
+			CancerMutation cmTmp = new CancerMutation();
+			
+			boolean found = false;
+			int numFound = 0;
+			
+			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9", "Toomie" };
+			
+			String filename = fn+"\\mutation_shizzle";
+			/*
+			 * Key (Gene+Location ID)
+			     ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
+			 */
+			// iterate thru trees
+			String str = "";
+			for(int i = 0; i < nTrees; i++)
+			{
+				
+				currList = ids.get(i);
+				for(int j = 0; j < currList.size(); j++)
+				{
+					numFound = 0;
+					found = false;
+					for(int k = i; k < nTrees; k++)
+					{
+						if(i != k)
+						{
+							currTree = trees.get(k);
+							if(currTree.get(currList.get(j)) != null)
+							{
+								
+								found = true;
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+						}
+						else
+						{							
+							if(found)
+							{
+								currTree = trees.get(i);
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+						}						
+					}
+					if(!found)
+					{
+						currTree = trees.get(i);
+						cmTmp = currTree.get(currList.get(j));
+						str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
+						utils.writeData.writeList(filename+"_unique.txt", str);
+					}
+					
+					if(numFound == (nTrees-1))
+					{
+						
+						for(int k = 0; k < nTrees; k++)
+						{
+							currTree = trees.get(k);
+							if(currTree.get(currList.get(j)) != null)
+							{
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								utils.writeData.writeList(filename+"_all.txt", str);
+							}				
+						}
+					}					
+				}
+				
+			}			
+		}
+	} MacroDataObject mdo;
 
 	
-	public DataSet(String type, String filename, String opt, DataSet a, DataSet b)
+	public DataSet(String type, String filename, String opt, DataSet a, DataSet b, ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids) throws IOException
 	{
 		utils = new CHUtilities();
 		if(type == "ds")
@@ -515,6 +623,10 @@ public class DataSet
 		if(type == "cm")
 		{
 			cmo = new CancerMutationObj(a, b, opt);
+		}
+		if(type == "macro")
+		{
+			mdo = new MacroDataObject(trees, ids, filename);
 		}
 		
 	}
