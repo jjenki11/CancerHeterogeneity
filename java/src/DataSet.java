@@ -404,7 +404,7 @@ public class DataSet
 					cm.read_count_2=mut.read_count_2;
 					cm.gene_name=mut.gene_name;
 					cm.transcript_name=mut.transcript_name;
-					cm.where_in_transcript=mut.where_in_transcript;
+					cm.where_in_transcript=mut.where_in_transcript.replaceAll(",", ".");
 					cm.change_type_1=mut.change_type_1;
 					cm.ref_peptide_1=mut.ref_peptide_1;
 					cm.var_peptide_1=mut.var_peptide_1;
