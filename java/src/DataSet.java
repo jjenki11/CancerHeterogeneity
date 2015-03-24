@@ -544,7 +544,7 @@ public class DataSet
 								found = true;
 								cmTmp = currTree.get(currList.get(j));
 								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -555,8 +555,8 @@ public class DataSet
 							{
 								currTree = trees.get(i);
 								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -566,8 +566,8 @@ public class DataSet
 					{
 						currTree = trees.get(i);
 						cmTmp = currTree.get(currList.get(j));
-						str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-								cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
+						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
 						utils.writeData.writeList(filename+"_unique.txt", str);
 					}
 					
@@ -580,8 +580,8 @@ public class DataSet
 							if(currTree.get(currList.get(j)) != null)
 							{
 								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_all.txt", str);
 							}				
 						}
@@ -627,8 +627,7 @@ public class DataSet
 		if(type == "macro")
 		{
 			mdo = new MacroDataObject(trees, ids, filename);
-		}
-		
+		}		
 	}
 	
 

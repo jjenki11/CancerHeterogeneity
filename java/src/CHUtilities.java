@@ -488,7 +488,7 @@ public class CHUtilities
 					aMutation.read_count_2=values[13];
 					aMutation.gene_name=values[15];
 					aMutation.transcript_name=values[16];
-					aMutation.where_in_transcript=values[17];
+					aMutation.where_in_transcript=values[17].replaceAll(",", ".");
 					aMutation.change_type_1=values[18];
 					aMutation.ref_peptide_1=values[19];
 					aMutation.var_peptide_1=values[20];
@@ -528,18 +528,6 @@ public class CHUtilities
 					{
 						counterYES++;
 						aMutation.Combined_ID = aMutation.gene_name + "_" + aMutation.left;
-						
-						/*
-						 * 
-						 * Key (Gene+Location ID)
-						 * ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
-						 */
-						/*
-						writeData.writeList(
-		    					"C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\results\\cancer_mutations_"+l+".txt", 
-		    					
-		    			);
-						*/
 						
 						theList.add(aMutation);
 						
