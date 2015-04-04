@@ -38,6 +38,7 @@ public class DrugEfficacy
 	String pri_mech_action;
 	
 	String combined_ID;
+	String mech_drug;
 	
 	public DrugEfficacy()
 	{
@@ -72,6 +73,7 @@ public class DrugEfficacy
 		ncgc_UID="";
 		pri_mech_action="";
 		combined_ID="";
+		mech_drug="";
 	}
 	
 	public String getStrings()

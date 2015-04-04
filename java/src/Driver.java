@@ -60,8 +60,7 @@ public class Driver
 		DataSet cmG8 = new DataSet("cm", "", "G8", mutationG8, cancerG8,null,null);
 		DataSet cmG9 = new DataSet("cm", "", "G9", mutationG9, cancerG9,null,null);
 		DataSet tumorrr = new DataSet("cm", "", "TUMOR", mutationOt8873, cancerOt8873,null,null);
-		
-		
+				
 		ArrayList<ArrayList<String>> mutationLists = new ArrayList<ArrayList<String>>();
 		mutationLists.add(cmC5.cmo.mutationIDs);
 		mutationLists.add(cmC8.cmo.mutationIDs);
@@ -79,16 +78,42 @@ public class Driver
 		treeList.add(cmG9.cmo.cMutationTree);
 		treeList.add(tumorrr.cmo.cMutationTree);
 		
-		DataSet bigboy = new DataSet("macro", basePath+"\\results\\mutations\\", "", null,null,treeList,mutationLists);
+		DataSet bigboyCancer = new DataSet("macroCancer", basePath+"\\results\\mutations\\", "", null,null,treeList,mutationLists);
+
+				
+		ArrayList<ArrayList<String>> drugMechLists = new ArrayList<ArrayList<String>>();
+		drugMechLists.add(effC5.de.mech_list);
+		drugMechLists.add(effC8.de.mech_list);
+		drugMechLists.add(effD10.de.mech_list);
+		drugMechLists.add(effF2.de.mech_list);
+		drugMechLists.add(effG8.de.mech_list);
+		drugMechLists.add(effG9.de.mech_list);
+		ArrayList<BTree<String, DrugEfficacy>> mechTreeList = new ArrayList<BTree<String, DrugEfficacy>>();
+		mechTreeList.add(effC5.de.mechTree);
+		mechTreeList.add(effC8.de.mechTree);
+		mechTreeList.add(effD10.de.mechTree);
+		mechTreeList.add(effF2.de.mechTree);
+		mechTreeList.add(effG8.de.mechTree);
+		mechTreeList.add(effG9.de.mechTree);
 		
+		DataSet bigboyEfficacyMech = new DataSet("macroDrug", basePath+"\\results\\mech_drug_efficacy\\,mech", "", null, null, mechTreeList, drugMechLists);
 		
+		ArrayList<ArrayList<String>> drugCombinedLists = new ArrayList<ArrayList<String>>();
+		drugCombinedLists.add(effC5.de.combined_id_list);
+		drugCombinedLists.add(effC8.de.combined_id_list);
+		drugCombinedLists.add(effD10.de.combined_id_list);
+		drugCombinedLists.add(effF2.de.combined_id_list);
+		drugCombinedLists.add(effG8.de.combined_id_list);
+		drugCombinedLists.add(effG9.de.combined_id_list);
+		ArrayList<BTree<String,DrugEfficacy>> combTreeList = new ArrayList<BTree<String, DrugEfficacy>>();
+		combTreeList.add(effC5.de.combinedTree);
+		combTreeList.add(effC8.de.combinedTree);
+		combTreeList.add(effD10.de.combinedTree);
+		combTreeList.add(effF2.de.combinedTree);
+		combTreeList.add(effG8.de.combinedTree);
+		combTreeList.add(effG9.de.combinedTree);
 		
-		
-		/*
-			System.out.println("FINDING Kras_145195291");		
-			System.out.println("FROM CNV: "+ cancerG9.cnv.cancerTree.get("Kras_145195291"));		
-			System.out.println("FROM SNL: "+ mutationG9.snl.combinedIDTree.get("Kras_145195291"));
-		*/
+		DataSet bigboyEfficacyCombined = new DataSet("macroDrug", basePath+"\\results\\combined_drug_efficacy\\,combined", "", null, null, combTreeList, drugCombinedLists);
 		
 	}
 }

@@ -681,7 +681,7 @@ public class CHUtilities
 			    	aDrugType.sample_name=values[2];
 			    	//aDrugType.drug_name="";
 			    	aDrugType.ncgc_UID=values[3];
-			    	aDrugType.pri_mech_action=values[4];
+			    	aDrugType.pri_mech_action=values[4].replaceAll(",","|");
 			    	
 			    	
 			    	// insert conditional to add to list...

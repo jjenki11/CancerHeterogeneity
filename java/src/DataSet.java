@@ -72,18 +72,21 @@ public class DataSet
 		// a is sens, b is type		
 		
 		BTree<String, DrugEfficacy> combinedTree;
-		BTree<String, ArrayList<DrugEfficacy>> mechTree;
-		BTree<String, ArrayList<DrugEfficacy>> geneTree;
+		BTree<String, DrugEfficacy> mechTree;
+		
+		ArrayList<String> combined_id_list;
+		ArrayList<String> mech_list;
+		ArrayList<String> gene_list;
 		
 		ArrayList<DrugEfficacy> effList;
 		public DrugEfficacyObj(DataSet a, DataSet b)
 		{
 			//ArrayList<DrugEfficacy> effList = utils.readData.read
-			effList = new ArrayList<DrugEfficacy>();
+			ArrayList<DrugEfficacy> effList = new ArrayList<DrugEfficacy>();
 			effList = performMerge(a,b);			
 			//printEfficacyObjects();
-			
-			geneTree = buildGeneTree(effList);
+			mech_list = new ArrayList<String>();
+			combined_id_list = new ArrayList<String>();
 			mechTree = buildMechanismTree(effList);
 			combinedTree = buildCombinedTree(effList);
 		}
@@ -140,6 +143,7 @@ public class DataSet
 				de.ncgc_UID=dtt.ncgc_UID;
 				de.pri_mech_action=dtt.pri_mech_action;
 				
+				
 				if((de.gene_sens == null) && (de.gene_symbol_type == null))
 				{
 					System.out.println("BOTH GENE NAMES WERE NULL! DO NOT ADD ME");
@@ -159,21 +163,24 @@ public class DataSet
 				}
 				if(!missingName)
 				{
-					de.combined_ID = de.gene_symbol_type+de.pri_mech_action;				
+					de.combined_ID = de.gene_symbol_type+">"+de.pri_mech_action+">"+de.sample_ID_sens;		
+					de.mech_drug = dtt.pri_mech_action+">"+dtt.sample_ID;
 					effs.add(de);
 				}
 			}			
 			return effs;			
 		}
-		
+/*		
 		public BTree<String, ArrayList<DrugEfficacy>> buildGeneTree(ArrayList<DrugEfficacy> list)
 		{
 			BTree<String, ArrayList<DrugEfficacy>> geneTree = new BTree<String, ArrayList<DrugEfficacy>>();
 			ArrayList<DrugEfficacy> l;
 			for(int i =0;i<list.size();i++)
 			{
+				
 				if(geneTree.get(list.get(i).gene_symbol_type) == null)
 				{
+					gene_list.add(list.get(i).gene_symbol_type);
 					l = new ArrayList<DrugEfficacy>();
 					l.add(list.get(i));
 					geneTree.put(list.get(i).gene_symbol_type, l);
@@ -187,15 +194,19 @@ public class DataSet
 			}
 			return geneTree;
 		}
-		
-		public BTree<String, ArrayList<DrugEfficacy>> buildMechanismTree(ArrayList<DrugEfficacy> list)
+*/		
+		public BTree<String,DrugEfficacy> buildMechanismTree(ArrayList<DrugEfficacy> list)
 		{
-			BTree<String, ArrayList<DrugEfficacy>> priTree = new BTree<String, ArrayList<DrugEfficacy>>();
+			BTree<String, DrugEfficacy> priTree = new BTree<String, DrugEfficacy>();
 			ArrayList<DrugEfficacy> l;
 			for(int i =0;i<list.size();i++)
 			{
-				if(priTree.get(list.get(i).pri_mech_action) == null)
+				mech_list.add(list.get(i).mech_drug);
+				priTree.put(list.get(i).mech_drug, list.get(i));
+				/*
+				if(priTree.get(list.get(i).mech_drug) == null)
 				{
+					mech_list.add(list.get(i).pri_mech_action);
 					l = new ArrayList<DrugEfficacy>();
 					l.add(list.get(i));
 					priTree.put(list.get(i).pri_mech_action, l);
@@ -205,7 +216,8 @@ public class DataSet
 					l = priTree.get(list.get(i).pri_mech_action);
 					l.add(list.get(i));
 					priTree.put(list.get(i).pri_mech_action, l);
-				}				
+				}	
+				*/			
 			}
 			return priTree;
 		}
@@ -215,22 +227,20 @@ public class DataSet
 			BTree<String, DrugEfficacy> combTree = new BTree<String, DrugEfficacy>();
 			for(int i =0;i<list.size();i++)
 			{
+				
+				combined_id_list.add(list.get(i).combined_ID);
 				combTree.put(list.get(i).combined_ID, list.get(i));
 			}
 			return combTree;
 		}
 		
 		public void printEfficacyObjects()
-		{
-			
+		{			
 			for(int i = 0;i < effList.size(); i++)
 			{
 				System.out.println(effList.get(i).getStrings());
-			}
-			
+			}			
 		}
-		
-		
 		
 	} DrugEfficacyObj de;
 	
@@ -500,11 +510,11 @@ public class DataSet
 		}		
 	} GeneExpression ge;	
 	
-	class MacroDataObject
+	class MacroCancerDataObject
 	{
 		
 		
-		public MacroDataObject(ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids, String fn) throws IOException
+		public MacroCancerDataObject(ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids, String fn) throws IOException
 		{
 			int nTrees = trees.size();
 			int nIDs = ids.size();
@@ -590,10 +600,113 @@ public class DataSet
 				
 			}			
 		}
-	} MacroDataObject mdo;
+	} MacroCancerDataObject mdo;
+	
+	class MacroDrugDataObject
+	{
+		
+		
+		public MacroDrugDataObject(ArrayList<BTree<String,DrugEfficacy>> trees, ArrayList<ArrayList<String>> ids, String fx) throws IOException
+		{
+			int nTrees = trees.size();
+			int nIDs = ids.size();
+			
+			String[] ff = fx.split(",");
+			String fn = ff[0];
+			String type = ff[1];
+			
+			String val = "";
+			
+			
+			
+			BTree<String,DrugEfficacy> currTree = new BTree<String, DrugEfficacy>();
+			ArrayList<String> currList = new ArrayList<String>();
+			DrugEfficacy deTmp = new DrugEfficacy();
+			
+			boolean found = false;
+			int numFound = 0;
+			
+			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9"};
+			
+			String filename = fn+"\\drug_effficacy_shizzle";
+			/*
+			 * Key (Gene+Location ID)
+			     ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
+			 */
+			// iterate thru trees
+			String str = "";
+			for(int i = 0; i < nTrees; i++)
+			{
+
+				currList = ids.get(i);
+				for(int j = 0; j < currList.size(); j++)
+				{
+					numFound = 0;
+					found = false;
+					for(int k = i; k < nTrees; k++)
+					{
+						if(i != k)
+						{
+							currTree = trees.get(k);
+							if(currTree.get(currList.get(j)) != null)
+							{								
+								found = true;
+								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								deTmp = currTree.get(currList.get(j));
+								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+						}
+						else
+						{							
+							if(found)
+							{
+								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								currTree = trees.get(i);
+								deTmp = currTree.get(currList.get(j));
+								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+						}						
+					}
+					if(!found)
+					{
+						if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+						else{val = deTmp.mech_drug.replaceAll(">",",");}
+						currTree = trees.get(i);
+						deTmp = currTree.get(currList.get(j));
+						str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[i];
+						utils.writeData.writeList(filename+"_unique.txt", str);
+					}
+					
+					if(numFound == (nTrees-1))
+					{
+						
+						for(int k = 0; k < nTrees; k++)
+						{
+							currTree = trees.get(k);
+							if(currTree.get(currList.get(j)) != null)
+							{
+								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								deTmp = currTree.get(currList.get(j));
+								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								utils.writeData.writeList(filename+"_all.txt", str);
+							}				
+						}
+					}					
+				}
+				
+			}			
+		}
+	} MacroDrugDataObject mddo;
 
 	
-	public DataSet(String type, String filename, String opt, DataSet a, DataSet b, ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids) throws IOException
+	public DataSet(String type, String filename, String opt, DataSet a, DataSet b, Object trees, ArrayList<ArrayList<String>> ids) throws IOException
 	{
 		utils = new CHUtilities();
 		if(type == "ds")
@@ -624,10 +737,14 @@ public class DataSet
 		{
 			cmo = new CancerMutationObj(a, b, opt);
 		}
-		if(type == "macro")
+		if(type == "macroCancer")
 		{
-			mdo = new MacroDataObject(trees, ids, filename);
+			mdo = new MacroCancerDataObject((ArrayList<BTree<String,CancerMutation>>)trees, ids, filename);
 		}		
+		if(type == "macroDrug")
+		{
+			mddo = new MacroDrugDataObject((ArrayList<BTree<String,DrugEfficacy>>)trees, ids, filename);
+		}
 	}
 	
 
