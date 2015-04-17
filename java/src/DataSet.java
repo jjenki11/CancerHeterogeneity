@@ -149,10 +149,12 @@ public class DataSet
 					System.out.println("BOTH GENE NAMES WERE NULL! DO NOT ADD ME");
 					missingName = true;
 				}
+				/*
 				else if((de.gene_sens == null) && (de.gene_symbol_type != null))
 				{
 					de.gene_sens = de.gene_symbol_type;
 				}
+				*/
 				else if((de.gene_sens != null) && (de.gene_symbol_type == null))
 				{
 					de.gene_symbol_type = de.gene_sens;
@@ -163,9 +165,14 @@ public class DataSet
 				}
 				if(!missingName)
 				{
-					de.combined_ID = de.gene_symbol_type+">"+de.pri_mech_action+">"+de.sample_ID_sens;		
+					de.combined_ID = de.gene_sens+">"+de.pri_mech_action+">"+de.sample_ID_sens;		
 					de.mech_drug = dtt.pri_mech_action+">"+dtt.sample_ID;
 					effs.add(de);
+					/*
+					if(de.sample_ID_sens == "NCGC00346952-01"){
+						System.out.println("DE MERGE :- ID# = "+de.sample_ID_sens+"  GENE SYMBOL = "+"\t  "+de.gene_sens);
+					}
+					*/
 				}
 			}			
 			return effs;			
@@ -615,9 +622,7 @@ public class DataSet
 			String fn = ff[0];
 			String type = ff[1];
 			
-			String val = "";
-			
-			
+			String val = "";			
 			
 			BTree<String,DrugEfficacy> currTree = new BTree<String, DrugEfficacy>();
 			ArrayList<String> currList = new ArrayList<String>();
@@ -634,16 +639,16 @@ public class DataSet
 			     ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
 			 */
 			// iterate thru trees
+
 			String str = "";
 			for(int i = 0; i < nTrees; i++)
 			{
-
 				currList = ids.get(i);
 				for(int j = 0; j < currList.size(); j++)
 				{
 					numFound = 0;
 					found = false;
-					for(int k = i; k < nTrees; k++)
+					for(int k = 0; k < nTrees; k++)
 					{
 						if(i != k)
 						{
@@ -651,10 +656,17 @@ public class DataSet
 							if(currTree.get(currList.get(j)) != null)
 							{								
 								found = true;
-								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								//else{val = deTmp.mech_drug.replaceAll(">",",");}
+								val = deTmp.combined_ID.replaceAll(">",  ",");
 								deTmp = currTree.get(currList.get(j));
-								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								/*String tmp = "";
+								if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
+									tmp = deTmp.gene_sens;
+								} else {
+									tmp = "?";
+								}*/
+								str = val+","/*+tmp+","*/+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -663,11 +675,18 @@ public class DataSet
 						{							
 							if(found)
 							{
-								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								val = deTmp.combined_ID.replaceAll(">",  ",");
+								//else{val = deTmp.mech_drug.replaceAll(">",",");}
 								currTree = trees.get(i);
 								deTmp = currTree.get(currList.get(j));
-								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								//String tmp = "";
+								/*if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
+									tmp = deTmp.gene_sens;
+								} else {
+									tmp = "?";
+								}*/
+								str = val+","/*+ tmp +","*/+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -675,32 +694,44 @@ public class DataSet
 					}
 					if(!found)
 					{
-						if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-						else{val = deTmp.mech_drug.replaceAll(">",",");}
+						//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+						val = deTmp.combined_ID.replaceAll(">",  ",");
+						//else{val = deTmp.mech_drug.replaceAll(">",",");}
 						currTree = trees.get(i);
 						deTmp = currTree.get(currList.get(j));
-						str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[i];
+						/*String tmp = "";
+						if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
+							tmp = deTmp.gene_sens;
+						} else {
+							tmp = "?";
+						}*/
+						str = val+","/*+ tmp */+","+labels[i];
 						utils.writeData.writeList(filename+"_unique.txt", str);
 					}
 					
 					if(numFound == (nTrees-1))
-					{
-						
+					{						
 						for(int k = 0; k < nTrees; k++)
 						{
 							currTree = trees.get(k);
 							if(currTree.get(currList.get(j)) != null)
 							{
-								if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								else{val = deTmp.mech_drug.replaceAll(">",",");}
+								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								//else{val = deTmp.mech_drug.replaceAll(">",",");}
+								val = deTmp.combined_ID.replaceAll(">",  ",");
 								deTmp = currTree.get(currList.get(j));
-								str = val+","+(((deTmp.gene_symbol_type!="") && (deTmp.gene_symbol_type!=null))? deTmp.gene_symbol_type:"?") +","+labels[k];
+								/*String tmp = "";
+								if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
+									tmp = deTmp.gene_sens;
+								} else {
+									tmp = "?";
+								}*/
+								str = val+","/*+tmp+","*/+labels[k];
 								utils.writeData.writeList(filename+"_all.txt", str);
-							}				
+							}
 						}
 					}					
-				}
-				
+				}				
 			}			
 		}
 	} MacroDrugDataObject mddo;
