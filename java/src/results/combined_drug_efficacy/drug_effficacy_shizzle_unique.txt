@@ -1,151 +1,72 @@
 HTR2A,5-HT2A Antagonists?,NCGC00015004-11,,C5
 NA,adrenergenic receptor antagaonist,NCGC00015121-16,,C5
-SLC6A3,Dopamine Transporter (DAT) Inhibitor,NCGC00015122-09,,C5
 ADRB1,beta1-Adrenoceptor Antagonists,NCGC00015159-06,,C5
 NR1I3,Constitutive Androstane Receptor Antagonist,NCGC00015205-07,,C5
-CAMKK2,Calmodulin-Dependent Protein Kinase II Inhibitors,NCGC00015233-04,,C5
-HRH1,Histamine H1 Receptor Antagonists,NCGC00015252-13,,C5
 HTR1A,5-HT Reuptake Inhibitor,NCGC00015267-09,,C5
 NA,K(ATP) Channel Blockers,NCGC00015462-12,,C5
-NA,Calcium Channels (Voltage-Gated) alpha2/delta-1/2 Subunit Ligand,NCGC00015466-04,,C5
-DRD2,Dopamine D2 Antagonist,NCGC00015500-10,,C5
 HRH1,Histamine H1 Receptor Antagonists,NCGC00015580-08,,C5
-JAK1,Jak inhibitor,NCGC00015610-18,,C5
-HRH1,Histamine H1 Receptor Antagonists,NCGC00015619-09,,C5
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00015693-08,,C5
-NA,Muscarinic Antagonists,NCGC00015767-09,,C5
 GRM1,Glutamate Release Inhibitor,NCGC00015882-09,,C5
 ESR1,Selective Estrogen Receptor Modulators (SERM),NCGC00015889-10,,C5
 PTGS2,Cyclooxygenase-2 Inhibitor,NCGC00015892-07,,C5
 DRD2,Calcium Channel Blocker,NCGC00016083-13,,C5
-MMP1,MMP Inhibitor,NCGC00016246-12,,C5
 HRH1,Histamine H1 Receptor Antagonists,NCGC00016672-04,,C5
 HRH1,Histamine H1 Receptor Antagonists,NCGC00016710-04,,C5
-ADRA1A,alpha1-Adrenoceptor Antagonists,NCGC00016740-19,,C5
 PPARA,PPARalpha agonist,NCGC00016794-14,,C5
-NA,antiparasitic agent,NCGC00016855-11,,C5
 ABCC3,ABCC3 Expression Enhancer,NCGC00016925-10,,C5
-GBF1,Golgi-Specific Brefeldin A-Resistance Guanine Nucleotide Exchange Factor 1 (GBF1) Inhibitors,NCGC00017254-02,,C5
 NA,Calcium Channel Blocker,NCGC00017376-10,,C5
 NA,Calcium Channel Blocker,NCGC00018102-06,,C5
-PDE1,Sodium channel inhibitor,NCGC00018204-11,,C5
-NA,Antifungal Agent,NCGC00018258-09,,C5
-ADA,Adenosine Deaminase Inhibitor,NCGC00022567-08,,C5
 NA,Corticosteroid,NCGC00023373-04,,C5
-MAP2K1,Mek 1/2 inhibitor,NCGC00025029-05,,C5
-LTA4H,Leukotriene A4 Hydrolase Inhibitor,NCGC00025323-01,,C5
-ESR1,Estrogen Receptor (ER) Agonist,NCGC00090749-11,,C5
 ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00091057-06,,C5
-RARG,RARgamma Agonist,NCGC00092284-03,,C5
 ESR1,Estrogen Receptor (ER) Agonist,NCGC00093347-06,,C5
 NA,DNA Polymerase Inhibitors,NCGC00093356-08,,C5
 AR,Androgen Receptor Antagonist,NCGC00093560-06,,C5
-NA,K(ATP) Channel Blockers,NCGC00095107-10,,C5
 HTR1A,5-HT Reuptake Inhibitor,NCGC00095109-06,,C5
 NA,Free radical formation,NCGC00159508-05,,C5
 ACE,Angiotensin-I Converting Enzyme Inhibitor,NCGC00159509-02,,C5
-CALM1,Calmodulin Antagonist,NCGC00159544-02,,C5
 ESR1,Selective Estrogen Receptor Modulators (SERM),NCGC00160530-03,,C5
-OPRL1,ORL1 (OP4_:_ NOP) Antagonists,NCGC00161418-02,,C5
 PDE3A,Phosphodiesterase III (PDE3) Inhibitor,NCGC00162385-05,,C5
 PPARG,PPARgamma Agonists?,NCGC00163128-07,,C5
-NA,Macrolide Antibiotic,NCGC00163470-09,,C5
-SMO,Smo Receptor Antagonist,NCGC00163474-05,,C5
 NA,neurtotoxic,NCGC00163633-03,,C5
 ESR1,Selective Estrogen Receptor Modulators (SERM),NCGC00164385-04,,C5
-CYSLTR1,Leukotriene CysLT1 (LTD4) Antagonist,NCGC00164547-06,,C5
 NA,K(V)11.1 (erg1) Channel Blocker,NCGC00164549-01,,C5
 SLC6A4,Serotonin Transporter (SERT) Inhibitor,NCGC00164559-04,,C5
-HMGCR,HMG-CoA Reductase Inhibitor,NCGC00164566-02,,C5
-NA,HIV Protease Inhibitors,NCGC00164576-03,,C5
 ESR1,Estrogen Receptor Antagonist,NCGC00164789-05,,C5
 AKT1,AKT 1/2 Inhibitor,NCGC00165727-02,,C5
 NA,cardiomyocytes differentiation initiator,NCGC00165770-03,,C5
 FGFR,FGFR 1/3 inhibitor,NCGC00165863-02,,C5
-TGBR1,TGF-bR1 (ALK5) Inhibitor,NCGC00165898-02,,C5
 NA,antimalarial agents,NCGC00166281-02,,C5
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00167503-02,,C5
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00167513-03,,C5
-NA,Antibacterial,NCGC00167532-01,,C5
-IKBKB,IKK1_:_ IKK-2_:_ IKK complex inhibitor,NCGC00167767-03,,C5
 AR,Androgen Receptor Antagonist,NCGC00167977-03,,C5
 GRIN2A,NMDA Antagonist,NCGC00168041-01,,C5
 ARHGEF1,GEF inhibitor,NCGC00168109-01,,C5
 PDE5A,Phosphodiesterase V (PDE5) inhibitor,NCGC00168781-01,,C5
-RRM2,ribonucleotide reductase inhibitor,NCGC00168784-01,,C5
 NA,antiprotozoal agent,NCGC00168785-02,,C5
 HRH1,Histamine H1 Receptor Antagonists,NCGC00177979-03,,C5
-NA,antimalarial agents,NCGC00179250-04,,C5
 HTR3A,5-HT3 Antagonists,NCGC00179341-02,,C5
 ACE,Angiotensin-I Converting Enzyme Inhibitor,NCGC00182037-01,,C5
-SIRT1,Histone Deacetylase/SIRT1 Activator,NCGC00182052-03,,C5
 CCR5,Chemokine CCR5 Antagonist,NCGC00182549-02,,C5
 GRIN2A,NMDA Antagonist,NCGC00182554-02,,C5
-ABL1,Bcr-Abl Kinase Inhibitor,NCGC00183285-04,,C5
-EHMT2,Histone-lysine N-methyltransferase EHMT2 Inhibitor,NCGC00185850-02,,C5
-IRAK1,IRAK Inhibitor,NCGC00186035-04,,C5
-MTOR,mTOR inhibitor,NCGC00187481-04,,C5
-PIK3CA,PI3Kalpha_:_ beta_:_ gamma Inhibitor,NCGC00187906-01,,C5
-MAP2K1,Mek 1/2 inhibitor,NCGC00188380-01,,C5
 DRD1,Dopamine D1/D2 Antagonist,NCGC00188689-01,,C5
-P2RY12,P2Y12 (P2T) Antagonists,NCGC00188690-02,,C5
-MAP2K1,MEK inhibitor,NCGC00189074-01,,C5
-ALK,Anaplastic Lymphoma Kinase (ALK) Inhibitor,NCGC00238453-01,,C5
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00241101-02,,C5
-KIT,FGFR 3 Inhibitor,NCGC00241103-04,,C5
-ABL1,Bcr-Abl inhibitor,NCGC00241107-03,,C5
-MAPK14,p38 MAPK Inhibitor,NCGC00241111-02,,C5
-AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00242482-01,,C5
 MTOR,mTORC1/2 inhibitor,NCGC00242484-02,,C5
 PTK2,Focal Adhesion Kinase (FAK) Inhibitor,NCGC00242495-01,,C5
 TRIO,Triple Functional Domain Protein (TRIO) Inhibitor,NCGC00242501-01,,C5
 NA,antimalarial agents,NCGC00246187-02,,C5
-NA,Perinuclear compartment (PNC) assembly inhibitor,NCGC00247785-05,,C5
 SLC6A9,Glycine Transporter 1 (GlyT-1) Inhibitor,NCGC00247954-02,,C5
 FLT1,VEGFR-1/2/3 Inhibitor,NCGC00249390-01,,C5
-BRAF,Raf kinase B/C inhibitor,NCGC00249391-01,,C5
 FGFR,FGFR inhibitor,NCGC00249685-02,,C5
 PDE4A,Phosphodiesterase IIII (PDE4) inhibitor,NCGC00249759-02,,C5
 PDE4A,Phosphodiesterase IIII (PDE4) inhibitor,NCGC00250085-01,,C5
-IGFR1,IGF-1R Inhibitors,NCGC00250375-02,,C5
-HTR4,5-HT4 Antagonists,NCGC00250378-01,,C5
 PLCG1,Phospholipase C inhibitor,NCGC00250389-01,,C5
-HDAC1,Histone Deacetylase (HDAC) 6 Inhibitor,NCGC00250390-01,,C5
-MET,HGFR (MET; c-Met) Inhibitor,NCGC00250400-01,,C5
-COX10,Farnesyltransferase Inhibitor,NCGC00250406-01,,C5
-BRAF,Raf kinase B/C inhibitor,NCGC00250407-01,,C5
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00253438-01,,C5
 IDH1,Isocitrate dehydrogenase inhibitor,NCGC00262689-01,,C5
-TLR7,TLR 7_:_ 8 and 9 antagonist,NCGC00263017-01,,C5
 WNT5A,Wnt signaling modulator,NCGC00263085-01,,C5
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263087-01,,C5
-TTK,monopolar spindle 1 (Mps1)?kinase inhibitor,NCGC00263090-01,,C5
-AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00263094-01,,C5
-MTOR,mTOR inhibitor,NCGC00263109-02,,C5
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263112-01,,C5
-SLC6A9,Glycine Transporter 1 (GlyT-1) Inhibitor,NCGC00263114-01,,C5
 GH1,Growth Hormone Secretagogue,NCGC00263115-01,,C5
-PRKCB,PKC beta Inhibitor,NCGC00263119-01,,C5
 MDM2,HDM2/HDMX inhibitor,NCGC00263124-01,,C5
 CXCR1,CXCR1/CXCR2 Receptor Antagonist,NCGC00263128-01,,C5
 CDK4,CDK4_:_ 6 Inhibitor,NCGC00263129-01,,C5
 PCK1,cPEPCK inhibitor,NCGC00263130-01,,C5
-MAPK8,JNK 1/2/3 Inhibitor,NCGC00263146-01,,C5
-MDM2,MDM2 (hdm2) Inhibitor,NCGC00263171-01,,C5
-AURKA,Aurora-A Inhibitor,NCGC00263178-01,,C5
-WEE1,Wee1 Kinase Inhibitor,NCGC00263183-01,,C5
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263185-01,,C5
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00263193-01,,C5
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263195-01,,C5
 TYK2,Tyk 2 inhibitor,NCGC00263200-01,,C5
-JAK2,Jak2 inhibitor,NCGC00263202-01,,C5
 IKBKB,IKK-2 (IKK-beta) Inhibitor,NCGC00263213-01,,C5
-MTOR,mTORC1 Inhibitor,NCGC00263216-02,,C5
 CERS1,Ceramide kinase inhibitor,NCGC00263217-01,,C5
-ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00263219-01,,C5
-PIK3CA,PI3Kalpha inhibitor,NCGC00263223-01,,C5
 FAS,Fatty acid synthase inhibitor,NCGC00263228-01,,C5
-FAS,Fatty acid synthase inhibitor,NCGC00263229-01,,C5
 IDH1,Isocitrate dehydrogenase inhibitor,NCGC00263234-01,,C5
 MGLL,Monoacylglycerol lipase (MAGL) inhibitor,NCGC00263237-01,,C5
 SRD5A1,Steroid 5alpha-Reductase Inhibitors,NCGC00263522-02,,C5
@@ -153,442 +74,117 @@ MAP3K8,Tpl-2/Cot (MAP3K8) Kinase Inhibitor,NCGC00273985-03,,C5
 FGFR,FGFR 1/2/3/4 inhibitor,NCGC00274030-01,,C5
 PDE3A,Phosphodiesterase III (PDE3) Inhibitor,NCGC00274063-01,,C5
 CHEK1,Chk1 Inhibitor,NCGC00343768-01,,C5
-NA,Calcium Channel Blocker,NCGC00344506-01,,C5
-CASR,Calcium-Sensing Receptor (CaSR) Agonists,NCGC00344507-02,,C5
-NAE1,NEDD8-Activating Enzyme (NAE) Inhibitors,NCGC00345794-01,,C5
-AKT1,PKB/Akt Inhibitor,NCGC00345795-01,,C5
-JAK2,Jak2 inhibitor,NCGC00345798-01,,C5
 HDAC6,Histone Deacetylase (HDAC) 6 Inhibitor,NCGC00345802-01,,C5
 STAT3,STAT-3 Inhibitor,NCGC00345805-01,,C5
-FLT1,VEGFR-2 (FLK-1/KDR) Inhibitors,NCGC00345821-01,,C5
-LIMK1,LIMK Inhibitor,NCGC00345825-01,,C5
-MAPK8,JNK Inhibitor,NCGC00345826-01,,C5
-SRC,cSRC inhibitor,NCGC00345829-01,,C5
-ROCK2,ROCK II Inhibitor,NCGC00345833-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00345837-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00345838-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00345849-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00345851-01,,C5
-JAK2,Jak2 inhibitor,NCGC00345854-01,,C5
-BTK,BTK Inhibitor,NCGC00345857-01,,C5
-ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00346448-01,,C5
 PDE5A,Phosphodiesterase III/Va (PDE) inhibitor,NCGC00346449-01,,C5
-FGFR,FGFR Inhibitor,NCGC00346459-01,,C5
 NA,Bacterial Efflux Pump Inhibitors,NCGC00346474-01,,C5
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346483-01,,C5
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346496-01,,C5
 PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00346511-01,,C5
-AURKA,Aurora A Inhibitor,NCGC00346525-01,,C5
 NA,Sodium channel inhibitor,NCGC00346529-01,,C5
-AURKA,Aurora Kinase Inhibitor,NCGC00346539-01,,C5
-MAP2K5,Mek 5 Inhibitor,NCGC00346543-01,,C5
-MAP2K5,Mek 5 Inhibitor,NCGC00346544-01,,C5
-CFTR,CFTR Channel Modulator,NCGC00346550-01,,C5
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346563-01,,C5
-KIF11,Kinesin-Like Spindle Protein Inhibitor,NCGC00346571-01,,C5
 TUBB,Tubulin polymerization inhibitor,NCGC00346580-01,,C5
-JAK2,Jak2/3 Inhibitor,NCGC00346581-01,,C5
-NA,Alkaloid,NCGC00346589-01,,C5
-PDGFRA,PDGFR Inhibitor,NCGC00346619-01,,C5
-GCK,Glucokinase activator,NCGC00346628-01,,C5
-MTOR,mTOR inhibitor,NCGC00346634-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00346649-01,,C5
-DPP4,Dipeptidyl Peptidase IV (CD26; DPP-IV; DP-IV) Inhibitor,NCGC00346655-01,,C5
-PIK3CA,PI3K Inhibitor,NCGC00346659-01,,C5
-CDK1,CDK1/2/4/5 Inhibitor,NCGC00346673-01,,C5
-PDPK1,Phosphoinositide Dependent Kinase (PDK) 1 Inhibitors,NCGC00346687-01,,C5
 FLT1,VEGFR-1 (Flt-1) Inhibitors,NCGC00346695-01,,C5
-BACE1,beta-Secretase Inhibitor,NCGC00346719-01,,C5
 ADRA1A,alpha1-Adrenoceptor Antagonists,NCGC00346740-01,,C5
-TBXA2R,Prostanoid TP Agonist,NCGC00346741-01,,C5
 INPPL1,SH2 containing inositol phosphatase (SHIP) inhibitor,NCGC00346882-01,,C5
 ABCBA,P-Glycoprotein (MDR-1; ABCB1) Inhibitors,NCGC00346894-01,,C5
-PIM1,Pim 1/2/3 Kinase Inhibitor,NCGC00346935-01,,C5
-ITK,ITK inhibitor,NCGC00346941-01,,C5
-LCK,Lck Kinase Inhibitors,NCGC00346955-01,,C5
-ABL1,Bcr-Abl inhibitor,NCGC00346956-01,,C5
 EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346957-01,,C5
 LCK,Lck Kinase Inhibitors,NCGC00346958-01,,C5
-LCK,Lck Kinase Inhibitors,NCGC00346959-01,,C5
 NA,M18 Aspartyl Aminopeptidase Inhibitor,NCGC00347063-01,,C5
-NA,p97 ATPase Inhibitor,NCGC00347064-01,,C5
 NA,p97 ATPase Inhibitor,NCGC00347065-01,,C5
-NA,EZH2 Methyltransferase Inhibitor,NCGC00347286-01,,C5
-P2RX7,P2X7 Receptor Antagonist,NCGC00347909-01,,C5
-CAMKK2,Calmodulin-Dependent Protein Kinase II Inhibitors,NCGC00347910-01,,C5
-NA,Mutant IDH1 Inhibitor,NCGC00347934-01,,C5
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00348107-01,,C5
 JAK2,Jak2 inhibitor,NCGC00014911-01,,C8
 IMPDH1,Inosine 5'-Monophosphate Dehydrogenase (IMPDH) Inhibitors,NCGC00016786-14,,C8
-NA,antiparasitic agent,NCGC00016855-11,,C8
 TOP1,DNA Topoisomerase I Inhibitors,NCGC00016994-16,,C8
-GBF1,Golgi-Specific Brefeldin A-Resistance Guanine Nucleotide Exchange Factor 1 (GBF1) Inhibitors,NCGC00017254-02,,C8
 GSK3B,Glycogen Synthase Kinase 3 beta (GSK-3beta; tau Protein Kinase I) Inhibitor,NCGC00017363-10,,C8
-ADA,Adenosine Deaminase Inhibitor,NCGC00022567-08,,C8
-DHFR,Dihydrofolate Reductase (DHFR) Inhibitors,NCGC00025060-16,,C8
 DNMT1,DNA Methyltransferase (DNMT) Inhibitor,NCGC00090851-09,,C8
-RARG,RARgamma Agonist,NCGC00092284-03,,C8
 IMPDH1,Inosine 5'-Monophosphate Dehydrogenase (IMPDH) Inhibitors,NCGC00159459-02,,C8
-PRKCA,PKC Activator,NCGC00162381-03,,C8
-NA,Antineoplastic Antibiotics,NCGC00162440-01,,C8
-NA,DNA Polymerase Inhibitors,NCGC00164553-03,,C8
-HMGCR,HMG-CoA Reductase Inhibitor,NCGC00164566-02,,C8
-TYMS,thymidylate synthase inhibitor,NCGC00166323-03,,C8
 PRKDC,DNA-Directed RNA Polymerase Inhibitor,NCGC00167431-02,,C8
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00167503-02,,C8
-RRM2,ribonucleotide reductase inhibitor,NCGC00168784-01,,C8
-MAP2K1,MEK inhibitor,NCGC00189074-01,,C8
-TYMS,thymidylate synthase inhibitor,NCGC00229704-01,,C8
-ALK,Anaplastic Lymphoma Kinase (ALK) Inhibitor,NCGC00238453-01,,C8
-DHFR,Dihydrofolate Reductase (DHFR) Inhibitors,NCGC00242596-01,,C8
-HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00247878-01,,C8
-BRAF,Raf kinase B/C inhibitor,NCGC00249391-01,,C8
-PIK3CA,PI3Kalpha/beta/delta/gamma Inhibitor,NCGC00250408-01,,C8
-PIK3CA,PI3Kalpha inhibitor,NCGC00262604-01,,C8
-HDAC1,Histone Deacetylase (HDAC) Inhibitor,NCGC00263117-02,,C8
-MAPK8,JNK 1/2/3 Inhibitor,NCGC00263146-01,,C8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263177-01,,C8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263195-01,,C8
-MTOR,mTORC1 Inhibitor,NCGC00263216-02,,C8
-MAP2K1,Mek 1/2 inhibitor,NCGC00345804-01,,C8
-SRC,cSRC inhibitor,NCGC00345829-01,,C8
-PIK3CA,PI3K Inhibitor,NCGC00345851-01,,C8
-FGFR,FGFR Inhibitor,NCGC00346459-01,,C8
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346496-01,,C8
-CFTR,CFTR Channel Modulator,NCGC00346550-01,,C8
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346563-01,,C8
-PDGFRA,PDGFR Inhibitor,NCGC00346619-01,,C8
-CHEK1,Chk1 Inhibitor,NCGC00346626-01,,C8
-MTOR,mTOR inhibitor,NCGC00346634-01,,C8
-HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00346640-01,,C8
-PIK3CA,PI3K Inhibitor,NCGC00346659-01,,C8
-CDK1,CDK1/2/4/5 Inhibitor,NCGC00346673-01,,C8
 SCD,Stearoyl-CoA Desaturase Inhibitors,NCGC00346680-01,,C8
-FLT3,FLT3,NCGC00346964-01,,C8
-JAK1,Jak inhibitor,NCGC00015610-18,,D10
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00015693-08,,D10
-GBF1,Golgi-Specific Brefeldin A-Resistance Guanine Nucleotide Exchange Factor 1 (GBF1) Inhibitors,NCGC00017254-02,,D10
-ADA,Adenosine Deaminase Inhibitor,NCGC00022567-08,,D10
-NA,Pyrimidine Antagonists,NCGC00023722-07,,D10
-RARG,RARgamma Agonist,NCGC00092284-03,,D10
-PRKCA,PKC Activator,NCGC00162381-03,,D10
-NA,Antineoplastic Antibiotics,NCGC00162440-01,,D10
 POLR2A,Inhibition of RNA polymerase II?mediated transcription,NCGC00163411-05,,D10
-NA,DNA Polymerase Inhibitors,NCGC00164553-03,,D10
-TGBR1,TGF-bR1 (ALK5) inhibitor,NCGC00165869-03,,D10
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00167513-03,,D10
 TOP2A,DNA Topoisomerase II Inhibitors,NCGC00167982-02,,D10
-RRM2,ribonucleotide reductase inhibitor,NCGC00168784-01,,D10
 ABL1,Bcr-Abl inhibitor,NCGC00181129-05,,D10
 VDR,Vitamin D Analog,NCGC00182058-03,,D10
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00182713-01,,D10
-PIK3CA,PI3Kalpha_:_ beta_:_ gamma Inhibitor,NCGC00187906-01,,D10
 MTOR,mTOR inhibitor,NCGC00250398-01,,D10
-PIK3CA,PI3Kalpha/beta/delta/gamma Inhibitor,NCGC00250408-01,,D10
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00253438-01,,D10
-PIK3CA,PI3Kalpha inhibitor,NCGC00262604-01,,D10
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263087-01,,D10
-KDR,VEGFR-2 Inhibitor,NCGC00263100-01,,D10
 JAK2,Jak2 Inhibitor,NCGC00263102-01,,D10
 EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00263103-01,,D10
-MTOR,mTOR inhibitor,NCGC00263109-02,,D10
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263112-01,,D10
-HDAC1,Histone Deacetylase (HDAC) Inhibitor,NCGC00263117-02,,D10
-MAPK8,JNK 1/2/3 Inhibitor,NCGC00263146-01,,D10
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263177-01,,D10
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263195-01,,D10
-MTOR,mTORC1 Inhibitor,NCGC00263216-02,,D10
-PIK3CA,PI3Kalpha inhibitor,NCGC00263223-01,,D10
-ITK,ITK inhibitor,NCGC00344999-01,,D10
-MAP2K1,Mek 1/2 inhibitor,NCGC00345804-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00345837-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00345838-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00345849-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00345851-01,,D10
 TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346437-01,,D10
 PIK3CA,PI3K alpha/delta Inhibitor,NCGC00346457-01,,D10
-FGFR,FGFR Inhibitor,NCGC00346459-01,,D10
-CFTR,CFTR Channel Modulator,NCGC00346550-01,,D10
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346563-01,,D10
-PDGFRA,PDGFR Inhibitor,NCGC00346619-01,,D10
-CHEK1,Chk1 Inhibitor,NCGC00346626-01,,D10
-MTOR,mTOR inhibitor,NCGC00346634-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00346649-01,,D10
 PIK3CA,PI3Kalpha_:_ beta_:_ gamma Inhibitor,NCGC00346650-01,,D10
-PIK3CA,PI3K Inhibitor,NCGC00346659-01,,D10
-PDPK1,Phosphoinositide Dependent Kinase (PDK) 1 Inhibitors,NCGC00346687-01,,D10
-PIK3CA,PI3K alpha Inhibitor,NCGC00346717-01,,D10
-ABL1,Bcr-Abl inhibitor,NCGC00346956-01,,D10
 NA,Mutant p53 Activator,NCGC00347952-01,,D10
-SLC6A3,Dopamine Transporter (DAT) Inhibitor,NCGC00015122-09,,F2
-CAMKK2,Calmodulin-Dependent Protein Kinase II Inhibitors,NCGC00015233-04,,F2
-HRH1,Histamine H1 Receptor Antagonists,NCGC00015252-13,,F2
-NA,Calcium Channels (Voltage-Gated) alpha2/delta-1/2 Subunit Ligand,NCGC00015466-04,,F2
-DRD2,Dopamine D2 Antagonist,NCGC00015500-10,,F2
-HRH1,Histamine H1 Receptor Antagonists,NCGC00015619-09,,F2
-NA,Muscarinic Antagonists,NCGC00015767-09,,F2
 PGR,Progestogen hormone,NCGC00015785-04,,F2
 EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00016017-07,,F2
-MMP1,MMP Inhibitor,NCGC00016246-12,,F2
 NA,Steroid,NCGC00016447-02,,F2
-ADRA1A,alpha1-Adrenoceptor Antagonists,NCGC00016740-19,,F2
-NA,antiparasitic agent,NCGC00016855-11,,F2
-PDE1,Sodium channel inhibitor,NCGC00018204-11,,F2
-NA,Antifungal Agent,NCGC00018258-09,,F2
-ADA,Adenosine Deaminase Inhibitor,NCGC00022567-08,,F2
-NA,Pyrimidine Antagonists,NCGC00023722-07,,F2
 NA,antiprotozoal agent,NCGC00024379-04,,F2
-MAP2K1,Mek 1/2 inhibitor,NCGC00025029-05,,F2
-DHFR,Dihydrofolate Reductase (DHFR) Inhibitors,NCGC00025060-16,,F2
-LTA4H,Leukotriene A4 Hydrolase Inhibitor,NCGC00025323-01,,F2
-ESR1,Estrogen Receptor (ER) Agonist,NCGC00090749-11,,F2
 RARB,RARbeta/gamma Agonist,NCGC00090752-08,,F2
-RARG,RARgamma Agonist,NCGC00092284-03,,F2
 HPRT1,Purine Antagonist,NCGC00094717-05,,F2
 NA,Purine Antagonist,NCGC00094792-06,,F2
-NA,K(ATP) Channel Blockers,NCGC00095107-10,,F2
 NA,H+/K+-ATPase Inhibitor,NCGC00095188-04,,F2
 NA,Fungal Squalene Monooxygenase Inhibitor,NCGC00159346-05,,F2
-CALM1,Calmodulin Antagonist,NCGC00159544-02,,F2
 AURKA,Aurora-A/B Inhibitor,NCGC00159574-02,,F2
 VDR,Vitamin D Analog,NCGC00161327-05,,F2
-OPRL1,ORL1 (OP4_:_ NOP) Antagonists,NCGC00161418-02,,F2
 DHFR,Dihydrofolate Reductase (DHFR) Inhibitors,NCGC00161419-03,,F2
-NA,Antineoplastic Antibiotics,NCGC00162440-01,,F2
 NA,Antimigraine drugs,NCGC00163169-02,,F2
 PRKCA,PKC inhibitor,NCGC00163505-03,,F2
-CYSLTR1,Leukotriene CysLT1 (LTD4) Antagonist,NCGC00164547-06,,F2
-NA,DNA Polymerase Inhibitors,NCGC00164553-03,,F2
-HMGCR,HMG-CoA Reductase Inhibitor,NCGC00164566-02,,F2
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00164574-05,,F2
-NA,HIV Protease Inhibitors,NCGC00164576-03,,F2
 TUBB,Tubulin polymerization inhibitor,NCGC00166035-02,,F2
-TYMS,thymidylate synthase inhibitor,NCGC00166323-03,,F2
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00167513-03,,F2
 AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00168110-01,,F2
-RRM2,ribonucleotide reductase inhibitor,NCGC00168784-01,,F2
-NA,antimalarial agents,NCGC00179250-04,,F2
-PNP,Purine-Nucleoside Phosphorylase Inhibitors,NCGC00181336-03,,F2
-SIRT1,Histone Deacetylase/SIRT1 Activator,NCGC00182052-03,,F2
-ABL1,Bcr-Abl Kinase Inhibitor,NCGC00183285-04,,F2
 APE1,APE1 inhibitor,NCGC00185090-03,,F2
-EHMT2,Histone-lysine N-methyltransferase EHMT2 Inhibitor,NCGC00185850-02,,F2
 PIK3CG,PI3K gamma Inhibitor,NCGC00186009-03,,F2
-IRAK1,IRAK Inhibitor,NCGC00186035-04,,F2
-MAP2K1,Mek 1/2 inhibitor,NCGC00188380-01,,F2
-P2RY12,P2Y12 (P2T) Antagonists,NCGC00188690-02,,F2
 MAP2K1,Mek1/2 inibitor,NCGC00189073-02,,F2
-MAP2K1,MEK inhibitor,NCGC00189074-01,,F2
-TYMS,thymidylate synthase inhibitor,NCGC00229704-01,,F2
-ALK,Anaplastic Lymphoma Kinase (ALK) Inhibitor,NCGC00238453-01,,F2
-KIT,FGFR 3 Inhibitor,NCGC00241103-04,,F2
 CLK1,Clk Inhibitor,NCGC00241342-02,,F2
 PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00242217-04,,F2
-AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00242482-01,,F2
-DHFR,Dihydrofolate Reductase (DHFR) Inhibitors,NCGC00242596-01,,F2
-NA,Perinuclear compartment (PNC) assembly inhibitor,NCGC00247785-05,,F2
 HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00247877-01,,F2
-HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00247878-01,,F2
-BRAF,Raf kinase B/C inhibitor,NCGC00249391-01,,F2
-IGFR1,IGF-1R Inhibitors,NCGC00250375-02,,F2
-HTR4,5-HT4 Antagonists,NCGC00250378-01,,F2
 ERN1,IRE1alpha/XBP-1 inhibitor,NCGC00250383-01,,F2
 TNKS,TNKS1/TNKS2 Inhibitor,NCGC00250397-01,,F2
-COX10,Farnesyltransferase Inhibitor,NCGC00250406-01,,F2
-BRAF,Raf kinase B/C inhibitor,NCGC00250407-01,,F2
-PIK3CA,PI3Kalpha/beta/delta/gamma Inhibitor,NCGC00250408-01,,F2
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00253438-01,,F2
-MAPK14,p38 MAPK Inhibitor,NCGC00262195-02,,F2
-TLR7,TLR 7_:_ 8 and 9 antagonist,NCGC00263017-01,,F2
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263087-01,,F2
-TTK,monopolar spindle 1 (Mps1)?kinase inhibitor,NCGC00263090-01,,F2
-AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00263094-01,,F2
 PRKCA,PKC inhibitor,NCGC00263095-01,,F2
-KDR,VEGFR-2 Inhibitor,NCGC00263100-01,,F2
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263112-01,,F2
-PRKCB,PKC beta Inhibitor,NCGC00263119-01,,F2
-MDM2,MDM2 (hdm2) Inhibitor,NCGC00263171-01,,F2
 KIF11,Kinesin-Like Spindle Protein Inhibitor,NCGC00263174-01,,F2
-AURKA,Aurora-A Inhibitor,NCGC00263178-01,,F2
-WEE1,Wee1 Kinase Inhibitor,NCGC00263183-01,,F2
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00263193-01,,F2
-JAK2,Jak2 inhibitor,NCGC00263202-01,,F2
 AURKA,Aurora-A/B/C Kinase Inhibitor,NCGC00263203-02,,F2
 ADH7,Alcohol dehydrogenase 7 inhibitor,NCGC00263211-01,,F2
-MTOR,mTORC1 Inhibitor,NCGC00263216-02,,F2
-ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00263219-01,,F2
-CASR,Calcium-Sensing Receptor (CaSR) Agonists,NCGC00344507-02,,F2
-ITK,ITK inhibitor,NCGC00344999-01,,F2
-NAE1,NEDD8-Activating Enzyme (NAE) Inhibitors,NCGC00345794-01,,F2
-JAK2,Jak2 inhibitor,NCGC00345798-01,,F2
-MAP2K1,Mek 1/2 inhibitor,NCGC00345804-01,,F2
-FLT1,VEGFR-2 (FLK-1/KDR) Inhibitors,NCGC00345821-01,,F2
-LIMK1,LIMK Inhibitor,NCGC00345825-01,,F2
-MAPK8,JNK Inhibitor,NCGC00345826-01,,F2
-SRC,cSRC inhibitor,NCGC00345829-01,,F2
-ROCK2,ROCK II Inhibitor,NCGC00345833-01,,F2
 ROCK1,ROCK Inhibitor,NCGC00345842-01,,F2
 TYK2,Tyk 2 inhibitor,NCGC00345844-01,,F2
 CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00345853-01,,F2
-JAK2,Jak2 inhibitor,NCGC00345854-01,,F2
-BTK,BTK Inhibitor,NCGC00345857-01,,F2
-ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00346448-01,,F2
 IGFR1,IGF-1R Inhibitor,NCGC00346460-02,,F2
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346483-01,,F2
 AURKA,Aurora-A/B Inhibitor,NCGC00346493-01,,F2
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00346496-01,,F2
-AURKA,Aurora A Inhibitor,NCGC00346525-01,,F2
-AURKA,Aurora Kinase Inhibitor,NCGC00346539-01,,F2
-MAP2K5,Mek 5 Inhibitor,NCGC00346543-01,,F2
-MAP2K5,Mek 5 Inhibitor,NCGC00346544-01,,F2
 AKT1,Akt1/2/3 Inhibitor,NCGC00346549-01,,F2
-CFTR,CFTR Channel Modulator,NCGC00346550-01,,F2
 CDK7,CDK7 Inhibitor,NCGC00346553-01,,F2
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346563-01,,F2
-KIF11,Kinesin-Like Spindle Protein Inhibitor,NCGC00346571-01,,F2
 BRAF,Raf kinase B/C inhibitor,NCGC00346577-01,,F2
-JAK2,Jak2/3 Inhibitor,NCGC00346581-01,,F2
-NA,Alkaloid,NCGC00346589-01,,F2
-PDGFRA,PDGFR Inhibitor,NCGC00346619-01,,F2
-CHEK1,Chk1 Inhibitor,NCGC00346626-01,,F2
-GCK,Glucokinase activator,NCGC00346628-01,,F2
-HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00346640-01,,F2
 AURKB,Aurora-B/C Inhibitor,NCGC00346648-01,,F2
-DPP4,Dipeptidyl Peptidase IV (CD26; DPP-IV; DP-IV) Inhibitor,NCGC00346655-01,,F2
-PDPK1,Phosphoinositide Dependent Kinase (PDK) 1 Inhibitors,NCGC00346687-01,,F2
 AR,Androgen Receptor Agonist,NCGC00346733-01,,F2
-TBXA2R,Prostanoid TP Agonist,NCGC00346741-01,,F2
 NA,Antimitotic Agent,NCGC00346832-01,,F2
 OPRL1,ORL1 (OP4_:_ NOP) Agonists,NCGC00346896-01,,F2
 TUBB,Tubulin polymerization inhibitor,NCGC00346937-01,,F2
-ITK,ITK inhibitor,NCGC00346941-01,,F2
-LCK,Lck Kinase Inhibitors,NCGC00346955-01,,F2
-ABL1,Bcr-Abl inhibitor,NCGC00346956-01,,F2
-LCK,Lck Kinase Inhibitors,NCGC00346959-01,,F2
-FLT3,FLT3,NCGC00346964-01,,F2
 FLT4,FLT4,NCGC00346965-01,,F2
-NA,p97 ATPase Inhibitor,NCGC00347064-01,,F2
 TNK2,ACK1/TNK2 Inhibitor,NCGC00347279-01,,F2
-NA,EZH2 Methyltransferase Inhibitor,NCGC00347286-01,,F2
-CAMKK2,Calmodulin-Dependent Protein Kinase II Inhibitors,NCGC00347910-01,,F2
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00348107-01,,F2
-SLC6A3,Dopamine Transporter (DAT) Inhibitor,NCGC00015122-09,,G8
-CAMKK2,Calmodulin-Dependent Protein Kinase II Inhibitors,NCGC00015233-04,,G8
-JAK1,Jak inhibitor,NCGC00015610-18,,G8
 AKR1B1,Aldose Reductase Inhibitor,NCGC00017245-12,,G8
-GBF1,Golgi-Specific Brefeldin A-Resistance Guanine Nucleotide Exchange Factor 1 (GBF1) Inhibitors,NCGC00017254-02,,G8
-PDE1,Sodium channel inhibitor,NCGC00018204-11,,G8
-ADA,Adenosine Deaminase Inhibitor,NCGC00022567-08,,G8
-MAP2K1,Mek 1/2 inhibitor,NCGC00025029-05,,G8
 BRAF,Raf Kinase Inhibitors,NCGC00025109-01,,G8
-LTA4H,Leukotriene A4 Hydrolase Inhibitor,NCGC00025323-01,,G8
 MAPK14,p38 MAPK Inhibitor,NCGC00025329-02,,G8
-RARG,RARgamma Agonist,NCGC00092284-03,,G8
 NA,immunosuppressant,NCGC00093704-11,,G8
 NA,sugar alcohol,NCGC00095537-06,,G8
 GABRA1,GABAA Receptor Modulator,NCGC00095694-05,,G8
-CALM1,Calmodulin Antagonist,NCGC00159544-02,,G8
-OPRL1,ORL1 (OP4_:_ NOP) Antagonists,NCGC00161418-02,,G8
 MAPK14,p38 MAPK Inhibitor,NCGC00162142-03,,G8
-NA,Macrolide Antibiotic,NCGC00163470-09,,G8
-SMO,Smo Receptor Antagonist,NCGC00163474-05,,G8
-CYSLTR1,Leukotriene CysLT1 (LTD4) Antagonist,NCGC00164547-06,,G8
-HMGCR,HMG-CoA Reductase Inhibitor,NCGC00164566-02,,G8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00164574-05,,G8
-NA,HIV Protease Inhibitors,NCGC00164576-03,,G8
-TGBR1,TGF-bR1 (ALK5) inhibitor,NCGC00165869-03,,G8
-TGBR1,TGF-bR1 (ALK5) Inhibitor,NCGC00165898-02,,G8
-EGFR,EGFR (HER1; erbB1) Inhibitor,NCGC00167513-03,,G8
-NA,Antibacterial,NCGC00167532-01,,G8
-IKBKB,IKK1_:_ IKK-2_:_ IKK complex inhibitor,NCGC00167767-03,,G8
 PIK3CA,PI3K inhibitor,NCGC00168114-03,,G8
-PNP,Purine-Nucleoside Phosphorylase Inhibitors,NCGC00181336-03,,G8
 VEGFA,VEGFR-1_:_2_:_3 Inhibitor,NCGC00181350-02,,G8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00182713-01,,G8
-EHMT2,Histone-lysine N-methyltransferase EHMT2 Inhibitor,NCGC00185850-02,,G8
-MTOR,mTOR inhibitor,NCGC00187481-04,,G8
-MAP2K1,MEK inhibitor,NCGC00189074-01,,G8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00241101-02,,G8
-ABL1,Bcr-Abl inhibitor,NCGC00241107-03,,G8
-MAPK14,p38 MAPK Inhibitor,NCGC00241111-02,,G8
 MAPK14,p38 MAPK Inhibitor,NCGC00241112-01,,G8
 NRC31,Glucocorticoid Receptor (GR) Agonist,NCGC00242505-01,,G8
 TGBR1,TGF-bR1 (ALK5) and TGFbR2 inhibitor,NCGC00242598-03,,G8
-BRAF,Raf kinase B/C inhibitor,NCGC00249391-01,,G8
-IGFR1,IGF-1R Inhibitors,NCGC00250375-02,,G8
 NTRK1,Tropomyosin Related Kinases (Trk) inhibitor,NCGC00250381-02,,G8
-HDAC1,Histone Deacetylase (HDAC) 6 Inhibitor,NCGC00250390-01,,G8
-MET,HGFR (MET; c-Met) Inhibitor,NCGC00250400-01,,G8
-COX10,Farnesyltransferase Inhibitor,NCGC00250406-01,,G8
-PIK3CA,PI3Kalpha/beta/delta/gamma Inhibitor,NCGC00250408-01,,G8
-MAPK14,p38 MAPK Inhibitor,NCGC00262195-02,,G8
-PIK3CA,PI3Kalpha inhibitor,NCGC00262604-01,,G8
-MTOR,mTOR inhibitor,NCGC00263109-02,,G8
-PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00263112-01,,G8
-SLC6A9,Glycine Transporter 1 (GlyT-1) Inhibitor,NCGC00263114-01,,G8
 KDR,VEGFR-2 Inhibitor,NCGC00263164-01,,G8
 TUBB,Tubulin polymerization inhibitor,NCGC00263169-01,,G8
-AURKA,Aurora-A Inhibitor,NCGC00263178-01,,G8
-WEE1,Wee1 Kinase Inhibitor,NCGC00263183-01,,G8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263185-01,,G8
 NOTCH1,g-Secretase Inhibitor,NCGC00263188-01,,G8
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00263193-01,,G8
-EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00263195-01,,G8
 FLT1,VEGFR-1/2/3 Inhibitor,NCGC00263198-01,,G8
-MTOR,mTORC1 Inhibitor,NCGC00263216-02,,G8
-ABCBA,P-Glycoprotein (MDR-1) Inhibitor,NCGC00263219-01,,G8
-FAS,Fatty acid synthase inhibitor,NCGC00263229-01,,G8
 BRD4,Bromodomain-Containing Protein 4 (Brd4_:_ HUNK1) Inhibitor,NCGC00263621-02,,G8
-NA,Calcium Channel Blocker,NCGC00344506-01,,G8
 BRD4,Bromodomain-Containing Protein 4 (Brd4_:_ HUNK1) Inhibitor,NCGC00344588-01,,G8
-AKT1,PKB/Akt Inhibitor,NCGC00345795-01,,G8
-FLT1,VEGFR-2 (FLK-1/KDR) Inhibitors,NCGC00345821-01,,G8
 AKT1,AKT1/2 Inhibitor,NCGC00345823-01,,G8
-LIMK1,LIMK Inhibitor,NCGC00345825-01,,G8
-MAPK8,JNK Inhibitor,NCGC00345826-01,,G8
 MAPK14,p38 MAPK Inhibitor,NCGC00345832-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00345837-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00345838-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00345849-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00345851-01,,G8
-JAK2,Jak2 inhibitor,NCGC00345854-01,,G8
-BTK,BTK Inhibitor,NCGC00345857-01,,G8
 PIK3CA,PI3Kalpha inhibitor,NCGC00346447-01,,G8
-FGFR,FGFR Inhibitor,NCGC00346459-01,,G8
 PIK3CA,PI3K Inhibitor,NCGC00346508-01,,G8
-AURKA,Aurora A Inhibitor,NCGC00346525-01,,G8
 NA,ATP synthase inhibitor,NCGC00346531-01,,G8
 PLK1,Polo-like Kinase-1 (Plk-1) Inhibitor,NCGC00346535-01,,G8
-AURKA,Aurora Kinase Inhibitor,NCGC00346539-01,,G8
 MTOR,mTORC1/2 inhibitor,NCGC00346541-01,,G8
-TOP2A,DNA Topoisomerase II Inhibitors,NCGC00346563-01,,G8
 TUBB,Tubulin depolymerization inhibitor,NCGC00346574-01,,G8
 EGFR,EGFR (HER1; erbB1) inhibitor,NCGC00346578-01,,G8
 AKT1,PKB/Akt Inhibitor,NCGC00346621-01,,G8
 PIK3CA,PI3Kalpha inhibitor,NCGC00346624-01,,G8
 PIK3CG,PI3K gamma Inhibitor,NCGC00346625-01,,G8
-CHEK1,Chk1 Inhibitor,NCGC00346626-01,,G8
-GCK,Glucokinase activator,NCGC00346628-01,,G8
-MTOR,mTOR inhibitor,NCGC00346634-01,,G8
 MTOR,mTORC1/2 inhibitor,NCGC00346635-01,,G8
-HSP90AB1,Heat Shock Protein 90 (hsp90) Inhibitor,NCGC00346640-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00346649-01,,G8
-PIK3CA,PI3K Inhibitor,NCGC00346659-01,,G8
-PDPK1,Phosphoinositide Dependent Kinase (PDK) 1 Inhibitors,NCGC00346687-01,,G8
-PIK3CA,PI3K alpha Inhibitor,NCGC00346717-01,,G8
-BACE1,beta-Secretase Inhibitor,NCGC00346719-01,,G8
-TBXA2R,Prostanoid TP Agonist,NCGC00346741-01,,G8
 LRRK2,Leucine-Rich Repeat Kinase 2 (LRRK2) Inhibitors,NCGC00346807-01,,G8
-PIM1,Pim 1/2/3 Kinase Inhibitor,NCGC00346935-01,,G8
 CENPE,Centromere Associated Protein (CENP) Inhibitors,NCGC00346943-01,,G8
 HDAC1,Histone Deacetylase (HDAC) Inhibitor,NCGC00346948-01,,G8
-LCK,Lck Kinase Inhibitors,NCGC00346955-01,,G8
-ABL1,Bcr-Abl inhibitor,NCGC00346956-01,,G8
-LCK,Lck Kinase Inhibitors,NCGC00346959-01,,G8
-FLT3,FLT3,NCGC00346964-01,,G8
 RIPK1,Receptor-interacting serine/threonine-protein kinase 1 (RIPK1),NCGC00346966-01,,G8
-NA,p97 ATPase Inhibitor,NCGC00347064-01,,G8
-P2RX7,P2X7 Receptor Antagonist,NCGC00347909-01,,G8
-NA,Mutant IDH1 Inhibitor,NCGC00347934-01,,G8
 TGBR1,TGF-b Inhibitor,NCGC00347947-01,,G8
-CSF1R,CSF1R (c-FMS) Inhibitor,NCGC00348107-01,,G8
