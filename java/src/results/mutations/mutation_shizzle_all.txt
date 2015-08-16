@@ -4642,3 +4642,1488 @@ Gm10222,9829,chrM, ,INS,Hom,aa, ,Upstream, , , ,D10
 Gm10222,9829,chrM, ,INS,Hom,aa, ,Upstream, , , ,G8
 Gm10222,9829,chrM, ,INS,Hom,aa, ,Upstream, , , ,G9
 Gm10222,9829,chrM, ,INS,Hom,aa, ,Upstream, , , ,Toomie
+Cpa6,10315189,chr1,t,SNP,Hom,c,NM_177834,3' UTR,Non-Coding, , ,C5
+Cpa6,10315189,chr1,t,SNP,Hom,c,NM_177834,3' UTR,Non-Coding, , ,C8
+Cpa6,10315189,chr1,t,SNP,Hom,c,NM_177834,3' UTR,Non-Coding, , ,D10
+Cpa6,10315189,chr1,t,SNP,Hom,c,NM_177834,3' UTR,Non-Coding, , ,F2
+Cpa6,10315189,chr1,t,SNP,Hom,c,NM_177834,3' UTR,Non-Coding, , ,G8
+Coq10b,55123706,chr1,a,SNP,Hom,g,NM_001039710,Intron, , , ,C5
+Coq10b,55123706,chr1,a,SNP,Hom,g,NM_001039710,Intron, , , ,C8
+Coq10b,55123706,chr1,a,SNP,Hom,g,NM_001039710,Intron, , , ,D10
+Coq10b,55123706,chr1,a,SNP,Hom,g,NM_001039710,Intron, , , ,F2
+Coq10b,55123706,chr1,a,SNP,Hom,g,NM_001039710,Intron, , , ,G8
+Lamc1,155086620,chr1,ca,DEL,Hom, ,NM_010683,Intron, , , ,C5
+Lamc1,155086620,chr1,ca,DEL,Hom, ,NM_010683,Intron, , , ,C8
+Lamc1,155086620,chr1,ca,DEL,Hom, ,NM_010683,Intron, , , ,D10
+Lamc1,155086620,chr1,ca,DEL,Hom, ,NM_010683,Intron, , , ,F2
+Lamc1,155086620,chr1,ca,DEL,Hom, ,NM_010683,Intron, , , ,G8
+Cep350,157741675,chr1, ,INS,Het,gcc,NM_001039184,Intron, , , ,C5
+Cep350,157741675,chr1, ,INS,Het,gcc,NM_001039184,Intron, , , ,C8
+Cep350,157741675,chr1, ,INS,Het,gcc,NM_001039184,Intron, , , ,D10
+Cep350,157741675,chr1, ,INS,Het,gcc,NM_001039184,Intron, , , ,F2
+Cep350,157741675,chr1, ,INS,Het,gcc,NM_001039184,Intron, , , ,G8
+Olfml2b,172612520,chr1,g,SNP,Hom,a,NM_177068,3' UTR,Non-Coding, , ,C5
+Olfml2b,172612520,chr1,g,SNP,Hom,a,NM_177068,3' UTR,Non-Coding, , ,C8
+Olfml2b,172612520,chr1,g,SNP,Hom,a,NM_177068,3' UTR,Non-Coding, , ,G8
+Olfml2b,172612520,chr1,g,SNP,Hom,a,NM_177068,3' UTR,Non-Coding, , ,G9
+Olfml2b,172612520,chr1,g,SNP,Hom,a,NM_177068,3' UTR,Non-Coding, , ,Toomie
+Mnda,175836266,chr1,g,SNP,Het,a,NM_001033450,CDS,Synonymous,A,A,C5
+Mnda,175836266,chr1,g,SNP,Het,a,NM_001033450,CDS,Synonymous,A,A,C8
+Mnda,175836266,chr1,g,SNP,Het,a,NM_001033450,CDS,Synonymous,A,A,F2
+Mnda,175836266,chr1,g,SNP,Het,a,NM_001033450,CDS,Synonymous,A,A,G8
+Mnda,175836266,chr1,g,SNP,Het,a,NM_001033450,CDS,Synonymous,A,A,Toomie
+Ifi202b,175901913,chr1, ,INS,Het,a,NM_008327,Intron, , , ,C5
+Ifi202b,175901913,chr1, ,INS,Het,a,NM_008327,Intron, , , ,C8
+Ifi202b,175901913,chr1, ,INS,Het,a,NM_008327,Intron, , , ,D10
+Ifi202b,175901913,chr1, ,INS,Het,a,NM_008327,Intron, , , ,F2
+Ifi202b,175901913,chr1, ,INS,Het,a,NM_008327,Intron, , , ,Toomie
+Dclre1c,3350940,chr2,g,SNP,Het,a,NM_001110214,Intron, , , ,C5
+Dclre1c,3350940,chr2,g,SNP,Het,a,NM_001110214,Intron, , , ,C8
+Dclre1c,3350940,chr2,g,SNP,Het,a,NM_146114,Intron, , , ,D10
+Dclre1c,3350940,chr2,g,SNP,Het,a,NM_001110214,Intron, , , ,F2
+Dclre1c,3350940,chr2,g,SNP,Het,a,NM_001110214,Intron, , , ,G8
+Ccdc3,5077541,chr2,a,DEL,Hom, ,NM_028804,Intron, , , ,C5
+Ccdc3,5077541,chr2,a,DEL,Hom, ,NM_028804,Intron, , , ,C8
+Ccdc3,5077541,chr2,a,DEL,Hom, ,NM_028804,Intron, , , ,D10
+Ccdc3,5077541,chr2,a,DEL,Hom, ,NM_028804,Intron, , , ,F2
+Ccdc3,5077541,chr2,a,DEL,Het, ,NM_028804,Intron, , , ,Toomie
+Rya3,153756405,chr2,gc,MNP,Hom,ag,NM_194357,Intron, , , ,C5
+Rya3,153756405,chr2,gc,MNP,Hom,ag,NM_194357,Intron, , , ,C8
+Rya3,153756405,chr2,gc,MNP,Hom,ag,NM_194357,Intron, , , ,D10
+Rya3,153756405,chr2,gc,MNP,Hom,ag,NM_194357,Intron, , , ,F2
+Rya3,153756405,chr2,gc,MNP,Hom,ag,NM_194357,Intron, , , ,G8
+Ndrg3,156784095,chr2, ,INS,Het,caaaa,NM_013865,Intron, , , ,C5
+Ndrg3,156784095,chr2, ,INS,Het,caaaa,NM_013865,Intron, , , ,C8
+Ndrg3,156784095,chr2, ,INS,Het,caaaa,NM_013865,Intron, , , ,D10
+Ndrg3,156784095,chr2, ,INS,Het,caaaa,NM_013865,Intron, , , ,F2
+Ndrg3,156784095,chr2, ,INS,Het,caaaa,NM_013865,Intron, , , ,G8
+Dhx35,158669946,chr2,g,SNP,Hom,a,NM_145742,Intron, , , ,C5
+Dhx35,158669946,chr2,g,SNP,Hom,a,NM_145742,Intron, , , ,C8
+Dhx35,158669946,chr2,g,SNP,Hom,a,NM_145742,Intron, , , ,D10
+Dhx35,158669946,chr2,g,SNP,Hom,a,NM_145742,Intron, , , ,F2
+Dhx35,158669946,chr2,g,SNP,Het,a,NM_145742,Intron, , , ,Toomie
+Ptprt,161386094,chr2,g,SNP,Hom,a,NM_021464,Intron, , , ,C5
+Ptprt,161386094,chr2,g,SNP,Hom,a,NM_021464,Intron, , , ,C8
+Ptprt,161386094,chr2,g,SNP,Hom,a,NM_021464,Intron, , , ,D10
+Ptprt,161386094,chr2,g,SNP,Hom,a,NM_021464,Intron, , , ,F2
+Ptprt,161386094,chr2,g,SNP,Hom,a,NM_021464,Intron, , , ,G8
+Ift52,162851205,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,C5
+Ift52,162851205,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,C8
+Ift52,162851205,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,D10
+Ift52,162851205,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,F2
+Ift52,162851205,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,G8
+Ift52,162858889,chr2,t,SNP,Hom,c,NM_172150,Intron, , , ,C5
+Ift52,162858889,chr2,t,SNP,Hom,c,NM_172150,Intron, , , ,C8
+Ift52,162858889,chr2,t,SNP,Hom,c,NM_172150,Intron, , , ,F2
+Ift52,162858889,chr2,t,SNP,Hom,c,NM_172150,Intron, , , ,G8
+Ift52,162858889,chr2,t,SNP,Het,c,NM_172150,Intron, , , ,G9
+Ift52,162859072,chr2,g,SNP,Hom,c,NM_172150,Intron, , , ,C5
+Ift52,162859072,chr2,g,SNP,Hom,c,NM_172150,Intron, , , ,C8
+Ift52,162859072,chr2,g,SNP,Hom,c,NM_172150,Intron, , , ,D10
+Ift52,162859072,chr2,g,SNP,Hom,c,NM_172150,Intron, , , ,F2
+Ift52,162859072,chr2,g,SNP,Hom,c,NM_172150,Intron, , , ,G8
+Ift52,162859090,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,C5
+Ift52,162859090,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,C8
+Ift52,162859090,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,D10
+Ift52,162859090,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,F2
+Ift52,162859090,chr2,c,SNP,Hom,t,NM_172150,Intron, , , ,G8
+Ttpal,163432841,chr2,g,SNP,Hom,a,NM_181734,Intron, , , ,C5
+Ttpal,163432841,chr2,g,SNP,Hom,a,NM_029512,Intron, , , ,C8
+Ttpal,163432841,chr2,g,SNP,Hom,a,NM_029512,Intron, , , ,D10
+Ttpal,163432841,chr2,g,SNP,Hom,a,NM_181734,Intron, , , ,G8
+Ttpal,163432841,chr2,g,SNP,Het,a,NM_029512,Intron, , , ,Toomie
+Ttpal,163432844,chr2,t,SNP,Hom,c,NM_029512,Intron, , , ,C5
+Ttpal,163432844,chr2,t,SNP,Hom,c,NM_029512,Intron, , , ,C8
+Ttpal,163432844,chr2,t,SNP,Hom,c,NM_029512,Intron, , , ,D10
+Ttpal,163432844,chr2,t,SNP,Hom,c,NM_029512,Intron, , , ,G8
+Ttpal,163432844,chr2,t,SNP,Het,c,NM_029512,Intron, , , ,Toomie
+Serinc3,163457971,chr2,c,SNP,Hom,a,NM_012032,CDS,Non-Synonymous,V,F,C5
+Serinc3,163457971,chr2,c,SNP,Hom,a,NM_012032,CDS,Non-Synonymous,V,F,C8
+Serinc3,163457971,chr2,c,SNP,Hom,a,NM_012032,CDS,Non-Synonymous,V,F,D10
+Serinc3,163457971,chr2,c,SNP,Hom,a,NM_012032,CDS,Non-Synonymous,V,F,F2
+Serinc3,163457971,chr2,c,SNP,Hom,a,NM_012032,CDS,Non-Synonymous,V,F,G8
+Kcns1,163990796,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,C5
+Kcns1,163990796,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,C8
+Kcns1,163990796,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,D10
+Kcns1,163990796,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,F2
+Kcns1,163990796,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,G8
+Kcns1,163990798,chr2,a,SNP,Hom,g,NM_008435,Intron, , , ,C5
+Kcns1,163990798,chr2,a,SNP,Hom,g,NM_008435,Intron, , , ,C8
+Kcns1,163990798,chr2,a,SNP,Hom,g,NM_008435,Intron, , , ,D10
+Kcns1,163990798,chr2,a,SNP,Hom,g,NM_008435,Intron, , , ,F2
+Kcns1,163990798,chr2,a,SNP,Hom,g,NM_008435,Intron, , , ,G8
+Kcns1,163990801,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,C5
+Kcns1,163990801,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,C8
+Kcns1,163990801,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,D10
+Kcns1,163990801,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,F2
+Kcns1,163990801,chr2,a,SNP,Hom,c,NM_008435,Intron, , , ,G8
+Svs5,164159374,chr2,g,SNP,Hom,a,NM_009301,3' UTR,Non-Coding, , ,C5
+Svs5,164159374,chr2,g,SNP,Hom,a,NM_009301,3' UTR,Non-Coding, , ,C8
+Svs5,164159374,chr2,g,SNP,Hom,a,NM_009301,3' UTR,Non-Coding, , ,D10
+Svs5,164159374,chr2,g,SNP,Hom,a,NM_009301,3' UTR,Non-Coding, , ,F2
+Svs5,164159374,chr2,g,SNP,Hom,a,NM_009301,3' UTR,Non-Coding, , ,G8
+Ctsa,164665914,chr2, ,INS,Het,gg,NM_001038492,3' UTR,Non-Coding, , ,C5
+Ctsa,164665914,chr2, ,INS,Het,gg,NM_001038492,3' UTR,Non-Coding, , ,C8
+Ctsa,164665914,chr2, ,INS,Het,gg,NM_001038492,3' UTR,Non-Coding, , ,D10
+Ctsa,164665914,chr2, ,INS,Het,gg,NM_001038492,3' UTR,Non-Coding, , ,G8
+Ctsa,164665914,chr2, ,INS,Het,gg,NM_001038492,3' UTR,Non-Coding, , ,Toomie
+Slc12a5,164808871,chr2,a,SNP,Het,t,NM_020333,Intron, , , ,C5
+Slc12a5,164808871,chr2,a,SNP,Het,t,NM_020333,Intron, , , ,C8
+Slc12a5,164808871,chr2,a,SNP,Het,t,NM_020333,Intron, , , ,D10
+Slc12a5,164808871,chr2,a,SNP,Het,t,NM_020333,Intron, , , ,F2
+Slc12a5,164808871,chr2,a,SNP,Het,t,NM_020333,Intron, , , ,G8
+Sulf2,165942357,chr2,t,SNP,Hom,c,NM_028072,Intron, , , ,C5
+Sulf2,165942357,chr2,t,SNP,Hom,c,NM_028072,Intron, , , ,C8
+Sulf2,165942357,chr2,t,SNP,Hom,c,NM_028072,Intron, , , ,D10
+Sulf2,165942357,chr2,t,SNP,Hom,c,NM_028072,Intron, , , ,G8
+Sulf2,165942357,chr2,t,SNP,Het,c,NM_028072,Intron, , , ,Toomie
+Prex1,166403291,chr2,ac,MNP,Hom,ga,NM_177782,Intron, , , ,C5
+Prex1,166403291,chr2,ac,MNP,Hom,ga,NM_177782,Intron, , , ,D10
+Prex1,166403291,chr2,ac,MNP,Hom,ga,NM_177782,Intron, , , ,G8
+Prex1,166403291,chr2,ac,MNP,Het,ga,NM_177782,Intron, , , ,G9
+Prex1,166403291,chr2,a,SNP,Het,g,NM_177782,Intron, , , ,Toomie
+Arfgef2,166699340,chr2,gc,MNP,Hom,at,NM_001085495,Intron, , , ,C5
+Arfgef2,166699340,chr2,gc,MNP,Hom,at,NM_001085495,Intron, , , ,C8
+Arfgef2,166699340,chr2,gc,MNP,Hom,at,NM_001085495,Intron, , , ,D10
+Arfgef2,166699340,chr2,gc,MNP,Hom,at,NM_001085495,Intron, , , ,F2
+Arfgef2,166699340,chr2,gc,MNP,Hom,at,NM_001085495,Intron, , , ,G8
+Cse1l,166768837,chr2,g,SNP,Hom,a,NM_023565,Intron, , , ,C5
+Cse1l,166768837,chr2,g,SNP,Hom,a,NM_023565,Intron, , , ,C8
+Cse1l,166768837,chr2,g,SNP,Hom,a,NM_023565,Intron, , , ,F2
+Cse1l,166768837,chr2,g,SNP,Hom,a,NM_023565,Intron, , , ,G8
+Cse1l,166768837,chr2,g,SNP,Het,a,NM_023565,Intron, , , ,Toomie
+Ptpn1,167758161,chr2,g,SNP,Hom,a,NM_011201,Intron, , , ,C5
+Ptpn1,167758161,chr2,g,SNP,Hom,a,NM_011201,Intron, , , ,C8
+Ptpn1,167758161,chr2,g,SNP,Hom,a,NM_011201,Intron, , , ,D10
+Ptpn1,167758161,chr2,g,SNP,Hom,a,NM_011201,Intron, , , ,F2
+Ptpn1,167758161,chr2,g,SNP,Hom,a,NM_011201,Intron, , , ,G8
+Bcar3,122226315,chr3,a,DEL,Het, ,NM_013867,Intron, , , ,C5
+Bcar3,122226315,chr3,a,DEL,Het, ,NM_013867,Intron, , , ,C8
+Bcar3,122226315,chr3,a,DEL,Het, ,NM_013867,Intron, , , ,G8
+Bcar3,122226315,chr3,a,DEL,Het, ,NM_013867,Intron, , , ,G9
+Bcar3,122226315,chr3,a,DEL,Het, ,NM_013867,Intron, , , ,Toomie
+Sec24d,123056236,chr3, ,INS,Het,a,NM_027135,Intron, , , ,C5
+Sec24d,123056236,chr3, ,INS,Het,a,NM_027135,Intron, , , ,C8
+Sec24d,123056236,chr3, ,INS,Het,a,NM_027135,Intron, , , ,G8
+Sec24d,123056236,chr3, ,INS,Het,a,NM_027135,Intron, , , ,G9
+Sec24d,123056236,chr3, ,INS,Het,a,NM_027135,Intron, , , ,Toomie
+Gbp2,142288387,chr3,g,SNP,Het,t,NM_010260,Intron, , , ,C5
+Gbp2,142288387,chr3,g,SNP,Het,t,NM_010260,Intron, , , ,C8
+Gbp2,142288387,chr3,g,SNP,Het,t,NM_010260,Intron, , , ,D10
+Gbp2,142288387,chr3,g,SNP,Het,t,NM_010260,Intron, , , ,F2
+Gbp2,142288387,chr3,g,SNP,Het,t,NM_010260,Intron, , , ,G8
+Lrrc7,157790287,chr3, ,INS,Het,a,NM_001081358,Intron, , , ,C5
+Lrrc7,157790287,chr3, ,INS,Het,a,NM_001081358,Intron, , , ,C8
+Lrrc7,157790287,chr3, ,INS,Het,a,NM_001081358,Intron, , , ,G8
+Lrrc7,157790287,chr3, ,INS,Het,a,NM_001081358,Intron, , , ,G9
+Lrrc7,157790287,chr3, ,INS,Het,a,NM_001081358,Intron, , , ,Toomie
+Dnaic1,41542326,chr4,a,SNP,Hom,g,NM_175138,Intron, , , ,C5
+Dnaic1,41542326,chr4,a,SNP,Hom,g,NM_175138,Intron, , , ,C8
+Dnaic1,41542326,chr4,a,SNP,Hom,g,NM_175138,Intron, , , ,G8
+Dnaic1,41542326,chr4,a,SNP,Hom,g,NM_175138,Intron, , , ,G9
+Dnaic1,41542326,chr4,a,SNP,Hom,g,NM_175138,Intron, , , ,Toomie
+4930417M19Rik,43315593,chr4,a,DEL,Hom, ,NM_177195,Intron, , , ,C5
+4930417M19Rik,43315593,chr4,a,DEL,Hom, ,NM_177195,Intron, , , ,C8
+4930417M19Rik,43315593,chr4,a,DEL,Hom, ,NM_177195,Intron, , , ,G8
+4930417M19Rik,43315593,chr4,a,DEL,Hom, ,NM_177195,Intron, , , ,G9
+4930417M19Rik,43315593,chr4,a,DEL,Hom, ,NM_177195,Intron, , , ,Toomie
+Cd72,43465161,chr4,t,SNP,Hom,a,NM_001110320,Intron, , , ,C5
+Cd72,43465161,chr4,t,SNP,Hom,a,NM_001110320,Intron, , , ,C8
+Cd72,43465161,chr4,t,SNP,Hom,a,NM_001110320,Intron, , , ,D10
+Cd72,43465161,chr4,t,SNP,Hom,a,NM_001110320,Intron, , , ,G8
+Cd72,43465161,chr4,tg,MIXED,Hom,a,NM_001110320,Intron, , , ,G9
+Mpdz,80925428,chr4,act,DEL,Het, ,NM_010820,3' UTR,Non-Coding, , ,C5
+Mpdz,80925428,chr4,act,DEL,Het, ,NM_010820,3' UTR,Non-Coding, , ,D10
+Mpdz,80925428,chr4,act,DEL,Het, ,NM_010820,3' UTR,Non-Coding, , ,G8
+Mpdz,80925428,chr4,act,DEL,Het, ,NM_010820,3' UTR,Non-Coding, , ,G9
+Mpdz,80925428,chr4,a,DEL,Het, ,NM_010820,3' UTR,Non-Coding, , ,Toomie
+Mpdz,80994622,chr4,tg,MNP,Het,ca,NM_010820,CDS,Non-Synonymous,A,V,C5
+Mpdz,80994622,chr4,tg,MNP,Het,ca,NM_010820,CDS,Non-Synonymous,A,V,D10
+Mpdz,80994622,chr4,tg,MNP,Het,ca,NM_010820,CDS,Non-Synonymous,A,V,G8
+Mpdz,80994622,chr4,tg,MNP,Het,ca,NM_010820,CDS,Non-Synonymous,A,V,G9
+Mpdz,80994622,chr4,t,SNP,Het,c,NM_010820,CDS,Non-Synonymous,A,V,Toomie
+Fbxo2,147539655,chr4,g,DEL,Het, ,NM_176848,Intron, , , ,C5
+Fbxo2,147539655,chr4,gt,DEL,Het,t,NM_176848,Intron, , , ,D10
+Fbxo2,147539655,chr4,g,DEL,Het, ,NM_176848,Intron, , , ,F2
+Fbxo2,147539655,chr4,g,DEL,Het, ,NM_176848,Intron, , , ,G8
+Fbxo2,147539655,chr4,g,DEL,Het, ,NM_176848,Intron, , , ,G9
+Uts2,150374209,chr4,c,SNP,Het,t,NM_011910,Intron, , , ,C5
+Uts2,150374209,chr4,c,SNP,Het,t,NM_011910,Intron, , , ,C8
+Uts2,150374209,chr4,c,SNP,Het,t,NM_011910,Intron, , , ,D10
+Uts2,150374209,chr4,c,SNP,Het,t,NM_011910,Intron, , , ,F2
+Uts2,150374209,chr4,c,SNP,Het,t,NM_011910,Intron, , , ,G8
+Camta1,150436825,chr4, ,INS,Het,gtgt,NM_001081557,3' UTR,Non-Coding, , ,C5
+Camta1,150436825,chr4, ,INS,Het,gtgt,NM_001081557,3' UTR,Non-Coding, , ,C8
+Camta1,150436825,chr4, ,INS,Het,gtgt,NM_001081557,3' UTR,Non-Coding, , ,D10
+Camta1,150436825,chr4, ,INS,Het,gtgt,NM_001081557,3' UTR,Non-Coding, , ,F2
+Camta1,150436825,chr4, ,INS,Het,gtgt,NM_001081557,3' UTR,Non-Coding, , ,G8
+Tnfrsf25,151490735,chr4, ,INS,Het,gctgct,NM_033042,CDS,Non-Synonymous,L,LLL,C5
+Tnfrsf25,151490735,chr4, ,INS,Het,gctgct,NM_033042,CDS,Non-Synonymous,L,LLL,D10
+Tnfrsf25,151490735,chr4, ,INS,Het,gctgct,NM_033042,CDS,Non-Synonymous,L,LLL,G8
+Tnfrsf25,151490735,chr4, ,INS,Het,gctgct,NM_033042,CDS,Non-Synonymous,L,LLL,G9
+Tnfrsf25,151490735,chr4, ,INS,Het,gctgct,NM_033042,CDS,Non-Synonymous,L,LLL,Toomie
+Prkcz,154645733,chr4,g,DEL,Het, ,NM_001039079,Intron, , , ,C5
+Prkcz,154645733,chr4,g,DEL,Het, ,NM_001039079,Intron, , , ,C8
+Prkcz,154645733,chr4,g,DEL,Het, ,NM_001039079,Intron, , , ,G8
+Prkcz,154645733,chr4,g,DEL,Het, ,NM_008860,Intron, , , ,G9
+Prkcz,154645733,chr4,g,DEL,Het, ,NM_001039079,Intron, , , ,Toomie
+Gabrd,154763003,chr4, ,INS,Het,g,NM_008072,Intron, , , ,C5
+Gabrd,154763003,chr4, ,INS,Het,g,NM_008072,Intron, , , ,C8
+Gabrd,154763003,chr4, ,INS,Het,g,NM_008072,Intron, , , ,F2
+Gabrd,154763003,chr4, ,INS,Het,g,NM_008072,Intron, , , ,G8
+Gabrd,154763003,chr4, ,INS,Het,g,NM_008072,Intron, , , ,Toomie
+2010015L04Rik,154812428,chr4,a,SNP,Het,c,NM_177674,Intron, , , ,C5
+2010015L04Rik,154812428,chr4,a,SNP,Het,c,NM_177674,Intron, , , ,C8
+2010015L04Rik,154812428,chr4,a,SNP,Het,c,NM_177674,Intron, , , ,F2
+2010015L04Rik,154812428,chr4,a,SNP,Het,c,NM_177674,Intron, , , ,G8
+2010015L04Rik,154812428,chr4,a,SNP,Het,c,NM_177674,Intron, , , ,G9
+2610204G22Rik,155136316,chr4,t,SNP,Het,g,NR_027971,Noncoding Exon,Non-Coding, , ,C5
+2610204G22Rik,155136316,chr4,t,SNP,Het,g,NR_027971,Noncoding Exon,Non-Coding, , ,C8
+2610204G22Rik,155136316,chr4,t,SNP,Het,g,NR_027971,Noncoding Exon,Non-Coding, , ,D10
+2610204G22Rik,155136316,chr4,t,SNP,Het,g,NR_027971,Noncoding Exon,Non-Coding, , ,F2
+2610204G22Rik,155136316,chr4,t,SNP,Het,g,NR_027971,Noncoding Exon,Non-Coding, , ,G8
+Ttll10,155417099,chr4,g,SNP,Het,a,NM_029264,Intron, , , ,C5
+Ttll10,155417099,chr4,g,SNP,Het,a,NM_029264,Intron, , , ,C8
+Ttll10,155417099,chr4,g,SNP,Het,a,NM_029264,Intron, , , ,F2
+Ttll10,155417099,chr4,g,SNP,Het,a,NM_029264,Intron, , , ,G8
+Ttll10,155417099,chr4,g,SNP,Het,a,NM_029264,Intron, , , ,Toomie
+Armc10,21159121,chr5,a,SNP,Hom,t,NM_026034,Intron, , , ,C5
+Armc10,21159121,chr5,a,SNP,Het,t,NM_026034,Intron, , , ,C8
+Armc10,21159121,chr5,a,SNP,Hom,t,NM_026034,Intron, , , ,D10
+Armc10,21159121,chr5,a,SNP,Hom,t,NM_026034,Intron, , , ,G8
+Armc10,21159121,chr5,a,SNP,Het,t,NM_026034,Intron, , , ,Toomie
+Napepld,21195611,chr5,g,DEL,Hom, ,NM_178728,Intron, , , ,C5
+Napepld,21195611,chr5,g,DEL,Hom, ,NM_178728,Intron, , , ,C8
+Napepld,21195611,chr5,g,DEL,Hom, ,NM_178728,Intron, , , ,D10
+Napepld,21195611,chr5,g,DEL,Hom, ,NM_178728,Intron, , , ,G8
+Napepld,21195611,chr5,g,DEL,Hom, ,NM_178728,Intron, , , ,Toomie
+Dnajc2,21282494,chr5,aa,MNP,Hom,gc,NM_009584,Intron, , , ,C5
+Dnajc2,21282494,chr5,aa,MNP,Hom,gc,NM_009584,Intron, , , ,D10
+Dnajc2,21282494,chr5,aa,MNP,Hom,gc,NM_009584,Intron, , , ,G8
+Dnajc2,21282494,chr5,aa,MNP,Het,gc,NM_009584,Intron, , , ,G9
+Dnajc2,21282494,chr5,a,SNP,Het,g,NM_009584,Intron, , , ,Toomie
+Lhfpl3,22298208,chr5,a,DEL,Het, ,NM_001081231,Intron, , , ,C5
+Lhfpl3,22298208,chr5,a,DEL,Het, ,NM_001081231,Intron, , , ,C8
+Lhfpl3,22298208,chr5,a,DEL,Het, ,NM_001081231,Intron, , , ,D10
+Lhfpl3,22298208,chr5,a,DEL,Het, ,NM_001081231,Intron, , , ,G9
+Lhfpl3,22298208,chr5,a,DEL,Het, ,NM_001081231,Intron, , , ,Toomie
+Nos3,23873286,chr5,ccc,DEL,Het, ,NM_008713,Intron, , , ,C5
+Nos3,23873286,chr5,ccc,DEL,Het, ,NM_008713,Intron, , , ,C8
+Nos3,23873286,chr5,ccc,DEL,Hom, ,NM_008713,Intron, , , ,G8
+Nos3,23873286,chr5,ccc,DEL,Het, ,NM_008713,Intron, , , ,G9
+Nos3,23873286,chr5,c,DEL,Het, ,NM_008713,Intron, , , ,Toomie
+Nos3,23877820,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,C5
+Nos3,23877820,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,D10
+Nos3,23877820,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,G8
+Nos3,23877820,chr5,c,SNP,Het,a,NM_008713,Intron, , , ,G9
+Nos3,23877820,chr5,c,SNP,Het,a,NM_008713,Intron, , , ,Toomie
+Nos3,23883367,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,C5
+Nos3,23883367,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,D10
+Nos3,23883367,chr5,c,SNP,Hom,a,NM_008713,Intron, , , ,G8
+Nos3,23883367,chr5,c,SNP,Het,a,NM_008713,Intron, , , ,G9
+Nos3,23883367,chr5,c,SNP,Het,a,NM_008713,Intron, , , ,Toomie
+Atg9b,23893620,chr5,c,SNP,Hom,g,NM_001002897,CDS,Synonymous,S,S,C5
+Atg9b,23893620,chr5,c,SNP,Het,g,NM_001002897,CDS,Synonymous,S,S,C8
+Atg9b,23893620,chr5,c,SNP,Hom,g,NM_001002897,CDS,Synonymous,S,S,D10
+Atg9b,23893620,chr5,c,SNP,Hom,g,NM_001002897,CDS,Synonymous,S,S,G8
+Atg9b,23893620,chr5,c,SNP,Het,g,NM_001002897,CDS,Synonymous,S,S,Toomie
+Cdk5,23926183,chr5,g,SNP,Hom,t,NM_007668,Intron, , , ,C5
+Cdk5,23926183,chr5,g,SNP,Het,t,NM_007668,Intron, , , ,C8
+Cdk5,23926183,chr5,g,SNP,Hom,t,NM_007668,Intron, , , ,D10
+Cdk5,23926183,chr5,g,SNP,Hom,t,NM_007668,Intron, , , ,G8
+Cdk5,23926183,chr5,g,SNP,Het,t,NM_007668,Intron, , , ,Toomie
+Cdk5,23926186,chr5,cc,DEL,Hom, ,NM_007668,Intron, , , ,C5
+Cdk5,23926186,chr5,cc,DEL,Het, ,NM_007668,Intron, , , ,C8
+Cdk5,23926186,chr5,cc,DEL,Hom, ,NM_007668,Intron, , , ,D10
+Cdk5,23926186,chr5,cc,DEL,Hom, ,NM_007668,Intron, , , ,G8
+Cdk5,23926186,chr5,c,DEL,Het, ,NM_007668,Intron, , , ,Toomie
+Cdk5,23926198,chr5,a,SNP,Hom,g,NM_007668,Intron, , , ,C5
+Cdk5,23926198,chr5,a,SNP,Het,g,NM_007668,Intron, , , ,C8
+Cdk5,23926198,chr5,a,SNP,Hom,g,NM_007668,Intron, , , ,D10
+Cdk5,23926198,chr5,a,SNP,Hom,g,NM_007668,Intron, , , ,G8
+Cdk5,23926198,chr5,a,SNP,Het,g,NM_007668,Intron, , , ,Toomie
+Cdk5,23926731,chr5, ,INS,Hom,g,NM_007668,Intron, , , ,C5
+Cdk5,23926731,chr5, ,INS,Hom,g,NM_007668,Intron, , , ,D10
+Cdk5,23926731,chr5, ,INS,Hom,g,NM_007668,Intron, , , ,G8
+Cdk5,23926731,chr5, ,INS,Het,g,NM_007668,Intron, , , ,G9
+Cdk5,23926731,chr5, ,INS,Het,g,NM_007668,Intron, , , ,Toomie
+Cdk5,23928299,chr5,cc,DEL,Het, ,NM_007668,Intron, , , ,C5
+Cdk5,23928299,chr5,cc,DEL,Het, ,NM_007668,Intron, , , ,C8
+Cdk5,23928299,chr5,cc,DEL,Hom, ,NM_007668,Intron, , , ,G8
+Cdk5,23928299,chr5,cc,DEL,Het, ,NM_007668,Intron, , , ,G9
+Cdk5,23928299,chr5,c,DEL,Het, ,NM_007668,Intron, , , ,Toomie
+Slc4a2,23937339,chr5, ,INS,Hom,c,NM_009207,Intron, , , ,C5
+Slc4a2,23937339,chr5, ,INS,Het,c,NM_009207,Intron, , , ,C8
+Slc4a2,23937339,chr5, ,INS,Hom,c,NM_009207,Intron, , , ,G8
+Slc4a2,23937339,chr5, ,INS,Het,c,NM_009207,Intron, , , ,G9
+Slc4a2,23937339,chr5, ,INS,Het,c,NM_009207,Intron, , , ,Toomie
+Agap3,23957350,chr5, ,INS,Het,ctgggc, ,Upstream, , , ,C5
+Agap3,23957350,chr5, ,INS,Het,ctgggc, ,Upstream, , , ,C8
+Agap3,23957350,chr5, ,INS,Het,ctgggc, ,Upstream, , , ,G8
+Agap3,23957350,chr5, ,INS,Het,ctgggc, ,Upstream, , , ,G9
+Agap3,23957350,chr5, ,INS,Het,ctgggc, ,Upstream, , , ,Toomie
+Gbx1,24032035,chr5,a,SNP,Hom,c,NM_015739,CDS,Synonymous,T,T,C5
+Gbx1,24032035,chr5,a,SNP,Hom,c,NM_015739,CDS,Synonymous,T,T,D10
+Gbx1,24032035,chr5,a,SNP,Hom,c,NM_015739,CDS,Synonymous,T,T,G8
+Gbx1,24032035,chr5,a,SNP,Het,c,NM_015739,CDS,Synonymous,T,T,G9
+Gbx1,24032035,chr5,a,SNP,Het,c,NM_015739,CDS,Synonymous,T,T,Toomie
+Asb10,24046418,chr5,c,SNP,Hom,t, ,Upstream, , , ,C5
+Asb10,24046418,chr5,c,SNP,Hom,t, ,Upstream, , , ,D10
+Asb10,24046418,chr5,c,SNP,Hom,t, ,Upstream, , , ,G8
+Asb10,24046418,chr5,c,SNP,Het,t, ,Upstream, , , ,G9
+Asb10,24046418,chr5,c,SNP,Het,t, ,Upstream, , , ,Toomie
+Mll3,24819303,chr5,cct,DEL,Hom, ,NM_001081383,CDS,Non-Synonymous,QE,Q,C5
+Mll3,24819303,chr5,cct,DEL,Hom, ,NM_001081383,CDS,Non-Synonymous,QE,Q,D10
+Mll3,24819303,chr5,cct,DEL,Hom, ,NM_001081383,CDS,Non-Synonymous,QE,Q,G8
+Mll3,24819303,chr5,cct,DEL,Het, ,NM_001081383,CDS,Non-Synonymous,QE,Q,G9
+Mll3,24819303,chr5,c,DEL,Het, ,NM_001081383,CDS,Non-Synonymous,QE,Q,Toomie
+Poln,34447808,chr5,t,DEL,Het, ,NM_181857,Intron, , , ,C5
+Poln,34447808,chr5,t,DEL,Het, ,NM_181857,Intron, , , ,C8
+Poln,34447808,chr5,t,DEL,Hom, ,NM_181857,Intron, , , ,D10
+Poln,34447808,chr5,t,DEL,Het, ,NM_181857,Intron, , , ,G9
+Poln,34447808,chr5,t,DEL,Het, ,NM_181857,Intron, , , ,Toomie
+Ccni,93624834,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,C5
+Ccni,93624834,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,C8
+Ccni,93624834,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,F2
+Ccni,93624834,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,G8
+Ccni,93624834,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,G9
+Ccni,93624873,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,C5
+Ccni,93624873,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,C8
+Ccni,93624873,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,F2
+Ccni,93624873,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,G8
+Ccni,93624873,chr5,t,SNP,Het,c,NM_017367,Intron, , , ,G9
+Ccni,93624880,chr5,g,SNP,Het,c,NM_017367,Intron, , , ,C5
+Ccni,93624880,chr5,g,SNP,Het,c,NM_017367,Intron, , , ,C8
+Ccni,93624880,chr5,g,SNP,Het,c,NM_017367,Intron, , , ,F2
+Ccni,93624880,chr5,g,SNP,Het,c,NM_017367,Intron, , , ,G8
+Ccni,93624880,chr5,g,SNP,Het,c,NM_017367,Intron, , , ,G9
+Ccni,93624887,chr5,c,SNP,Het,g,NM_017367,Intron, , , ,C5
+Ccni,93624887,chr5,c,SNP,Het,g,NM_017367,Intron, , , ,C8
+Ccni,93624887,chr5,c,SNP,Het,g,NM_017367,Intron, , , ,F2
+Ccni,93624887,chr5,c,SNP,Het,g,NM_017367,Intron, , , ,G8
+Ccni,93624887,chr5,c,SNP,Het,g,NM_017367,Intron, , , ,G9
+Acacb,114690710,chr5, ,INS,Het,a,NM_133904,Intron, , , ,C5
+Acacb,114690710,chr5, ,INS,Het,a,NM_133904,Intron, , , ,C8
+Acacb,114690710,chr5, ,INS,Het,a,NM_133904,Intron, , , ,D10
+Acacb,114690710,chr5, ,INS,Het,a,NM_133904,Intron, , , ,G8
+Acacb,114690710,chr5, ,INS,Het,a,NM_133904,Intron, , , ,Toomie
+Nos1,118355507,chr5,g,SNP,Hom,a,NM_008712,Intron, , , ,C5
+Nos1,118355507,chr5,g,SNP,Het,a,NM_008712,Intron, , , ,C8
+Nos1,118355507,chr5,g,SNP,Hom,a,NM_008712,Intron, , , ,D10
+Nos1,118355507,chr5,g,SNP,Het,a,NM_008712,Intron, , , ,G9
+Nos1,118355507,chr5,g,SNP,Het,a,NM_008712,Intron, , , ,Toomie
+Nos1,118355512,chr5,t,SNP,Hom,c,NM_008712,Intron, , , ,C5
+Nos1,118355512,chr5,t,SNP,Het,c,NM_008712,Intron, , , ,C8
+Nos1,118355512,chr5,t,SNP,Hom,c,NM_008712,Intron, , , ,D10
+Nos1,118355512,chr5,t,SNP,Het,c,NM_008712,Intron, , , ,G9
+Nos1,118355512,chr5,t,SNP,Het,c,NM_008712,Intron, , , ,Toomie
+Pax4,28394745,chr6,g,SNP,Het,t,NM_001159925,Intron, , , ,C5
+Pax4,28394745,chr6,g,SNP,Het,t,NM_001159925,Intron, , , ,C8
+Pax4,28394745,chr6,g,SNP,Het,t,NM_001159925,Intron, , , ,D10
+Pax4,28394745,chr6,g,SNP,Het,t,NM_001159925,Intron, , , ,F2
+Pax4,28394745,chr6,g,SNP,Het,t,NM_001159925,Intron, , , ,G8
+Ccdc129,55925574,chr6, ,INS,Het,t,NM_001081665,Intron, , , ,C5
+Ccdc129,55925574,chr6, ,INS,Het,t,NM_001081665,Intron, , , ,C8
+Ccdc129,55925574,chr6, ,INS,Het,t,NM_001081665,Intron, , , ,D10
+Ccdc129,55925574,chr6, ,INS,Het,t,NM_001081665,Intron, , , ,G9
+Ccdc129,55925574,chr6, ,INS,Het,t,NM_001081665,Intron, , , ,Toomie
+Pde1c,56087330,chr6,g,SNP,Het,c,NM_001025568,Intron, , , ,C5
+Pde1c,56087330,chr6,g,SNP,Het,c,NM_001025568,Intron, , , ,C8
+Pde1c,56087330,chr6,g,SNP,Het,c,NM_001159953,Intron, , , ,F2
+Pde1c,56087330,chr6,g,SNP,Het,c,NM_001025568,Intron, , , ,G9
+Pde1c,56087330,chr6,g,SNP,Het,c,NM_001025568,Intron, , , ,Toomie
+Pde1c,56092041,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,C5
+Pde1c,56092041,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,C8
+Pde1c,56092041,chr6,t,SNP,Het,c,NM_001159953,Intron, , , ,D10
+Pde1c,56092041,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,F2
+Pde1c,56092041,chr6,t,SNP,Het,c,NM_001159960,Intron, , , ,Toomie
+Pde1c,56092045,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,C5
+Pde1c,56092045,chr6,t,SNP,Het,c,NM_001159956,Intron, , , ,C8
+Pde1c,56092045,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,D10
+Pde1c,56092045,chr6,t,SNP,Het,c,NM_001159953,Intron, , , ,F2
+Pde1c,56092045,chr6,t,SNP,Het,c,NM_001025568,Intron, , , ,Toomie
+Pde1c,56092140,chr6,t,SNP,Het,c,NM_001025568,CDS,Synonymous,P,P,C5
+Pde1c,56092140,chr6,t,SNP,Het,c,NM_001025568,CDS,Synonymous,P,P,D10
+Pde1c,56092140,chr6,t,SNP,Het,c,NM_001159960,CDS,Synonymous,P,P,F2
+Pde1c,56092140,chr6,t,SNP,Het,c,NM_001025568,CDS,Synonymous,P,P,G9
+Pde1c,56092140,chr6,t,SNP,Het,c,NM_001025568,CDS,Synonymous,P,P,Toomie
+Avl9,56696480,chr6,a,SNP,Het,g,NM_030235,Intron, , , ,C5
+Avl9,56696480,chr6,a,SNP,Het,g,NM_030235,Intron, , , ,C8
+Avl9,56696480,chr6,a,SNP,Het,g,NM_030235,Intron, , , ,D10
+Avl9,56696480,chr6,a,SNP,Het,g,NM_030235,Intron, , , ,F2
+Avl9,56696480,chr6,a,SNP,Het,g,NM_030235,Intron, , , ,Toomie
+V1rc19,56935326,chr6,a,DEL,Het, , ,Upstream, , , ,C5
+V1rc19,56935326,chr6,a,DEL,Het, , ,Upstream, , , ,C8
+V1rc19,56935326,chr6,a,DEL,Het, , ,Upstream, , , ,F2
+V1rc19,56935326,chr6,a,DEL,Het, , ,Upstream, , , ,G9
+V1rc19,56935326,chr6,a,DEL,Het, , ,Upstream, , , ,Toomie
+V1rc32,56986706,chr6,t,SNP,Het,c,NM_134187,CDS,Synonymous,F,F,C5
+V1rc32,56986706,chr6,t,SNP,Het,c,NM_134187,CDS,Synonymous,F,F,D10
+V1rc32,56986706,chr6,t,SNP,Het,c,NM_134187,CDS,Synonymous,F,F,F2
+V1rc32,56986706,chr6,t,SNP,Het,c,NM_134187,CDS,Synonymous,F,F,G8
+V1rc32,56986706,chr6,t,SNP,Het,c,NM_134187,CDS,Synonymous,F,F,G9
+V1rc32,56986741,chr6, ,INS,Het,a,NM_134187,CDS,Frameshift, , ,C5
+V1rc32,56986741,chr6, ,INS,Het,a,NM_134187,CDS,Frameshift, , ,D10
+V1rc32,56986741,chr6, ,INS,Het,a,NM_134187,CDS,Frameshift, , ,F2
+V1rc32,56986741,chr6, ,INS,Het,a,NM_134187,CDS,Frameshift, , ,G8
+V1rc32,56986741,chr6, ,INS,Het,a,NM_134187,CDS,Frameshift, , ,G9
+V1rc7,57183397,chr6, ,INS,Het,tt, ,Upstream, , , ,C5
+V1rc7,57183397,chr6, ,INS,Het,tt, ,Upstream, , , ,C8
+V1rc7,57183397,chr6, ,INS,Het,tt, ,Upstream, , , ,G8
+V1rc7,57183397,chr6, ,INS,Het,tt, ,Upstream, , , ,G9
+V1rc7,57183397,chr6, ,INS,Het,tt, ,Upstream, , , ,Toomie
+V1rc27,57355156,chr6,a,SNP,Het,g,NM_134182,CDS,Synonymous,L,L,C5
+V1rc27,57355156,chr6,a,SNP,Het,g,NM_134182,CDS,Synonymous,L,L,D10
+V1rc27,57355156,chr6,a,SNP,Het,g,NM_134182,CDS,Synonymous,L,L,F2
+V1rc27,57355156,chr6,a,SNP,Het,g,NM_134182,CDS,Synonymous,L,L,G8
+V1rc27,57355156,chr6,a,SNP,Het,g,NM_134182,CDS,Synonymous,L,L,Toomie
+Herc5,57560992,chr6, ,INS,Het,a,NM_025992,Intron, , , ,C5
+Herc5,57560992,chr6, ,INS,Het,a,NM_025992,Intron, , , ,C8
+Herc5,57560992,chr6, ,INS,Het,a,NM_025992,Intron, , , ,D10
+Herc5,57560992,chr6, ,INS,Het,a,NM_025992,Intron, , , ,G9
+Herc5,57560992,chr6, ,INS,Het,a,NM_025992,Intron, , , ,Toomie
+Herc5,57601911,chr6,c,SNP,Het,t,NM_025992,Intron, , , ,C5
+Herc5,57601911,chr6,c,SNP,Het,t,NM_025992,Intron, , , ,D10
+Herc5,57601911,chr6,c,SNP,Het,t,NM_025992,Intron, , , ,F2
+Herc5,57601911,chr6,c,SNP,Het,t,NM_025992,Intron, , , ,G8
+Herc5,57601911,chr6,c,SNP,Het,t,NM_025992,Intron, , , ,Toomie
+Herc5,57601923,chr6,c,SNP,Het,g,NM_025992,Intron, , , ,C5
+Herc5,57601923,chr6,c,SNP,Het,g,NM_025992,Intron, , , ,D10
+Herc5,57601923,chr6,c,SNP,Het,g,NM_025992,Intron, , , ,F2
+Herc5,57601923,chr6,c,SNP,Het,g,NM_025992,Intron, , , ,G8
+Herc5,57601923,chr6,c,SNP,Het,g,NM_025992,Intron, , , ,Toomie
+Herc5,57601926,chr6,t,SNP,Het,c,NM_025992,Intron, , , ,C5
+Herc5,57601926,chr6,t,SNP,Het,c,NM_025992,Intron, , , ,D10
+Herc5,57601926,chr6,t,SNP,Het,c,NM_025992,Intron, , , ,F2
+Herc5,57601926,chr6,t,SNP,Het,c,NM_025992,Intron, , , ,G8
+Herc5,57601926,chr6,t,SNP,Het,c,NM_025992,Intron, , , ,Toomie
+Herc5,57601929,chr6,c,SNP,Het,a,NM_025992,Intron, , , ,C5
+Herc5,57601929,chr6,c,SNP,Het,a,NM_025992,Intron, , , ,D10
+Herc5,57601929,chr6,c,SNP,Het,a,NM_025992,Intron, , , ,F2
+Herc5,57601929,chr6,c,SNP,Het,a,NM_025992,Intron, , , ,G8
+Herc5,57601929,chr6,c,SNP,Het,a,NM_025992,Intron, , , ,Toomie
+Mrps25,92133696,chr6,g,SNP,Het,a,NM_025578,Intron, , , ,C5
+Mrps25,92133696,chr6,g,SNP,Het,a,NM_025578,Intron, , , ,C8
+Mrps25,92133696,chr6,g,SNP,Het,a,NM_025578,Intron, , , ,F2
+Mrps25,92133696,chr6,g,SNP,Het,a,NM_025578,Intron, , , ,G9
+Mrps25,92133696,chr6,g,SNP,Het,a,NM_025578,Intron, , , ,Toomie
+Frmd4b,97278218,chr6, ,INS,Het,a,NM_145148,Intron, , , ,C5
+Frmd4b,97278218,chr6, ,INS,Het,a,NM_145148,Intron, , , ,C8
+Frmd4b,97278218,chr6, ,INS,Het,a,NM_145148,Intron, , , ,D10
+Frmd4b,97278218,chr6, ,INS,Het,a,NM_145148,Intron, , , ,F2
+Frmd4b,97278218,chr6, ,INS,Het,a,NM_145148,Intron, , , ,Toomie
+Pdzrn3,101103206,chr6,a,SNP,Het,g,NM_018884,Intron, , , ,C5
+Pdzrn3,101103206,chr6,a,SNP,Het,g,NM_018884,Intron, , , ,C8
+Pdzrn3,101103206,chr6,a,SNP,Het,g,NM_018884,Intron, , , ,F2
+Pdzrn3,101103206,chr6,a,SNP,Het,g,NM_018884,Intron, , , ,G9
+Pdzrn3,101103206,chr6,a,SNP,Het,g,NM_018884,Intron, , , ,Toomie
+Cntn3,102153761,chr6,g,SNP,Het,a,NM_008779,Intron, , , ,C5
+Cntn3,102153761,chr6,g,SNP,Het,a,NM_008779,Intron, , , ,C8
+Cntn3,102153761,chr6,g,SNP,Het,a,NM_008779,Intron, , , ,D10
+Cntn3,102153761,chr6,g,SNP,Het,a,NM_008779,Intron, , , ,F2
+Cntn3,102153761,chr6,g,SNP,Het,a,NM_008779,Intron, , , ,Toomie
+Olfr214,116501560,chr6,c,SNP,Het,t, ,Upstream, , , ,C5
+Olfr214,116501560,chr6,c,SNP,Het,t, ,Upstream, , , ,C8
+Olfr214,116501560,chr6,c,SNP,Het,t, ,Upstream, , , ,F2
+Olfr214,116501560,chr6,c,SNP,Het,t, ,Upstream, , , ,G9
+Olfr214,116501560,chr6,c,SNP,Het,t, ,Upstream, , , ,Toomie
+Rasgef1a,118034634,chr6, ,INS,Het,tgggg,NM_027526,Intron, , , ,C5
+Rasgef1a,118034634,chr6, ,INS,Het,tgggg,NM_027526,Intron, , , ,C8
+Rasgef1a,118034634,chr6, ,INS,Het,tgggg,NM_027526,Intron, , , ,F2
+Rasgef1a,118034634,chr6, ,INS,Het,tgggg,NM_027526,Intron, , , ,G9
+Rasgef1a,118034634,chr6, ,INS,Het,tgggg,NM_027526,Intron, , , ,Toomie
+Wnk1,119893946,chr6, ,INS,Het,ttttg,NM_198703,Intron, , , ,C5
+Wnk1,119893946,chr6, ,INS,Het,ttttg,NM_198703,Intron, , , ,C8
+Wnk1,119893946,chr6, ,INS,Het,ttttg,NM_198703,Intron, , , ,G8
+Wnk1,119893946,chr6, ,INS,Het,ttttg,NM_198703,Intron, , , ,G9
+Wnk1,119893946,chr6, ,INS,Het,ttttg,NM_198703,Intron, , , ,Toomie
+Vmn2r20,123336116,chr6,t,SNP,Het,a,NM_001104634,CDS,Non-Synonymous,N,Y,C5
+Vmn2r20,123336116,chr6,t,SNP,Het,a,NM_001104634,CDS,Non-Synonymous,N,Y,C8
+Vmn2r20,123336116,chr6,t,SNP,Het,a,NM_001104634,CDS,Non-Synonymous,N,Y,F2
+Vmn2r20,123336116,chr6,t,SNP,Het,a,NM_001104634,CDS,Non-Synonymous,N,Y,G9
+Vmn2r20,123336116,chr6,t,SNP,Het,a,NM_001104634,CDS,Non-Synonymous,N,Y,Toomie
+Vmn2r20,123346249,chr6,c,SNP,Het,t,NM_001104634,Intron, , , ,C5
+Vmn2r20,123346249,chr6,c,SNP,Het,t,NM_001104634,Intron, , , ,C8
+Vmn2r20,123346249,chr6,c,SNP,Het,t,NM_001104634,Intron, , , ,D10
+Vmn2r20,123346249,chr6,c,SNP,Het,t,NM_001104634,Intron, , , ,F2
+Vmn2r20,123346249,chr6,c,SNP,Het,t,NM_001104634,Intron, , , ,G8
+Vmn2r23,123683321,chr6,c,SNP,Het,a,NM_001104638,CDS,Non-Synonymous,P,T,C5
+Vmn2r23,123683321,chr6,c,SNP,Het,a,NM_001104638,CDS,Non-Synonymous,P,T,C8
+Vmn2r23,123683321,chr6,c,SNP,Het,a,NM_001104638,CDS,Non-Synonymous,P,T,D10
+Vmn2r23,123683321,chr6,c,SNP,Het,a,NM_001104638,CDS,Non-Synonymous,P,T,F2
+Vmn2r23,123683321,chr6,c,SNP,Het,a,NM_001104638,CDS,Non-Synonymous,P,T,G9
+Vmn2r23,123683324,chr6,t,SNP,Het,c,NM_001104638,CDS,Non-Synonymous,F,L,C5
+Vmn2r23,123683324,chr6,t,SNP,Het,c,NM_001104638,CDS,Non-Synonymous,F,L,C8
+Vmn2r23,123683324,chr6,t,SNP,Het,c,NM_001104638,CDS,Non-Synonymous,F,L,D10
+Vmn2r23,123683324,chr6,t,SNP,Het,c,NM_001104638,CDS,Non-Synonymous,F,L,F2
+Vmn2r23,123683324,chr6,t,SNP,Het,c,NM_001104638,CDS,Non-Synonymous,F,L,G9
+Vmn2r24,123728977,chr6,g,SNP,Het,t, ,Upstream, , , ,C5
+Vmn2r24,123728977,chr6,g,SNP,Het,t, ,Upstream, , , ,C8
+Vmn2r24,123728977,chr6,g,SNP,Het,t, ,Upstream, , , ,D10
+Vmn2r24,123728977,chr6,g,SNP,Het,t, ,Upstream, , , ,F2
+Vmn2r24,123728977,chr6,g,SNP,Het,t, ,Upstream, , , ,G9
+Vmn2r24,123766315,chr6, ,INS,Het,aa, ,Downstream, , , ,C5
+Vmn2r24,123766315,chr6, ,INS,Het,aa, ,Downstream, , , ,C8
+Vmn2r24,123766315,chr6, ,INS,Het,aa, ,Downstream, , , ,F2
+Vmn2r24,123766315,chr6, ,INS,Het,aa, ,Downstream, , , ,G9
+Vmn2r24,123766315,chr6, ,INS,Het,aa, ,Downstream, , , ,Toomie
+Vmn2r25,123803185,chr6,g,SNP,Het,a,NM_001104641,CDS,Synonymous,S,S,C5
+Vmn2r25,123803185,chr6,g,SNP,Het,a,NM_001104641,CDS,Synonymous,S,S,C8
+Vmn2r25,123803185,chr6,g,SNP,Het,a,NM_001104641,CDS,Synonymous,S,S,D10
+Vmn2r25,123803185,chr6,g,SNP,Het,a,NM_001104641,CDS,Synonymous,S,S,F2
+Vmn2r25,123803185,chr6,g,SNP,Het,a,NM_001104641,CDS,Synonymous,S,S,G8
+Vmn2r27,124142116,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,G,E,C5
+Vmn2r27,124142116,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,G,E,C8
+Vmn2r27,124142116,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,G,E,D10
+Vmn2r27,124142116,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,G,E,F2
+Vmn2r27,124142116,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,G,E,G9
+Vmn2r27,124174025,chr6,g,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,H,Q,C5
+Vmn2r27,124174025,chr6,g,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,H,Q,C8
+Vmn2r27,124174025,chr6,g,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,H,Q,F2
+Vmn2r27,124174025,chr6,g,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,H,Q,G9
+Vmn2r27,124174025,chr6,g,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,H,Q,Toomie
+Vmn2r27,124174045,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,V,I,C5
+Vmn2r27,124174045,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,V,I,C8
+Vmn2r27,124174045,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,V,I,F2
+Vmn2r27,124174045,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,V,I,G9
+Vmn2r27,124174045,chr6,c,SNP,Het,t,NM_001104642,CDS,Non-Synonymous,V,I,Toomie
+Vmn2r27,124174057,chr6,ac,MNP,Het,gt,NM_001104642,CDS,Non-Synonymous,EY,EH,C5
+Vmn2r27,124174057,chr6,ac,MNP,Het,gt,NM_001104642,CDS,Non-Synonymous,EY,EH,C8
+Vmn2r27,124174057,chr6,ac,MNP,Het,gt,NM_001104642,CDS,Non-Synonymous,EY,EH,F2
+Vmn2r27,124174057,chr6,ac,MNP,Het,gt,NM_001104642,CDS,Non-Synonymous,EY,EH,G9
+Vmn2r27,124174057,chr6,a,SNP,Het,g,NM_001104642,CDS,Non-Synonymous,EY,EH,Toomie
+Vmn2r27,124174129,chr6,t,SNP,Het,a,NM_001104642,CDS,Non-Synonymous,N,Y,C5
+Vmn2r27,124174129,chr6,t,SNP,Het,a,NM_001104642,CDS,Non-Synonymous,N,Y,C8
+Vmn2r27,124174129,chr6,t,SNP,Het,a,NM_001104642,CDS,Non-Synonymous,N,Y,D10
+Vmn2r27,124174129,chr6,t,SNP,Het,a,NM_001104642,CDS,Non-Synonymous,N,Y,F2
+Vmn2r27,124174129,chr6,t,SNP,Het,a,NM_001104642,CDS,Non-Synonymous,N,Y,G9
+Ccnd2,127098913,chr6,g,SNP,Het,a,NM_009829,Intron, , , ,C5
+Ccnd2,127098913,chr6,g,SNP,Het,a,NM_009829,Intron, , , ,F2
+Ccnd2,127098913,chr6,g,SNP,Hom,a,NM_009829,Intron, , , ,G8
+Ccnd2,127098913,chr6,g,SNP,Het,a,NM_009829,Intron, , , ,G9
+Ccnd2,127098913,chr6,g,SNP,Het,a,NM_009829,Intron, , , ,Toomie
+Tead4,128201899,chr6,g,DEL,Het, ,NM_001080979,Intron, , , ,C5
+Tead4,128201899,chr6,g,DEL,Het, ,NM_001080979,Intron, , , ,C8
+Tead4,128201899,chr6,g,DEL,Het, ,NM_001080979,Intron, , , ,D10
+Tead4,128201899,chr6,g,DEL,Het, ,NM_001080979,Intron, , , ,F2
+Tead4,128201899,chr6,g,DEL,Het, ,NM_001080979,Intron, , , ,Toomie
+Fkbp4,128383088,chr6, ,INS,Hom,g,NM_010219,Intron, , , ,C5
+Fkbp4,128383088,chr6, ,INS,Hom,g,NM_010219,Intron, , , ,C8
+Fkbp4,128383088,chr6, ,INS,Hom,g,NM_010219,Intron, , , ,D10
+Fkbp4,128383088,chr6, ,INS,Hom,g,NM_010219,Intron, , , ,G8
+Fkbp4,128383088,chr6, ,INS,Hom,g,NM_010219,Intron, , , ,Toomie
+Pzp,128480849,chr6,t,SNP,Hom,c, ,Upstream, , , ,C5
+Pzp,128480849,chr6,t,SNP,Hom,c, ,Upstream, , , ,C8
+Pzp,128480849,chr6,t,SNP,Hom,c, ,Upstream, , , ,G8
+Pzp,128480849,chr6,t,SNP,Hom,c, ,Upstream, , , ,G9
+Pzp,128480849,chr6,t,SNP,Hom,c, ,Upstream, , , ,Toomie
+Pzp,128480881,chr6,c,SNP,Hom,t, ,Upstream, , , ,C5
+Pzp,128480881,chr6,c,SNP,Hom,t, ,Upstream, , , ,C8
+Pzp,128480881,chr6,c,SNP,Hom,t, ,Upstream, , , ,F2
+Pzp,128480881,chr6,c,SNP,Hom,t, ,Upstream, , , ,G8
+Pzp,128480881,chr6,c,SNP,Hom,t, ,Upstream, , , ,G9
+BC048546,128525470,chr6,t,SNP,Hom,c,NM_001001179,Intron, , , ,C5
+BC048546,128525470,chr6,t,SNP,Hom,c,NM_001001179,Intron, , , ,C8
+BC048546,128525470,chr6,t,SNP,Hom,c,NM_001001179,Intron, , , ,D10
+BC048546,128525470,chr6,t,SNP,Hom,c,NM_001001179,Intron, , , ,F2
+BC048546,128525470,chr6,t,SNP,Hom,c,NM_001001179,Intron, , , ,G8
+Clec2h,128624654,chr6,cg,MNP,Het,at,NM_053165,Intron, , , ,C5
+Clec2h,128624654,chr6,cg,MNP,Het,at,NM_053165,Intron, , , ,C8
+Clec2h,128624654,chr6,cg,MNP,Het,at,NM_053165,Intron, , , ,D10
+Clec2h,128624654,chr6,cg,MNP,Het,at,NM_053165,Intron, , , ,F2
+Clec2h,128624654,chr6,c,SNP,Het,a,NM_053165,Intron, , , ,Toomie
+Clec2h,128624659,chr6,t,SNP,Het,c,NM_053165,Intron, , , ,C5
+Clec2h,128624659,chr6,t,SNP,Het,c,NM_053165,Intron, , , ,C8
+Clec2h,128624659,chr6,t,SNP,Het,c,NM_053165,Intron, , , ,D10
+Clec2h,128624659,chr6,t,SNP,Het,c,NM_053165,Intron, , , ,F2
+Clec2h,128624659,chr6,t,SNP,Het,c,NM_053165,Intron, , , ,Toomie
+Klrb1c,128734379,chr6,g,SNP,Hom,a,NM_001159904,Intron, , , ,C5
+Klrb1c,128734379,chr6,g,SNP,Hom,a,NM_008527,Intron, , , ,C8
+Klrb1c,128734379,chr6,g,SNP,Hom,a,NM_001159904,Intron, , , ,D10
+Klrb1c,128734379,chr6,g,SNP,Hom,a,NM_001159904,Intron, , , ,G8
+Klrb1c,128734379,chr6,g,SNP,Hom,a,NM_001159904,Intron, , , ,G9
+Klrb1b,128762870,chr6,c,SNP,Het,t, ,Downstream, , , ,C5
+Klrb1b,128762870,chr6,c,SNP,Het,t, ,Downstream, , , ,C8
+Klrb1b,128762870,chr6,c,SNP,Het,t, ,Downstream, , , ,D10
+Klrb1b,128762870,chr6,c,SNP,Het,t, ,Downstream, , , ,F2
+Klrb1b,128762870,chr6,c,SNP,Het,t, ,Downstream, , , ,Toomie
+Klrb1b,128765357,chr6,c,SNP,Het,t,NM_030599,Intron, , , ,C5
+Klrb1b,128765357,chr6,c,SNP,Het,t,NM_030599,Intron, , , ,C8
+Klrb1b,128765357,chr6,c,SNP,Het,t,NM_030599,Intron, , , ,D10
+Klrb1b,128765357,chr6,c,SNP,Het,t,NM_030599,Intron, , , ,G8
+Klrb1b,128765357,chr6,c,SNP,Het,t,NM_030599,Intron, , , ,G9
+Clec2g,128884513,chr6,t,SNP,Het,g,NM_027562,Intron, , , ,C5
+Clec2g,128884513,chr6,t,SNP,Het,g,NM_027562,Intron, , , ,C8
+Clec2g,128884513,chr6,t,SNP,Het,g,NM_027562,Intron, , , ,D10
+Clec2g,128884513,chr6,t,SNP,Het,g,NM_027562,Intron, , , ,G8
+Clec2g,128884513,chr6,t,SNP,Het,g,NM_027562,Intron, , , ,G9
+Klrb1f,129003643,chr6,ca,MNP,Hom,tg,NR_024263,Intron, , , ,C5
+Klrb1f,129003643,chr6,ca,MNP,Hom,tg,NM_153094,Intron, , , ,C8
+Klrb1f,129003643,chr6,ca,MNP,Hom,tg,NM_153094,Intron, , , ,F2
+Klrb1f,129003643,chr6,ca,MNP,Hom,tg,NM_153094,Intron, , , ,G8
+Klrb1f,129003643,chr6,ca,MNP,Hom,tg,NM_153094,Intron, , , ,G9
+Clec12b,129326247,chr6,c,SNP,Het,g,NM_027709,CDS,Non-Synonymous,R,T,C5
+Clec12b,129326247,chr6,c,SNP,Het,g,NM_027709,CDS,Non-Synonymous,R,T,C8
+Clec12b,129326247,chr6,c,SNP,Het,g,NM_027709,CDS,Non-Synonymous,R,T,D10
+Clec12b,129326247,chr6,c,SNP,Het,g,NM_027709,CDS,Non-Synonymous,R,T,F2
+Clec12b,129326247,chr6,c,SNP,Het,g,NM_027709,CDS,Non-Synonymous,R,T,Toomie
+Clec12b,129326260,chr6,t,SNP,Het,c,NM_027709,CDS,Non-Synonymous,I,V,C5
+Clec12b,129326260,chr6,t,SNP,Het,c,NM_027709,CDS,Non-Synonymous,I,V,C8
+Clec12b,129326260,chr6,t,SNP,Het,c,NM_027709,CDS,Non-Synonymous,I,V,D10
+Clec12b,129326260,chr6,t,SNP,Het,c,NM_027709,CDS,Non-Synonymous,I,V,F2
+Clec12b,129326260,chr6,t,SNP,Het,c,NM_027709,CDS,Non-Synonymous,I,V,Toomie
+Clec1b,129350354,chr6,t,SNP,Hom,c,NM_019985,Intron, , , ,C5
+Clec1b,129350354,chr6,t,SNP,Hom,c,NM_019985,Intron, , , ,D10
+Clec1b,129350354,chr6,t,SNP,Hom,c,NM_019985,Intron, , , ,G8
+Clec1b,129350354,chr6,t,SNP,Hom,c,NM_019985,Intron, , , ,G9
+Clec1b,129350354,chr6,t,SNP,Hom,c,NM_019985,Intron, , , ,Toomie
+Klrk1,129562754,chr6,c,SNP,Het,t,NM_001083322,3' UTR,Non-Coding, , ,C5
+Klrk1,129562754,chr6,c,SNP,Het,t,NM_001083322,3' UTR,Non-Coding, , ,C8
+Klrk1,129562754,chr6,c,SNP,Het,t,NM_001083322,3' UTR,Non-Coding, , ,G8
+Klrk1,129562754,chr6,c,SNP,Het,t,NM_001083322,3' UTR,Non-Coding, , ,G9
+Klrk1,129562754,chr6,c,SNP,Het,t,NM_001083322,3' UTR,Non-Coding, , ,Toomie
+Klrc3,129589163,chr6,g,SNP,Het,a,NM_021378,CDS,Synonymous,L,L,C5
+Klrc3,129589163,chr6,g,SNP,Het,a,NM_021378,CDS,Synonymous,L,L,C8
+Klrc3,129589163,chr6,g,SNP,Het,a,NM_021378,CDS,Synonymous,L,L,F2
+Klrc3,129589163,chr6,g,SNP,Het,a,NM_021378,CDS,Synonymous,L,L,G9
+Klrc3,129589163,chr6,g,SNP,Het,a,NM_021378,CDS,Synonymous,L,L,Toomie
+Klrc3,129593293,chr6,agcagg,DEL,Het, ,NM_021378,CDS,Non-Synonymous,HLL,H,C5
+Klrc3,129593293,chr6,agcagg,DEL,Het, ,NM_021378,CDS,Non-Synonymous,HLL,H,D10
+Klrc3,129593293,chr6,agcagg,DEL,Het, ,NM_021378,CDS,Non-Synonymous,HLL,H,F2
+Klrc3,129593293,chr6,agcagg,DEL,Het, ,NM_021378,CDS,Non-Synonymous,HLL,H,G9
+Klrc3,129593293,chr6,a,DEL,Het, ,NM_021378,CDS,Non-Synonymous,HLL,H,Toomie
+Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,C5
+Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,C8
+Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,D10
+Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,G8
+Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,G9
+Gm156,129725620,chr6,t,SNP,Het,g,NM_001014997,Intron, , , ,C5
+Gm156,129725620,chr6,t,SNP,Het,g,NM_001014997,Intron, , , ,C8
+Gm156,129725620,chr6,t,SNP,Het,g,NM_001014997,Intron, , , ,F2
+Gm156,129725620,chr6,t,SNP,Het,g,NM_001014997,Intron, , , ,G9
+Gm156,129725620,chr6,t,SNP,Het,g,NM_001014997,Intron, , , ,Toomie
+Gm156,129725631,chr6,a,SNP,Het,t,NM_001014997,Intron, , , ,C5
+Gm156,129725631,chr6,a,SNP,Het,t,NM_001014997,Intron, , , ,C8
+Gm156,129725631,chr6,a,SNP,Het,t,NM_001014997,Intron, , , ,F2
+Gm156,129725631,chr6,a,SNP,Het,t,NM_001014997,Intron, , , ,G9
+Gm156,129725631,chr6,a,SNP,Het,t,NM_001014997,Intron, , , ,Toomie
+Gm156,129725634,chr6,c,SNP,Het,t,NM_001014997,Intron, , , ,C5
+Gm156,129725634,chr6,c,SNP,Het,t,NM_001014997,Intron, , , ,C8
+Gm156,129725634,chr6,c,SNP,Het,t,NM_001014997,Intron, , , ,F2
+Gm156,129725634,chr6,c,SNP,Het,t,NM_001014997,Intron, , , ,G9
+Gm156,129725634,chr6,c,SNP,Het,t,NM_001014997,Intron, , , ,Toomie
+Klra17,129818898,chr6,a,SNP,Het,t,NM_133203,Intron, , , ,C5
+Klra17,129818898,chr6,a,SNP,Het,t,NM_133203,Intron, , , ,D10
+Klra17,129818898,chr6,a,SNP,Het,t,NM_133203,Intron, , , ,F2
+Klra17,129818898,chr6,a,SNP,Het,t,NM_133203,Intron, , , ,G8
+Klra17,129818898,chr6,a,SNP,Het,t,NM_133203,Intron, , , ,G9
+Klra17,129822195,chr6,c,SNP,Het,t,NM_133203,Intron, , , ,C5
+Klra17,129822195,chr6,c,SNP,Het,t,NM_133203,Intron, , , ,C8
+Klra17,129822195,chr6,c,SNP,Het,t,NM_133203,Intron, , , ,F2
+Klra17,129822195,chr6,c,SNP,Het,t,NM_133203,Intron, , , ,G8
+Klra17,129822195,chr6,c,SNP,Het,t,NM_133203,Intron, , , ,G9
+Klra17,129822456,chr6,g,SNP,Het,a,NM_133203,Intron, , , ,C5
+Klra17,129822456,chr6,g,SNP,Het,a,NM_133203,Intron, , , ,C8
+Klra17,129822456,chr6,g,SNP,Het,a,NM_133203,Intron, , , ,D10
+Klra17,129822456,chr6,g,SNP,Het,a,NM_133203,Intron, , , ,G8
+Klra17,129822456,chr6,g,SNP,Het,a,NM_133203,Intron, , , ,G9
+Klra17,129822466,chr6,g,SNP,Het,t,NM_133203,Intron, , , ,C5
+Klra17,129822466,chr6,g,SNP,Het,t,NM_133203,Intron, , , ,C8
+Klra17,129822466,chr6,g,SNP,Het,t,NM_133203,Intron, , , ,F2
+Klra17,129822466,chr6,g,SNP,Het,t,NM_133203,Intron, , , ,G8
+Klra17,129822466,chr6,g,SNP,Het,t,NM_133203,Intron, , , ,G9
+Klra17,129824679,chr6,t,SNP,Het,g,NM_133203,Intron, , , ,C5
+Klra17,129824679,chr6,t,SNP,Het,g,NM_133203,Intron, , , ,F2
+Klra17,129824679,chr6,t,SNP,Het,g,NM_133203,Intron, , , ,G8
+Klra17,129824679,chr6,t,SNP,Het,g,NM_133203,Intron, , , ,G9
+Klra17,129824679,chr6,t,SNP,Het,g,NM_133203,Intron, , , ,Toomie
+Klra5,129859836,chr6,ag,MNP,Het,at,NM_008463,Intron, , , ,C5
+Klra5,129859836,chr6,ag,MNP,Het,at,NM_008463,Intron, , , ,D10
+Klra5,129859836,chr6,ag,MNP,Het,at,NM_008463,Intron, , , ,F2
+Klra5,129859836,chr6,ag,MNP,Het,at,NM_008463,Intron, , , ,G8
+Klra5,129859836,chr6,ag,MNP,Het,at,NM_008463,Intron, , , ,G9
+Klra22,129930093,chr6,g,SNP,Het,a,NM_053152,Intron, , , ,C5
+Klra22,129930093,chr6,g,SNP,Het,a,NM_053152,Intron, , , ,C8
+Klra22,129930093,chr6,g,SNP,Het,a,NM_053152,Intron, , , ,F2
+Klra22,129930093,chr6,g,SNP,Het,a,NM_053152,Intron, , , ,G8
+Klra22,129930093,chr6,g,SNP,Het,a,NM_053152,Intron, , , ,G9
+Klra6,129963442,chr6,t,SNP,Het,g,NM_008464,CDS,Non-Synonymous,K,N,C5
+Klra6,129963442,chr6,t,SNP,Het,g,NM_008464,CDS,Non-Synonymous,K,N,C8
+Klra6,129963442,chr6,t,SNP,Het,g,NM_008464,CDS,Non-Synonymous,K,N,D10
+Klra6,129963442,chr6,t,SNP,Het,g,NM_008464,CDS,Non-Synonymous,K,N,F2
+Klra6,129963442,chr6,t,SNP,Het,g,NM_008464,CDS,Non-Synonymous,K,N,G9
+Klra22,129966873,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,C5
+Klra22,129966873,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,C8
+Klra22,129966873,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,D10
+Klra22,129966873,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,G8
+Klra22,129966873,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,G9
+Klra22,129969092,chr6,a,SNP,Hom,t,NM_053152,Intron, , , ,C5
+Klra22,129969092,chr6,a,SNP,Hom,t,NM_053152,Intron, , , ,C8
+Klra22,129969092,chr6,a,SNP,Hom,t,NM_053152,Intron, , , ,F2
+Klra22,129969092,chr6,a,SNP,Hom,t,NM_053152,Intron, , , ,G8
+Klra22,129969092,chr6,a,SNP,Hom,t,NM_053152,Intron, , , ,G9
+Klra22,129974978,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C5
+Klra22,129974978,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C8
+Klra22,129974978,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,F2
+Klra22,129974978,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,G8
+Klra22,129974978,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,Toomie
+Klra22,130003071,chr6,c,SNP,Het,a,NM_053152,CDS,Non-Synonymous,V,L,C5
+Klra22,130003071,chr6,c,SNP,Het,a,NM_053152,CDS,Non-Synonymous,V,L,C8
+Klra22,130003071,chr6,c,SNP,Het,a,NM_053152,CDS,Non-Synonymous,V,L,D10
+Klra22,130003071,chr6,c,SNP,Het,a,NM_053152,CDS,Non-Synonymous,V,L,G8
+Klra22,130003071,chr6,c,SNP,Het,a,NM_053152,CDS,Non-Synonymous,V,L,G9
+Klra22,130003153,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,C5
+Klra22,130003153,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,D10
+Klra22,130003153,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,F2
+Klra22,130003153,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,G8
+Klra22,130003153,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,G9
+Klra22,130009630,chr6,cg,MNP,Het,tg,NM_053152,CDS,Non-Synonymous,FV,FI,C5
+Klra22,130009630,chr6,cg,MNP,Het,tg,NM_053152,CDS,Non-Synonymous,FV,FI,C8
+Klra22,130009630,chr6,cg,MNP,Het,tg,NM_053152,CDS,Non-Synonymous,FV,FI,G8
+Klra22,130009630,chr6,cg,MNP,Het,tg,NM_053152,CDS,Non-Synonymous,FV,FI,G9
+Klra22,130009630,chr6,c,SNP,Het,t,NM_053152,CDS,Non-Synonymous,FV,FI,Toomie
+Klra18,130012227,chr6,t,SNP,Het,g,NM_053153,CDS,Non-Synonymous,Q,H,C5
+Klra18,130012227,chr6,t,SNP,Het,g,NM_053153,CDS,Non-Synonymous,Q,H,D10
+Klra18,130012227,chr6,t,SNP,Het,g,NM_053153,CDS,Non-Synonymous,Q,H,F2
+Klra18,130012227,chr6,t,SNP,Het,g,NM_053153,CDS,Non-Synonymous,Q,H,G8
+Klra18,130012227,chr6,t,SNP,Het,g,NM_053153,CDS,Non-Synonymous,Q,H,G9
+Klra18,130013176,chr6,g,SNP,Het,a,NM_053153,CDS,Synonymous,L,L,C5
+Klra18,130013176,chr6,g,SNP,Het,a,NM_053153,CDS,Synonymous,L,L,D10
+Klra18,130013176,chr6,g,SNP,Het,a,NM_053153,CDS,Synonymous,L,L,F2
+Klra18,130013176,chr6,g,SNP,Het,a,NM_053153,CDS,Synonymous,L,L,G8
+Klra18,130013176,chr6,g,SNP,Het,a,NM_053153,CDS,Synonymous,L,L,G9
+Klra22,130015130,chr6, ,INS,Het,ag,NM_053152,Intron, , , ,C5
+Klra22,130015130,chr6, ,INS,Het,ag,NM_053152,Intron, , , ,C8
+Klra22,130015130,chr6, ,INS,Het,ag,NM_053152,Intron, , , ,D10
+Klra22,130015130,chr6, ,INS,Het,ag,NM_053152,Intron, , , ,G8
+Klra22,130015130,chr6, ,INS,Het,ag,NM_053152,Intron, , , ,G9
+Klra22,130015378,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,C5
+Klra22,130015378,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,C8
+Klra22,130015378,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,F2
+Klra22,130015378,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,G8
+Klra22,130015378,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,Toomie
+Klra22,130068799,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,C5
+Klra22,130068799,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,D10
+Klra22,130068799,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,F2
+Klra22,130068799,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,G8
+Klra22,130068799,chr6,c,SNP,Hom,t,NM_053152,Intron, , , ,G9
+Klra22,130069185,chr6,c,SNP,Hom,a,NM_053152,Intron, , , ,C5
+Klra22,130069185,chr6,c,SNP,Hom,a,NM_053152,Intron, , , ,D10
+Klra22,130069185,chr6,c,SNP,Hom,a,NM_053152,Intron, , , ,G8
+Klra22,130069185,chr6,c,SNP,Hom,a,NM_053152,Intron, , , ,G9
+Klra22,130069185,chr6,c,SNP,Hom,a,NM_053152,Intron, , , ,Toomie
+Klra21,130078183,chr6,g,SNP,Hom,t,NM_053151,5' UTR,Non-Coding, , ,C5
+Klra21,130078183,chr6,g,SNP,Hom,t,NM_053151,5' UTR,Non-Coding, , ,C8
+Klra21,130078183,chr6,g,SNP,Hom,t,NM_053151,5' UTR,Non-Coding, , ,D10
+Klra21,130078183,chr6,g,SNP,Hom,t,NM_053151,5' UTR,Non-Coding, , ,G8
+Klra21,130078183,chr6,g,SNP,Hom,t,NM_053151,5' UTR,Non-Coding, , ,G9
+Klra21,130078189,chr6,c,SNP,Hom,a,NM_053151,5' UTR,Non-Coding, , ,C5
+Klra21,130078189,chr6,c,SNP,Hom,a,NM_053151,5' UTR,Non-Coding, , ,C8
+Klra21,130078189,chr6,c,SNP,Hom,a,NM_053151,5' UTR,Non-Coding, , ,D10
+Klra21,130078189,chr6,c,SNP,Hom,a,NM_053151,5' UTR,Non-Coding, , ,G8
+Klra21,130078189,chr6,c,SNP,Hom,a,NM_053151,5' UTR,Non-Coding, , ,G9
+Klra22,130108792,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C5
+Klra22,130108792,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C8
+Klra22,130108792,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,D10
+Klra22,130108792,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,G8
+Klra22,130108792,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,G9
+Klra22,130110628,chr6,g,SNP,Hom,t,NM_053152,Intron, , , ,C5
+Klra22,130110628,chr6,g,SNP,Hom,t,NM_053152,Intron, , , ,C8
+Klra22,130110628,chr6,g,SNP,Hom,t,NM_053152,Intron, , , ,G8
+Klra22,130110628,chr6,g,SNP,Hom,t,NM_053152,Intron, , , ,G9
+Klra22,130110628,chr6,g,SNP,Hom,t,NM_053152,Intron, , , ,Toomie
+Klra22,130135686,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,C5
+Klra22,130135686,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,D10
+Klra22,130135686,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,F2
+Klra22,130135686,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,G8
+Klra22,130135686,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,G9
+Klra22,130135821,chr6,c,SNP,Het,t,NM_053152,Intron, , , ,C5
+Klra22,130135821,chr6,c,SNP,Het,t,NM_053152,Intron, , , ,D10
+Klra22,130135821,chr6,c,SNP,Het,t,NM_053152,Intron, , , ,F2
+Klra22,130135821,chr6,c,SNP,Het,t,NM_053152,Intron, , , ,G8
+Klra22,130135821,chr6,c,SNP,Het,t,NM_053152,Intron, , , ,G9
+Klra22,130138516,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,C5
+Klra22,130138516,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,C8
+Klra22,130138516,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,D10
+Klra22,130138516,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,G8
+Klra22,130138516,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,G9
+Klra9,130141302,chr6,g,SNP,Het,a,NM_010651,CDS,Synonymous,V,V,C5
+Klra9,130141302,chr6,g,SNP,Het,a,NM_010651,CDS,Synonymous,V,V,C8
+Klra9,130141302,chr6,g,SNP,Het,a,NM_010651,CDS,Synonymous,V,V,D10
+Klra9,130141302,chr6,g,SNP,Het,a,NM_010651,CDS,Synonymous,V,V,G9
+Klra9,130141302,chr6,g,SNP,Het,a,NM_010651,CDS,Synonymous,V,V,Toomie
+Klra7,130178682,chr6,g,SNP,Het,a,NM_014194,CDS,Non-Synonymous,T,M,C5
+Klra7,130178682,chr6,g,SNP,Het,a,NM_001110323,CDS,Non-Synonymous,T,M,C8
+Klra7,130178682,chr6,g,SNP,Het,a,NM_001110323,CDS,Non-Synonymous,T,M,D10
+Klra7,130178682,chr6,g,SNP,Het,a,NM_001110323,CDS,Non-Synonymous,T,M,F2
+Klra7,130178682,chr6,g,SNP,Het,a,NM_001110323,CDS,Non-Synonymous,T,M,G9
+Klra22,130216417,chr6,tta,MIXED,Het, ,NM_053152,Intron, , , ,C5
+Klra22,130216417,chr6,tta,MIXED,Het, ,NM_053152,Intron, , , ,C8
+Klra22,130216417,chr6,tta,MIXED,Het, ,NM_053152,Intron, , , ,F2
+Klra22,130216417,chr6,tta,MIXED,Het, ,NM_053152,Intron, , , ,G8
+Klra22,130216417,chr6,tta,MIXED,Het, ,NM_053152,Intron, , , ,G9
+Klra22,130216457,chr6,a,SNP,Het,g,NM_053152,Intron, , , ,C5
+Klra22,130216457,chr6,a,SNP,Het,g,NM_053152,Intron, , , ,C8
+Klra22,130216457,chr6,a,SNP,Het,t,NM_053152,Intron, , , ,D10
+Klra22,130216457,chr6,a,SNP,Het,g,NM_053152,Intron, , , ,G9
+Klra22,130216457,chr6,a,SNP,Het,g,NM_053152,Intron, , , ,Toomie
+Klra10,130222709,chr6,c,SNP,Het,t,NM_008459,CDS,Synonymous,K,K,C5
+Klra10,130222709,chr6,c,SNP,Het,t,NM_008459,CDS,Synonymous,K,K,D10
+Klra10,130222709,chr6,c,SNP,Het,t,NM_008459,CDS,Synonymous,K,K,F2
+Klra10,130222709,chr6,c,SNP,Het,t,NM_008459,CDS,Synonymous,K,K,G9
+Klra10,130222709,chr6,c,SNP,Het,t,NM_008459,CDS,Synonymous,K,K,Toomie
+Klra22,130229536,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,C5
+Klra22,130229536,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,C8
+Klra22,130229536,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,D10
+Klra22,130229536,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,F2
+Klra22,130229536,chr6,g,SNP,Het,t,NM_053152,Intron, , , ,G8
+Klra22,130232097,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C5
+Klra22,130232097,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,C8
+Klra22,130232097,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,D10
+Klra22,130232097,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,G8
+Klra22,130232097,chr6,t,SNP,Hom,c,NM_053152,Intron, , , ,G9
+Klra22,130241166,chr6,ttt,DEL,Het, ,NM_053152,Intron, , , ,C5
+Klra22,130241166,chr6,ttt,DEL,Het, ,NM_053152,Intron, , , ,C8
+Klra22,130241166,chr6,ttt,DEL,Het, ,NM_053152,Intron, , , ,D10
+Klra22,130241166,chr6,ttt,DEL,Het, ,NM_053152,Intron, , , ,F2
+Klra22,130241166,chr6,ttt,DEL,Het, ,NM_053152,Intron, , , ,G8
+Klra12,130251293,chr6,t,SNP,Hom,a,NM_010646,CDS,Non-Synonymous,K,I,C5
+Klra12,130251293,chr6,t,SNP,Hom,a,NM_010646,CDS,Non-Synonymous,K,I,C8
+Klra12,130251293,chr6,t,SNP,Hom,a,NM_010646,CDS,Non-Synonymous,K,I,D10
+Klra12,130251293,chr6,t,SNP,Hom,a,NM_010646,CDS,Non-Synonymous,K,I,G8
+Klra12,130251293,chr6,t,SNP,Hom,a,NM_010646,CDS,Non-Synonymous,K,I,G9
+Klra22,130256310,chr6,t,SNP,Hom,a,NM_053152,Intron, , , ,C5
+Klra22,130256310,chr6,t,SNP,Hom,a,NM_053152,Intron, , , ,F2
+Klra22,130256310,chr6,t,SNP,Hom,a,NM_053152,Intron, , , ,G8
+Klra22,130256310,chr6,t,SNP,Hom,a,NM_053152,Intron, , , ,G9
+Klra22,130256310,chr6,t,SNP,Hom,a,NM_053152,Intron, , , ,Toomie
+Klra12,130256388,chr6,g,SNP,Het,a,NM_010646,CDS,Stop Gain,Q,*,C5
+Klra12,130256388,chr6,g,SNP,Het,a,NM_010646,CDS,Stop Gain,Q,*,C8
+Klra12,130256388,chr6,g,SNP,Het,a,NM_010646,CDS,Stop Gain,Q,*,F2
+Klra12,130256388,chr6,g,SNP,Het,a,NM_010646,CDS,Stop Gain,Q,*,G8
+Klra12,130256388,chr6,g,SNP,Het,a,NM_010646,CDS,Stop Gain,Q,*,G9
+Klra22,130327643,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,C5
+Klra22,130327643,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,C8
+Klra22,130327643,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,D10
+Klra22,130327643,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,F2
+Klra22,130327643,chr6,t,SNP,Het,a,NM_053152,Intron, , , ,G9
+Klra22,130327720,chr6,g,SNP,Het,t,NM_053152,CDS,Non-Synonymous,Q,K,C5
+Klra22,130327720,chr6,g,SNP,Het,t,NM_053152,CDS,Non-Synonymous,Q,K,D10
+Klra22,130327720,chr6,g,SNP,Het,t,NM_053152,CDS,Non-Synonymous,Q,K,F2
+Klra22,130327720,chr6,g,SNP,Het,t,NM_053152,CDS,Non-Synonymous,Q,K,G8
+Klra22,130327720,chr6,g,SNP,Het,t,NM_053152,CDS,Non-Synonymous,Q,K,Toomie
+Klra22,130330688,chr6,t,SNP,Het,g,NM_053152,5' UTR,Non-Coding, , ,C5
+Klra22,130330688,chr6,t,SNP,Het,g,NM_053152,5' UTR,Non-Coding, , ,D10
+Klra22,130330688,chr6,t,SNP,Het,g,NM_053152,5' UTR,Non-Coding, , ,F2
+Klra22,130330688,chr6,t,SNP,Het,g,NM_053152,5' UTR,Non-Coding, , ,G8
+Klra22,130330688,chr6,t,SNP,Het,g,NM_053152,5' UTR,Non-Coding, , ,Toomie
+Gm4736,132158655,chr6, ,INS,Het,c,NM_053251,Intron, , , ,C5
+Gm4736,132158655,chr6, ,INS,Het,c,NM_053251,Intron, , , ,C8
+Gm4736,132158655,chr6, ,INS,Het,c,NM_053251,Intron, , , ,F2
+Gm4736,132158655,chr6, ,INS,Het,c,NM_053251,Intron, , , ,G9
+Gm4736,132158655,chr6, ,INS,Het,c,NM_053251,Intron, , , ,Toomie
+Lrp6,134403531,chr6,atgt,DEL,Het, ,NM_008514,Intron, , , ,C5
+Lrp6,134403531,chr6,atgt,DEL,Het, ,NM_008514,Intron, , , ,C8
+Lrp6,134403531,chr6,atgt,DEL,Het, ,NM_008514,Intron, , , ,F2
+Lrp6,134403531,chr6,atgt,DEL,Het, ,NM_008514,Intron, , , ,G9
+Lrp6,134403531,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,Toomie
+Lrp6,134434223,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,C5
+Lrp6,134434223,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,C8
+Lrp6,134434223,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,F2
+Lrp6,134434223,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,G9
+Lrp6,134434223,chr6,a,DEL,Het, ,NM_008514,Intron, , , ,Toomie
+Lrp6,134470524,chr6,t,SNP,Het,c,NM_008514,CDS,Synonymous,T,T,C5
+Lrp6,134470524,chr6,t,SNP,Het,c,NM_008514,CDS,Synonymous,T,T,C8
+Lrp6,134470524,chr6,t,SNP,Het,c,NM_008514,CDS,Synonymous,T,T,D10
+Lrp6,134470524,chr6,t,SNP,Het,c,NM_008514,CDS,Synonymous,T,T,F2
+Lrp6,134470524,chr6,t,SNP,Het,c,NM_008514,CDS,Synonymous,T,T,Toomie
+Lrp6,134470634,chr6,t,SNP,Het,a,NM_008514,Intron, , , ,C5
+Lrp6,134470634,chr6,t,SNP,Het,a,NM_008514,Intron, , , ,C8
+Lrp6,134470634,chr6,t,SNP,Het,a,NM_008514,Intron, , , ,D10
+Lrp6,134470634,chr6,t,SNP,Het,a,NM_008514,Intron, , , ,F2
+Lrp6,134470634,chr6,t,SNP,Het,a,NM_008514,Intron, , , ,Toomie
+Mansc1,134567292,chr6,a,SNP,Het,t,NM_026345,Intron, , , ,C5
+Mansc1,134567292,chr6,a,SNP,Het,t,NM_026345,Intron, , , ,C8
+Mansc1,134567292,chr6,a,SNP,Het,t,NM_026345,Intron, , , ,F2
+Mansc1,134567292,chr6,a,SNP,Het,t,NM_026345,Intron, , , ,G9
+Mansc1,134567292,chr6,a,SNP,Het,t,NM_026345,Intron, , , ,Toomie
+Gprc5d,135065391,chr6,a,DEL,Hom, ,NM_053118,Intron, , , ,C5
+Gprc5d,135065391,chr6,a,DEL,Hom, ,NM_053118,Intron, , , ,C8
+Gprc5d,135065391,chr6,a,DEL,Hom, ,NM_053118,Intron, , , ,F2
+Gprc5d,135065391,chr6,a,DEL,Hom, ,NM_053118,Intron, , , ,G8
+Gprc5d,135065391,chr6,a,DEL,Hom, ,NM_053118,Intron, , , ,G9
+8430419L09Rik,135175482,chr6,ca,MNP,Hom,tg,NM_028982,Intron, , , ,C5
+8430419L09Rik,135175482,chr6,ca,MNP,Hom,tg,NM_028982,Intron, , , ,C8
+8430419L09Rik,135175482,chr6,ca,MNP,Hom,tg,NM_028982,Intron, , , ,F2
+8430419L09Rik,135175482,chr6,ca,MNP,Hom,tg,NM_028982,Intron, , , ,G8
+8430419L09Rik,135175482,chr6,ca,MNP,Hom,tg,NM_028982,Intron, , , ,G9
+8430419L09Rik,135175841,chr6, ,INS,Hom,g,NM_028982,Intron, , , ,C5
+8430419L09Rik,135175841,chr6, ,INS,Hom,g,NM_028982,Intron, , , ,C8
+8430419L09Rik,135175841,chr6, ,INS,Hom,g,NM_028982,Intron, , , ,D10
+8430419L09Rik,135175841,chr6, ,INS,Hom,g,NM_028982,Intron, , , ,G8
+8430419L09Rik,135175841,chr6, ,INS,Hom,g,NM_028982,Intron, , , ,Toomie
+8430419L09Rik,135181821,chr6,aa,MNP,Het,ag,NM_028982,Intron, , , ,C5
+8430419L09Rik,135181821,chr6,aa,MNP,Het,ag,NM_028982,Intron, , , ,C8
+8430419L09Rik,135181821,chr6,aa,MNP,Het,ag,NM_028982,Intron, , , ,D10
+8430419L09Rik,135181821,chr6,aa,MNP,Het,ag,NM_028982,Intron, , , ,G8
+8430419L09Rik,135181821,chr6,a,SNP,Het,a,NM_028982,Intron, , , ,Toomie
+Grin2b,135729438,chr6, ,INS,Het,aa,NM_008171,Intron, , , ,C5
+Grin2b,135729438,chr6, ,INS,Het,aaa,NM_008171,Intron, , , ,D10
+Grin2b,135729438,chr6, ,INS,Het,aaa,NM_008171,Intron, , , ,G8
+Grin2b,135729438,chr6, ,INS,Het,aaa,NM_008171,Intron, , , ,G9
+Grin2b,135729438,chr6, ,INS,Het,aaa,NM_008171,Intron, , , ,Toomie
+Gucy2c,136671100,chr6,c,SNP,Hom,g,NM_001127318,Intron, , , ,C5
+Gucy2c,136671100,chr6,c,SNP,Hom,g,NM_001127318,Intron, , , ,C8
+Gucy2c,136671100,chr6,c,SNP,Hom,g,NM_001127318,Intron, , , ,F2
+Gucy2c,136671100,chr6,c,SNP,Hom,g,NM_001127318,Intron, , , ,G8
+Gucy2c,136671100,chr6,c,SNP,Hom,g,NM_001127318,Intron, , , ,G9
+Gucy2c,136676811,chr6,a,SNP,Hom,t,NM_001127318,Intron, , , ,C5
+Gucy2c,136676811,chr6,a,SNP,Hom,t,NM_001127318,Intron, , , ,F2
+Gucy2c,136676811,chr6,a,SNP,Hom,t,NM_001127318,Intron, , , ,G8
+Gucy2c,136676811,chr6,a,SNP,Hom,t,NM_001127318,Intron, , , ,G9
+Gucy2c,136676811,chr6,a,SNP,Hom,t,NM_001127318,Intron, , , ,Toomie
+Wbp11,136765696,chr6,c,SNP,Het,t,NM_021714,CDS,Non-Synonymous,D,N,C5
+Wbp11,136765696,chr6,c,SNP,Het,t,NM_021714,CDS,Non-Synonymous,D,N,C8
+Wbp11,136765696,chr6,c,SNP,Het,t,NM_021714,CDS,Non-Synonymous,D,N,F2
+Wbp11,136765696,chr6,c,SNP,Het,t,NM_021714,CDS,Non-Synonymous,D,N,G9
+Wbp11,136765696,chr6,c,SNP,Het,t,NM_021714,CDS,Non-Synonymous,D,N,Toomie
+Wbp11,136773010,chr6, ,INS,Hom,a,NM_021714,Intron, , , ,C5
+Wbp11,136773010,chr6, ,INS,Hom,a,NM_021714,Intron, , , ,C8
+Wbp11,136773010,chr6, ,INS,Hom,a,NM_021714,Intron, , , ,D10
+Wbp11,136773010,chr6, ,INS,Hom,a,NM_021714,Intron, , , ,G8
+Wbp11,136773010,chr6, ,INS,Hom,a,NM_021714,Intron, , , ,Toomie
+Mgp,136824308,chr6, ,INS,Het,cagcag,NM_008597,5' UTR,Non-Coding, , ,C5
+Mgp,136824308,chr6, ,INS,Het,cagcagcag,NM_008597,5' UTR,Non-Coding, , ,D10
+Mgp,136824308,chr6, ,INS,Het,cagcagcag,NM_008597,5' UTR,Non-Coding, , ,G8
+Mgp,136824308,chr6, ,INS,Het,cagcagcag,NM_008597,5' UTR,Non-Coding, , ,G9
+Mgp,136824308,chr6, ,INS,Het,cagcagcag,NM_008597,5' UTR,Non-Coding, , ,Toomie
+Erp27,136855938,chr6,t,SNP,Hom,c,NM_026983,3' UTR,Non-Coding, , ,C5
+Erp27,136855938,chr6,t,SNP,Hom,c,NM_026983,3' UTR,Non-Coding, , ,D10
+Erp27,136855938,chr6,t,SNP,Hom,c,NM_026983,3' UTR,Non-Coding, , ,F2
+Erp27,136855938,chr6,t,SNP,Hom,c,NM_026983,3' UTR,Non-Coding, , ,G8
+Erp27,136855938,chr6,t,SNP,Hom,c,NM_026983,3' UTR,Non-Coding, , ,Toomie
+Arhgdib,136878080,chr6,g,DEL,Hom, ,NM_007486,Intron, , , ,C5
+Arhgdib,136878080,chr6,g,DEL,Hom, ,NM_007486,Intron, , , ,C8
+Arhgdib,136878080,chr6,g,DEL,Hom, ,NM_007486,Intron, , , ,D10
+Arhgdib,136878080,chr6,g,DEL,Hom, ,NM_007486,Intron, , , ,F2
+Arhgdib,136878080,chr6,g,DEL,Hom, ,NM_007486,Intron, , , ,Toomie
+Ptpro,137398588,chr6,at,MNP,Het,ac,NM_001164401,Intron, , , ,C5
+Ptpro,137398588,chr6,at,MNP,Het,ac,NM_001164401,Intron, , , ,C8
+Ptpro,137398588,chr6,at,MNP,Het,ac,NM_001164401,Intron, , , ,F2
+Ptpro,137398588,chr6,at,MNP,Het,ac,NM_001164401,Intron, , , ,G8
+Ptpro,137398588,chr6,a,SNP,Het,a,NM_001164401,Intron, , , ,Toomie
+Strap,137684077,chr6,t,SNP,Hom,a,NM_011499,Intron, , , ,C5
+Strap,137684077,chr6,t,SNP,Hom,a,NM_011499,Intron, , , ,C8
+Strap,137684077,chr6,t,SNP,Hom,a,NM_011499,Intron, , , ,D10
+Strap,137684077,chr6,t,SNP,Hom,a,NM_011499,Intron, , , ,G8
+Strap,137684077,chr6,t,SNP,Hom,a,NM_011499,Intron, , , ,Toomie
+Strap,137688258,chr6,c,SNP,Hom,t,NM_011499,Intron, , , ,C5
+Strap,137688258,chr6,c,SNP,Hom,t,NM_011499,Intron, , , ,C8
+Strap,137688258,chr6,c,SNP,Hom,t,NM_011499,Intron, , , ,F2
+Strap,137688258,chr6,c,SNP,Hom,t,NM_011499,Intron, , , ,G8
+Strap,137688258,chr6,c,SNP,Hom,t,NM_011499,Intron, , , ,G9
+Rergl,139443318,chr6,a,SNP,Het,g,NM_001128090,Intron, , , ,C5
+Rergl,139443318,chr6,a,SNP,Het,g,NM_001128090,Intron, , , ,C8
+Rergl,139443318,chr6,a,SNP,Het,g,NM_001128090,Intron, , , ,F2
+Rergl,139443318,chr6,a,SNP,Het,g,NM_001128090,Intron, , , ,G9
+Rergl,139443318,chr6,a,SNP,Het,g,NM_001128090,Intron, , , ,Toomie
+Rergl,139443327,chr6,g,SNP,Het,a,NM_001128090,Intron, , , ,C5
+Rergl,139443327,chr6,g,SNP,Het,a,NM_001128090,Intron, , , ,C8
+Rergl,139443327,chr6,g,SNP,Het,a,NM_001128090,Intron, , , ,F2
+Rergl,139443327,chr6,g,SNP,Het,a,NM_001128090,Intron, , , ,G9
+Rergl,139443327,chr6,g,SNP,Het,a,NM_001128090,Intron, , , ,Toomie
+Pik3c2g,139570780,chr6,t,SNP,Het,c,NM_207683,CDS,Synonymous,A,A,C5
+Pik3c2g,139570780,chr6,t,SNP,Het,c,NM_207683,CDS,Synonymous,A,A,C8
+Pik3c2g,139570780,chr6,t,SNP,Het,c,NM_207683,CDS,Synonymous,A,A,D10
+Pik3c2g,139570780,chr6,t,SNP,Het,c,NM_207683,CDS,Synonymous,A,A,F2
+Pik3c2g,139570780,chr6,t,SNP,Het,c,NM_207683,CDS,Synonymous,A,A,Toomie
+Pik3c2g,139584050,chr6,g,SNP,Het,a,NM_207683,Intron, , , ,C5
+Pik3c2g,139584050,chr6,g,SNP,Het,a,NM_207683,Intron, , , ,C8
+Pik3c2g,139584050,chr6,g,SNP,Het,a,NM_207683,Intron, , , ,F2
+Pik3c2g,139584050,chr6,g,SNP,Het,a,NM_207683,Intron, , , ,G9
+Pik3c2g,139584050,chr6,g,SNP,Het,a,NM_207683,Intron, , , ,Toomie
+Pik3c2g,139584179,chr6, ,INS,Het,agag,NM_207683,Intron, , , ,C5
+Pik3c2g,139584179,chr6, ,INS,Het,agag,NM_207683,Intron, , , ,F2
+Pik3c2g,139584179,chr6, ,INS,Het,agag,NM_207683,Intron, , , ,G8
+Pik3c2g,139584179,chr6, ,INS,Het,agag,NM_207683,Intron, , , ,G9
+Pik3c2g,139584179,chr6, ,INS,Het,agag,NM_207683,Intron, , , ,Toomie
+Plekha5,140368668,chr6,c,SNP,Het,t, ,Upstream, , , ,C5
+Plekha5,140368668,chr6,c,SNP,Het,t, ,Upstream, , , ,C8
+Plekha5,140368668,chr6,c,SNP,Het,t, ,Upstream, , , ,D10
+Plekha5,140368668,chr6,c,SNP,Het,t, ,Upstream, , , ,F2
+Plekha5,140368668,chr6,c,SNP,Het,t, ,Upstream, , , ,Toomie
+Plekha5,140504606,chr6,g,SNP,Het,t,NM_144920,Intron, , , ,C5
+Plekha5,140504606,chr6,g,SNP,Het,t,NM_144920,Intron, , , ,C8
+Plekha5,140504606,chr6,g,SNP,Het,t,NM_144920,Intron, , , ,D10
+Plekha5,140504606,chr6,g,SNP,Het,t,NM_144920,Intron, , , ,G9
+Plekha5,140504606,chr6,g,SNP,Het,t,NM_144920,Intron, , , ,Toomie
+Plekha5,140517468,chr6,g,SNP,Het,a,NM_144920,Intron, , , ,C5
+Plekha5,140517468,chr6,g,SNP,Het,a,NM_144920,Intron, , , ,C8
+Plekha5,140517468,chr6,g,SNP,Het,a,NM_144920,Intron, , , ,F2
+Plekha5,140517468,chr6,g,SNP,Het,a,NM_144920,Intron, , , ,G8
+Plekha5,140517468,chr6,g,SNP,Het,a,NM_144920,Intron, , , ,Toomie
+Pde3a,141407843,chr6,a,SNP,Het,t,NM_018779,Intron, , , ,C5
+Pde3a,141407843,chr6,a,SNP,Het,t,NM_018779,Intron, , , ,C8
+Pde3a,141407843,chr6,a,SNP,Het,t,NM_018779,Intron, , , ,F2
+Pde3a,141407843,chr6,a,SNP,Het,t,NM_018779,Intron, , , ,G9
+Pde3a,141407843,chr6,a,SNP,Het,t,NM_018779,Intron, , , ,Toomie
+Pde3a,141432327,chr6,t,SNP,Het,c,NM_018779,Intron, , , ,C5
+Pde3a,141432327,chr6,t,SNP,Het,c,NM_018779,Intron, , , ,C8
+Pde3a,141432327,chr6,t,SNP,Het,c,NM_018779,Intron, , , ,F2
+Pde3a,141432327,chr6,t,SNP,Het,c,NM_018779,Intron, , , ,G9
+Pde3a,141432327,chr6,t,SNP,Het,c,NM_018779,Intron, , , ,Toomie
+Pde3a,141440676,chr6,c,SNP,Het,t,NM_018779,CDS,Synonymous,G,G,C5
+Pde3a,141440676,chr6,c,SNP,Het,t,NM_018779,CDS,Synonymous,G,G,C8
+Pde3a,141440676,chr6,c,SNP,Het,t,NM_018779,CDS,Synonymous,G,G,F2
+Pde3a,141440676,chr6,c,SNP,Het,t,NM_018779,CDS,Synonymous,G,G,G9
+Pde3a,141440676,chr6,c,SNP,Het,t,NM_018779,CDS,Synonymous,G,G,Toomie
+Slco1c1,141490606,chr6,t,SNP,Het,g,NM_021471,Intron, , , ,C5
+Slco1c1,141490606,chr6,t,SNP,Het,g,NM_021471,Intron, , , ,F2
+Slco1c1,141490606,chr6,t,SNP,Het,g,NM_021471,Intron, , , ,G8
+Slco1c1,141490606,chr6,t,SNP,Het,g,NM_021471,Intron, , , ,G9
+Slco1c1,141490606,chr6,t,SNP,Het,g,NM_021471,Intron, , , ,Toomie
+Slco1b2,141600906,chr6,a,SNP,Het,g,NM_020495,Intron, , , ,C5
+Slco1b2,141600906,chr6,a,SNP,Het,g,NM_020495,Intron, , , ,C8
+Slco1b2,141600906,chr6,a,SNP,Het,g,NM_020495,Intron, , , ,D10
+Slco1b2,141600906,chr6,a,SNP,Het,g,NM_020495,Intron, , , ,F2
+Slco1b2,141600906,chr6,a,SNP,Het,g,NM_020495,Intron, , , ,G9
+Slco1b2,141618058,chr6,t,SNP,Het,c,NM_020495,Intron, , , ,C5
+Slco1b2,141618058,chr6,t,SNP,Het,c,NM_020495,Intron, , , ,D10
+Slco1b2,141618058,chr6,t,SNP,Het,c,NM_020495,Intron, , , ,F2
+Slco1b2,141618058,chr6,t,SNP,Het,c,NM_020495,Intron, , , ,G9
+Slco1b2,141618058,chr6,t,SNP,Het,c,NM_020495,Intron, , , ,Toomie
+Slco1a4,141764125,chr6,g,SNP,Het,a,NM_030687,CDS,Non-Synonymous,P,S,C5
+Slco1a4,141764125,chr6,g,SNP,Het,a,NM_030687,CDS,Non-Synonymous,P,S,C8
+Slco1a4,141764125,chr6,g,SNP,Het,a,NM_030687,CDS,Non-Synonymous,P,S,F2
+Slco1a4,141764125,chr6,g,SNP,Het,a,NM_030687,CDS,Non-Synonymous,P,S,G9
+Slco1a4,141764125,chr6,g,SNP,Het,a,NM_030687,CDS,Non-Synonymous,P,S,Toomie
+Slco1a4,141773466,chr6,t,SNP,Het,c,NM_030687,Intron, , , ,C5
+Slco1a4,141773466,chr6,t,SNP,Het,c,NM_030687,Intron, , , ,C8
+Slco1a4,141773466,chr6,t,SNP,Het,c,NM_030687,Intron, , , ,F2
+Slco1a4,141773466,chr6,t,SNP,Het,c,NM_030687,Intron, , , ,G9
+Slco1a4,141773466,chr6,t,SNP,Het,c,NM_030687,Intron, , , ,Toomie
+Slco1a4,141773480,chr6, ,INS,Het,ag,NM_030687,Intron, , , ,C5
+Slco1a4,141773480,chr6, ,INS,Het,ag,NM_030687,Intron, , , ,C8
+Slco1a4,141773480,chr6, ,INS,Het,ag,NM_030687,Intron, , , ,F2
+Slco1a4,141773480,chr6, ,INS,Het,ag,NM_030687,Intron, , , ,G9
+Slco1a4,141773480,chr6, ,INS,Het,ag,NM_030687,Intron, , , ,Toomie
+Slco1a1,141857669,chr6,t,SNP,Het,a,NM_013797,Intron, , , ,C5
+Slco1a1,141857669,chr6,t,SNP,Het,a,NM_013797,Intron, , , ,C8
+Slco1a1,141857669,chr6,t,SNP,Het,a,NM_013797,Intron, , , ,F2
+Slco1a1,141857669,chr6,t,SNP,Het,a,NM_013797,Intron, , , ,G8
+Slco1a1,141857669,chr6,t,SNP,Het,a,NM_013797,Intron, , , ,G9
+Slco1a1,141881083,chr6,t,SNP,Het,c,NM_013797,Intron, , , ,C5
+Slco1a1,141881083,chr6,t,SNP,Het,c,NM_013797,Intron, , , ,C8
+Slco1a1,141881083,chr6,t,SNP,Het,c,NM_013797,Intron, , , ,F2
+Slco1a1,141881083,chr6,t,SNP,Het,c,NM_013797,Intron, , , ,G8
+Slco1a1,141881083,chr6,t,SNP,Het,c,NM_013797,Intron, , , ,G9
+Slco1a1,141884460,chr6,a,SNP,Het,g,NM_013797,CDS,Synonymous,L,L,C5
+Slco1a1,141884460,chr6,a,SNP,Het,g,NM_013797,CDS,Synonymous,L,L,D10
+Slco1a1,141884460,chr6,a,SNP,Het,g,NM_013797,CDS,Synonymous,L,L,F2
+Slco1a1,141884460,chr6,a,SNP,Het,g,NM_013797,CDS,Synonymous,L,L,G8
+Slco1a1,141884460,chr6,a,SNP,Het,g,NM_013797,CDS,Synonymous,L,L,Toomie
+Slco1a1,141895257,chr6,g,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,C5
+Slco1a1,141895257,chr6,g,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,C8
+Slco1a1,141895257,chr6,g,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,D10
+Slco1a1,141895257,chr6,g,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,F2
+Slco1a1,141895257,chr6,g,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,G9
+Slco1a1,141895269,chr6,c,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,C5
+Slco1a1,141895269,chr6,c,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,C8
+Slco1a1,141895269,chr6,c,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,D10
+Slco1a1,141895269,chr6,c,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,F2
+Slco1a1,141895269,chr6,c,SNP,Het,a,NM_013797,5' UTR,Non-Coding, , ,G9
+Slco1a1,141895285,chr6,a,SNP,Het,g,NM_013797,5' UTR,Non-Coding, , ,C5
+Slco1a1,141895285,chr6,a,SNP,Het,g,NM_013797,5' UTR,Non-Coding, , ,C8
+Slco1a1,141895285,chr6,a,SNP,Het,g,NM_013797,5' UTR,Non-Coding, , ,D10
+Slco1a1,141895285,chr6,a,SNP,Het,g,NM_013797,5' UTR,Non-Coding, , ,F2
+Slco1a1,141895285,chr6,a,SNP,Het,g,NM_013797,5' UTR,Non-Coding, , ,G8
+Gm6614,141920667,chr6,a,SNP,Het,g, ,Downstream, , , ,C5
+Gm6614,141920667,chr6,a,SNP,Het,g, ,Downstream, , , ,C8
+Gm6614,141920667,chr6,a,SNP,Het,g, ,Downstream, , , ,D10
+Gm6614,141920667,chr6,a,SNP,Het,g, ,Downstream, , , ,F2
+Gm6614,141920667,chr6,a,SNP,Het,g, ,Downstream, , , ,Toomie
+Gm6614,141920683,chr6,g,SNP,Het,a, ,Downstream, , , ,C5
+Gm6614,141920683,chr6,g,SNP,Het,a, ,Downstream, , , ,C8
+Gm6614,141920683,chr6,g,SNP,Het,a, ,Downstream, , , ,F2
+Gm6614,141920683,chr6,g,SNP,Het,a, ,Downstream, , , ,G9
+Gm6614,141920683,chr6,g,SNP,Het,a, ,Downstream, , , ,Toomie
+Gm6614,141920791,chr6,t,SNP,Het,c,NM_001081318,CDS,Non-Synonymous,M,V,C5
+Gm6614,141920791,chr6,t,SNP,Het,c,NM_001081318,CDS,Non-Synonymous,M,V,C8
+Gm6614,141920791,chr6,t,SNP,Het,c,NM_001081318,CDS,Non-Synonymous,M,V,D10
+Gm6614,141920791,chr6,t,SNP,Het,c,NM_001081318,CDS,Non-Synonymous,M,V,F2
+Gm6614,141920791,chr6,t,SNP,Het,c,NM_001081318,CDS,Non-Synonymous,M,V,Toomie
+Gm6614,141920798,chr6,g,SNP,Het,a,NM_001081318,CDS,Synonymous,L,L,C5
+Gm6614,141920798,chr6,g,SNP,Het,a,NM_001081318,CDS,Synonymous,L,L,C8
+Gm6614,141920798,chr6,g,SNP,Het,a,NM_001081318,CDS,Synonymous,L,L,D10
+Gm6614,141920798,chr6,g,SNP,Het,a,NM_001081318,CDS,Synonymous,L,L,F2
+Gm6614,141920798,chr6,g,SNP,Het,a,NM_001081318,CDS,Synonymous,L,L,Toomie
+Gm6614,141936346,chr6,c,SNP,Het,t,NM_001081318,CDS,Synonymous,V,V,C5
+Gm6614,141936346,chr6,c,SNP,Het,t,NM_001081318,CDS,Synonymous,V,V,C8
+Gm6614,141936346,chr6,c,SNP,Het,t,NM_001081318,CDS,Synonymous,V,V,F2
+Gm6614,141936346,chr6,c,SNP,Het,t,NM_001081318,CDS,Synonymous,V,V,G9
+Gm6614,141936346,chr6,c,SNP,Het,t,NM_001081318,CDS,Synonymous,V,V,Toomie
+Gm6614,141942736,chr6,g,SNP,Het,t,NM_001081318,CDS,Synonymous,A,A,C5
+Gm6614,141942736,chr6,g,SNP,Het,t,NM_001081318,CDS,Synonymous,A,A,C8
+Gm6614,141942736,chr6,g,SNP,Het,t,NM_001081318,CDS,Synonymous,A,A,D10
+Gm6614,141942736,chr6,g,SNP,Het,t,NM_001081318,CDS,Synonymous,A,A,F2
+Gm6614,141942736,chr6,g,SNP,Het,t,NM_001081318,CDS,Synonymous,A,A,G9
+Gm6614,141942744,chr6,c,SNP,Het,t,NM_001081318,CDS,Non-Synonymous,D,N,C5
+Gm6614,141942744,chr6,c,SNP,Het,t,NM_001081318,CDS,Non-Synonymous,D,N,C8
+Gm6614,141942744,chr6,c,SNP,Het,t,NM_001081318,CDS,Non-Synonymous,D,N,D10
+Gm6614,141942744,chr6,c,SNP,Het,t,NM_001081318,CDS,Non-Synonymous,D,N,F2
+Gm6614,141942744,chr6,c,SNP,Het,t,NM_001081318,CDS,Non-Synonymous,D,N,G9
+Gm6614,141942901,chr6,g,SNP,Het,a,NM_001081318,Intron, , , ,C5
+Gm6614,141942901,chr6,g,SNP,Het,a,NM_001081318,Intron, , , ,C8
+Gm6614,141942901,chr6,g,SNP,Het,a,NM_001081318,Intron, , , ,D10
+Gm6614,141942901,chr6,g,SNP,Het,a,NM_001081318,Intron, , , ,F2
+Gm6614,141942901,chr6,g,SNP,Het,a,NM_001081318,Intron, , , ,G9
+Gm6614,141943125,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,C5
+Gm6614,141943125,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,C8
+Gm6614,141943125,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,F2
+Gm6614,141943125,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,G9
+Gm6614,141943125,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,Toomie
+Gm6614,141943145,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,C5
+Gm6614,141943145,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,C8
+Gm6614,141943145,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,F2
+Gm6614,141943145,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,G9
+Gm6614,141943145,chr6,t,SNP,Het,c,NM_001081318,Intron, , , ,Toomie
+Gm6614,141943387,chr6,a,SNP,Het,g,NM_001081318,Intron, , , ,C5
+Gm6614,141943387,chr6,a,SNP,Het,g,NM_001081318,Intron, , , ,C8
+Gm6614,141943387,chr6,a,SNP,Het,g,NM_001081318,Intron, , , ,D10
+Gm6614,141943387,chr6,a,SNP,Het,g,NM_001081318,Intron, , , ,F2
+Gm6614,141943387,chr6,a,SNP,Het,g,NM_001081318,Intron, , , ,G9
+Gm6614,141960007,chr6,a,SNP,Het,c, ,Upstream, , , ,C5
+Gm6614,141960007,chr6,a,SNP,Het,c, ,Upstream, , , ,C8
+Gm6614,141960007,chr6,a,SNP,Het,c, ,Upstream, , , ,D10
+Gm6614,141960007,chr6,a,SNP,Het,c, ,Upstream, , , ,F2
+Gm6614,141960007,chr6,a,SNP,Het,c, ,Upstream, , , ,G9
+Slco1a6,142109513,chr6,g,SNP,Het,a,NM_023718,Intron, , , ,C5
+Slco1a6,142109513,chr6,g,SNP,Het,a,NM_023718,Intron, , , ,C8
+Slco1a6,142109513,chr6,g,SNP,Het,a,NM_023718,Intron, , , ,D10
+Slco1a6,142109513,chr6,g,SNP,Het,a,NM_023718,Intron, , , ,F2
+Slco1a6,142109513,chr6,g,SNP,Het,a,NM_023718,Intron, , , ,Toomie
+Slco1a5,142183264,chr6,ga,MNP,Het,tt,NM_130861,CDS,Non-Synonymous,L,Q,C5
+Slco1a5,142183264,chr6,ga,MNP,Het,tt,NM_130861,CDS,Non-Synonymous,L,Q,C8
+Slco1a5,142183264,chr6,ga,MNP,Het,tt,NM_130861,CDS,Non-Synonymous,L,Q,D10
+Slco1a5,142183264,chr6,ga,MNP,Het,tt,NM_130861,CDS,Non-Synonymous,L,Q,F2
+Slco1a5,142183264,chr6,ga,MNP,Het,tt,NM_130861,CDS,Non-Synonymous,L,Q,G9
+Slco1a5,142224179,chr6, ,INS,Het,a,NM_130861,Intron, , , ,C5
+Slco1a5,142224179,chr6, ,INS,Het,a,NM_130861,Intron, , , ,C8
+Slco1a5,142224179,chr6, ,INS,Het,a,NM_130861,Intron, , , ,D10
+Slco1a5,142224179,chr6, ,INS,Het,a,NM_130861,Intron, , , ,F2
+Slco1a5,142224179,chr6, ,INS,Het,a,NM_130861,Intron, , , ,Toomie
+Slco1a5,142247348,chr6,t,DEL,Het, ,NM_130861,Intron, , , ,C5
+Slco1a5,142247348,chr6,t,DEL,Het, ,NM_130861,Intron, , , ,C8
+Slco1a5,142247348,chr6,t,DEL,Het, ,NM_130861,Intron, , , ,D10
+Slco1a5,142247348,chr6,t,DEL,Het, ,NM_130861,Intron, , , ,F2
+Slco1a5,142247348,chr6,t,DEL,Het, ,NM_130861,Intron, , , ,Toomie
+Slco1a5,142262698,chr6,g,SNP,Het,a,NM_130861,Intron, , , ,C5
+Slco1a5,142262698,chr6,g,SNP,Het,a,NM_130861,Intron, , , ,C8
+Slco1a5,142262698,chr6,g,SNP,Het,a,NM_130861,Intron, , , ,G8
+Slco1a5,142262698,chr6,g,SNP,Het,a,NM_130861,Intron, , , ,G9
+Slco1a5,142262698,chr6,g,SNP,Het,a,NM_130861,Intron, , , ,Toomie
+Golt1b,142342405,chr6,g,SNP,Het,t,NM_025872,Intron, , , ,C5
+Golt1b,142342405,chr6,g,SNP,Het,t,NM_025872,Intron, , , ,C8
+Golt1b,142342405,chr6,g,SNP,Het,t,NM_025872,Intron, , , ,F2
+Golt1b,142342405,chr6,g,SNP,Het,t,NM_025872,Intron, , , ,G9
+Golt1b,142342405,chr6,g,SNP,Het,t,NM_025872,Intron, , , ,Toomie
+Gys2,142397047,chr6,c,SNP,Het,t,NM_145572,Intron, , , ,C5
+Gys2,142397047,chr6,c,SNP,Het,t,NM_145572,Intron, , , ,C8
+Gys2,142397047,chr6,c,SNP,Het,t,NM_145572,Intron, , , ,D10
+Gys2,142397047,chr6,c,SNP,Het,t,NM_145572,Intron, , , ,F2
+Gys2,142397047,chr6,c,SNP,Het,t,NM_145572,Intron, , , ,G9
+Gys2,142403828,chr6,g,SNP,Het,a,NM_145572,Intron, , , ,C5
+Gys2,142403828,chr6,g,SNP,Het,a,NM_145572,Intron, , , ,C8
+Gys2,142403828,chr6,g,SNP,Het,a,NM_145572,Intron, , , ,F2
+Gys2,142403828,chr6,g,SNP,Het,a,NM_145572,Intron, , , ,G9
+Gys2,142403828,chr6,g,SNP,Het,a,NM_145572,Intron, , , ,Toomie
+Gys2,142411731,chr6, ,INS,Het,g,NM_145572,Intron, , , ,C5
+Gys2,142411731,chr6, ,INS,Het,g,NM_145572,Intron, , , ,C8
+Gys2,142411731,chr6, ,INS,Het,g,NM_145572,Intron, , , ,D10
+Gys2,142411731,chr6, ,INS,Het,g,NM_145572,Intron, , , ,F2
+Gys2,142411731,chr6, ,INS,Het,g,NM_145572,Intron, , , ,G9
+Ldhb,142439083,chr6,c,SNP,Het,t,NM_008492,CDS,Synonymous,P,P,C5
+Ldhb,142439083,chr6,c,SNP,Het,t,NM_008492,CDS,Synonymous,P,P,D10
+Ldhb,142439083,chr6,c,SNP,Het,t,NM_008492,CDS,Synonymous,P,P,F2
+Ldhb,142439083,chr6,c,SNP,Het,t,NM_008492,CDS,Synonymous,P,P,G9
+Ldhb,142439083,chr6,c,SNP,Het,t,NM_008492,CDS,Synonymous,P,P,Toomie
+Ldhb,142442604,chr6,cc,MNP,Het,ta,NM_008492,Intron, , , ,C5
+Ldhb,142442604,chr6,cc,MNP,Het,ta,NM_008492,Intron, , , ,C8
+Ldhb,142442604,chr6,cc,MNP,Het,ta,NM_008492,Intron, , , ,D10
+Ldhb,142442604,chr6,cc,MNP,Het,ta,NM_008492,Intron, , , ,F2
+Ldhb,142442604,chr6,cc,MNP,Het,ta,NM_008492,Intron, , , ,G9
+Ldhb,142442607,chr6,c,SNP,Het,g,NM_008492,Intron, , , ,C5
+Ldhb,142442607,chr6,c,SNP,Het,g,NM_008492,Intron, , , ,C8
+Ldhb,142442607,chr6,c,SNP,Het,g,NM_008492,Intron, , , ,D10
+Ldhb,142442607,chr6,c,SNP,Het,g,NM_008492,Intron, , , ,F2
+Ldhb,142442607,chr6,c,SNP,Het,g,NM_008492,Intron, , , ,G9
+Abcc9,142550238,chr6,a,SNP,Het,g,NM_001044720,Intron, , , ,C5
+Abcc9,142550238,chr6,a,SNP,Het,g,NM_001044720,Intron, , , ,C8
+Abcc9,142550238,chr6,a,SNP,Het,g,NM_001044720,Intron, , , ,D10
+Abcc9,142550238,chr6,a,SNP,Het,g,NM_001044720,Intron, , , ,F2
+Abcc9,142550238,chr6,a,SNP,Het,g,NM_001044720,Intron, , , ,Toomie
+5330439B14Rik,142574216,chr6,c,SNP,Het,g,NM_177314,CDS,Non-Synonymous,L,V,C5
+5330439B14Rik,142574216,chr6,c,SNP,Het,g,NM_177314,CDS,Non-Synonymous,L,V,C8
+5330439B14Rik,142574216,chr6,c,SNP,Het,g,NM_177314,CDS,Non-Synonymous,L,V,F2
+5330439B14Rik,142574216,chr6,c,SNP,Het,g,NM_177314,CDS,Non-Synonymous,L,V,G9
+5330439B14Rik,142574216,chr6,c,SNP,Het,g,NM_177314,CDS,Non-Synonymous,L,V,Toomie
+Abcc9,142613243,chr6,c,SNP,Het,t,NM_021041,Intron, , , ,C5
+Abcc9,142613243,chr6,c,SNP,Het,t,NM_001044720,Intron, , , ,C8
+Abcc9,142613243,chr6,c,SNP,Het,t,NM_001044720,Intron, , , ,F2
+Abcc9,142613243,chr6,c,SNP,Het,t,NM_021042,Intron, , , ,G9
+Abcc9,142613243,chr6,c,SNP,Het,t,NM_001044720,Intron, , , ,Toomie
+Abcc9,142641454,chr6,cg,MNP,Het,ta,NM_021041,Intron, , , ,C5
+Abcc9,142641454,chr6,cg,MNP,Het,ta,NM_001044720,Intron, , , ,C8
+Abcc9,142641454,chr6,cg,MNP,Het,ta,NM_001044720,Intron, , , ,D10
+Abcc9,142641454,chr6,cg,MNP,Het,ta,NM_001044720,Intron, , , ,F2
+Abcc9,142641454,chr6,c,SNP,Het,t,NM_001044720,Intron, , , ,Toomie
+Gm766,142734792,chr6,t,SNP,Het,c,NM_001145390,3' UTR,Non-Coding, , ,C5
+Gm766,142734792,chr6,t,SNP,Het,c,NM_001145390,3' UTR,Non-Coding, , ,C8
+Gm766,142734792,chr6,t,SNP,Het,c,NM_001145390,3' UTR,Non-Coding, , ,F2
+Gm766,142734792,chr6,t,SNP,Het,c,NM_001145390,3' UTR,Non-Coding, , ,G9
+Gm766,142734792,chr6,t,SNP,Het,c,NM_001145390,3' UTR,Non-Coding, , ,Toomie
+St8sia1,142816486,chr6,t,SNP,Het,c,NM_011374,Intron, , , ,C5
+St8sia1,142816486,chr6,t,SNP,Het,c,NM_011374,Intron, , , ,C8
+St8sia1,142816486,chr6,t,SNP,Het,c,NM_011374,Intron, , , ,F2
+St8sia1,142816486,chr6,t,SNP,Het,c,NM_011374,Intron, , , ,G9
+St8sia1,142816486,chr6,t,SNP,Het,c,NM_011374,Intron, , , ,Toomie
+5730419I09Rik,142995524,chr6,a,SNP,Het,c,NM_001109688,Intron, , , ,C5
+5730419I09Rik,142995524,chr6,a,SNP,Het,c,NM_001109688,Intron, , , ,C8
+5730419I09Rik,142995524,chr6,a,SNP,Het,c,NM_001109688,Intron, , , ,F2
+5730419I09Rik,142995524,chr6,a,SNP,Het,c,NM_001109688,Intron, , , ,G9
+5730419I09Rik,142995524,chr6,a,SNP,Het,c,NM_001109688,Intron, , , ,Toomie
+5730419I09Rik,143028561,chr6,ac,MNP,Het,gt,NM_001109688,Intron, , , ,C5
+5730419I09Rik,143028561,chr6,ac,MNP,Het,gt,NM_001109688,Intron, , , ,C8
+5730419I09Rik,143028561,chr6,ac,MNP,Het,gt,NM_001109688,Intron, , , ,D10
+5730419I09Rik,143028561,chr6,ac,MNP,Het,gt,NM_001109688,Intron, , , ,G9
+5730419I09Rik,143028561,chr6,a,SNP,Het,g,NM_001109688,Intron, , , ,Toomie
+5730419I09Rik,143031878,chr6,c,SNP,Het,t,NM_001109688,Intron, , , ,C5
+5730419I09Rik,143031878,chr6,c,SNP,Het,t,NM_001109688,Intron, , , ,C8
+5730419I09Rik,143031878,chr6,c,SNP,Het,t,NM_001109688,Intron, , , ,F2
+5730419I09Rik,143031878,chr6,c,SNP,Het,t,NM_001109688,Intron, , , ,G9
+5730419I09Rik,143031878,chr6,c,SNP,Het,t,NM_029897,Intron, , , ,Toomie
+Etnk1,143151546,chr6,t,DEL,Het, ,NM_029250,Intron, , , ,C5
+Etnk1,143151546,chr6,t,DEL,Het, ,NM_029250,Intron, , , ,C8
+Etnk1,143151546,chr6,t,DEL,Het, ,NM_029250,Intron, , , ,D10
+Etnk1,143151546,chr6,t,DEL,Het, ,NM_029250,Intron, , , ,F2
+Etnk1,143151546,chr6,t,DEL,Het, ,NM_029250,Intron, , , ,Toomie
+Sox5,143793141,chr6, ,INS,Het,g,NM_001113559,Intron, , , ,C5
+Sox5,143793141,chr6, ,INS,Het,g,NM_001113559,Intron, , , ,C8
+Sox5,143793141,chr6, ,INS,Het,g,NM_001113559,Intron, , , ,F2
+Sox5,143793141,chr6, ,INS,Het,g,NM_001113559,Intron, , , ,G9
+Sox5,143793141,chr6, ,INS,Het,g,NM_001113559,Intron, , , ,Toomie
+Bcat1,144997197,chr6,g,SNP,Het,c,NM_001024468,CDS,Synonymous,P,P,C5
+Bcat1,144997197,chr6,g,SNP,Het,c,NM_001024468,CDS,Synonymous,P,P,C8
+Bcat1,144997197,chr6,g,SNP,Het,c,NM_001024468,CDS,Synonymous,P,P,D10
+Bcat1,144997197,chr6,g,SNP,Het,c,NM_001024468,CDS,Synonymous,P,P,G9
+Bcat1,144997197,chr6,g,SNP,Het,c,NM_001024468,CDS,Synonymous,P,P,Toomie
+Lrmp,145120306,chr6,cc,MNP,Hom,tt,NM_008511,Intron, , , ,C5
+Lrmp,145120306,chr6,cc,MNP,Hom,tt,NM_008511,Intron, , , ,C8
+Lrmp,145120306,chr6,cc,MNP,Hom,tt,NM_008511,Intron, , , ,F2
+Lrmp,145120306,chr6,cc,MNP,Hom,tt,NM_008511,Intron, , , ,G8
+Lrmp,145120306,chr6,cc,MNP,Hom,tt,NM_008511,Intron, , , ,G9
+Ifltd1,145352930,chr6,c,SNP,Hom,g,NM_028742,Intron, , , ,C5
+Ifltd1,145352930,chr6,c,SNP,Hom,g,NM_028742,Intron, , , ,D10
+Ifltd1,145352930,chr6,c,SNP,Hom,g,NM_028742,Intron, , , ,G8
+Ifltd1,145352930,chr6,c,SNP,Hom,g,NM_028742,Intron, , , ,G9
+Ifltd1,145352930,chr6,c,SNP,Hom,g,NM_028742,Intron, , , ,Toomie
+4933424B01Rik,146523190,chr6,c,SNP,Het,t,NM_138757,Intron, , , ,C5
+4933424B01Rik,146523190,chr6,c,SNP,Het,t,NM_138757,Intron, , , ,C8
+4933424B01Rik,146523190,chr6,c,SNP,Het,t,NM_138757,Intron, , , ,F2
+4933424B01Rik,146523190,chr6,c,SNP,Het,t,NM_138757,Intron, , , ,G9
+4933424B01Rik,146523190,chr6,c,SNP,Het,t,NM_138757,Intron, , , ,Toomie
+Stk38l,146717029,chr6, ,INS,Hom,ag,NM_172734,Intron, , , ,C5
+Stk38l,146717029,chr6, ,INS,Hom,ag,NM_172734,Intron, , , ,C8
+Stk38l,146717029,chr6, ,INS,Hom,ag,NM_172734,Intron, , , ,D10
+Stk38l,146717029,chr6, ,INS,Hom,ag,NM_172734,Intron, , , ,G8
+Stk38l,146717029,chr6, ,INS,Hom,ag,NM_172734,Intron, , , ,G9
+Arntl2,146776662,chr6,aag,DEL,Hom, ,NM_172309,CDS,Non-Synonymous,EV,V,C5
+Arntl2,146776662,chr6,aag,DEL,Hom, ,NM_172309,CDS,Non-Synonymous,EV,V,D10
+Arntl2,146776662,chr6,aag,DEL,Hom, ,NM_172309,CDS,Non-Synonymous,EV,V,F2
+Arntl2,146776662,chr6,aag,DEL,Hom, ,NM_172309,CDS,Non-Synonymous,EV,V,G8
+Arntl2,146776662,chr6,aag,DEL,Hom, ,NM_172309,CDS,Non-Synonymous,EV,V,G9
+Arntl2,146778194,chr6,c,SNP,Het,t,NM_172309,Intron, , , ,C5
+Arntl2,146778194,chr6,c,SNP,Het,t,NM_172309,Intron, , , ,C8
+Arntl2,146778194,chr6,c,SNP,Het,t,NM_172309,Intron, , , ,F2
+Arntl2,146778194,chr6,c,SNP,Het,t,NM_172309,Intron, , , ,G9
+Arntl2,146778194,chr6,c,SNP,Het,t,NM_172309,Intron, , , ,Toomie
+1700023A16Rik,146798530,chr6,g,SNP,Hom,t, ,Upstream, , , ,C5
+1700023A16Rik,146798530,chr6,g,SNP,Hom,t, ,Upstream, , , ,C8
+1700023A16Rik,146798530,chr6,g,SNP,Hom,t, ,Upstream, , , ,G8
+1700023A16Rik,146798530,chr6,g,SNP,Hom,t, ,Upstream, , , ,G9
+1700023A16Rik,146798530,chr6,g,SNP,Hom,t, ,Upstream, , , ,Toomie
+1700023A16Rik,146807597,chr6,t,DEL,Hom, ,NM_027059,Intron, , , ,C5
+1700023A16Rik,146807597,chr6,t,DEL,Hom, ,NM_027059,Intron, , , ,C8
+1700023A16Rik,146807597,chr6,t,DEL,Hom, ,NM_027059,Intron, , , ,F2
+1700023A16Rik,146807597,chr6,t,DEL,Hom, ,NM_027059,Intron, , , ,G8
+1700023A16Rik,146807597,chr6,t,DEL,Hom, ,NM_027059,Intron, , , ,Toomie
+1700034J05Rik,146901569,chr6,cc,MNP,Het,tt,NM_001164236,CDS,Non-Synonymous,KE,KK,C5
+1700034J05Rik,146901569,chr6,cc,MNP,Het,tt,NM_001164236,CDS,Non-Synonymous,KE,KK,C8
+1700034J05Rik,146901569,chr6,cc,MNP,Het,tt,NM_001164236,CDS,Non-Synonymous,KE,KK,F2
+1700034J05Rik,146901569,chr6,cc,MNP,Het,tt,NM_001164236,CDS,Non-Synonymous,KE,KK,G8
+1700034J05Rik,146901569,chr6,c,SNP,Het,t,NM_001164236,CDS,Non-Synonymous,KE,KK,Toomie
+Ppfibp1,146902148,chr6, ,INS,Hom,g,NM_026221,Intron, , , ,C5
+Ppfibp1,146902148,chr6, ,INS,Hom,g,NM_026221,Intron, , , ,C8
+Ppfibp1,146902148,chr6, ,INS,Hom,g,NM_026221,Intron, , , ,F2
+Ppfibp1,146902148,chr6, ,INS,Hom,g,NM_026221,Intron, , , ,G9
+Ppfibp1,146902148,chr6, ,INS,Hom,g,NM_026221,Intron, , , ,Toomie
+Rep15,146981282,chr6,g,SNP,Het,a,NM_025620,CDS,Synonymous,A,A,C5
+Rep15,146981282,chr6,g,SNP,Het,a,NM_025620,CDS,Synonymous,A,A,C8
+Rep15,146981282,chr6,g,SNP,Het,a,NM_025620,CDS,Synonymous,A,A,F2
+Rep15,146981282,chr6,g,SNP,Het,a,NM_025620,CDS,Synonymous,A,A,G9
+Rep15,146981282,chr6,g,SNP,Het,a,NM_025620,CDS,Synonymous,A,A,Toomie
+Rep15,146982024,chr6, ,INS,Het,gaaaa,NM_025620,3' UTR,Non-Coding, , ,C5
+Rep15,146982024,chr6, ,INS,Het,gaaaa,NM_025620,3' UTR,Non-Coding, , ,C8
+Rep15,146982024,chr6, ,INS,Het,gaaaa,NM_025620,3' UTR,Non-Coding, , ,F2
+Rep15,146982024,chr6, ,INS,Het,gaaaa,NM_025620,3' UTR,Non-Coding, , ,G8
+Rep15,146982024,chr6, ,INS,Het,gaaaa,NM_025620,3' UTR,Non-Coding, , ,G9
+Gm5887,147024112,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,T,I,C5
+Gm5887,147024112,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,T,I,C8
+Gm5887,147024112,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,T,I,D10
+Gm5887,147024112,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,T,I,F2
+Gm5887,147024112,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,T,I,Toomie
+Gm5887,147024119,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,A,P,C5
+Gm5887,147024119,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,A,P,C8
+Gm5887,147024119,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,A,P,D10
+Gm5887,147024119,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,A,P,F2
+Gm5887,147024119,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,A,P,Toomie
+Gm5887,147024134,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,P,S,C5
+Gm5887,147024134,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,P,S,C8
+Gm5887,147024134,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,P,S,D10
+Gm5887,147024134,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,P,S,F2
+Gm5887,147024134,chr6,g,SNP,Het,a,NM_001034903,CDS,Non-Synonymous,P,S,Toomie
+Gm5887,147024181,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,S,T,C5
+Gm5887,147024181,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,S,T,C8
+Gm5887,147024181,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,S,T,D10
+Gm5887,147024181,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,S,T,F2
+Gm5887,147024181,chr6,c,SNP,Het,g,NM_001034903,CDS,Non-Synonymous,S,T,Toomie
+Nlrp12,3239713,chr7,g,SNP,Het,a,NM_001033431,Intron, , , ,C5
+Nlrp12,3239713,chr7,g,SNP,Hom,a,NM_001033431,Intron, , , ,D10
+Nlrp12,3239713,chr7,g,SNP,Het,a,NM_001033431,Intron, , , ,F2
+Nlrp12,3239713,chr7,g,SNP,Het,a,NM_001033431,Intron, , , ,G8
+Nlrp12,3239713,chr7,g,SNP,Het,a,NM_001033431,Intron, , , ,G9
+Crxos1,16489300,chr7,g,SNP,Het,t,NM_001033638,3' UTR,Non-Coding, , ,C5
+Crxos1,16489300,chr7,g,SNP,Het,t,NM_001033638,3' UTR,Non-Coding, , ,D10
+Crxos1,16489300,chr7,g,SNP,Het,t,NM_001033638,3' UTR,Non-Coding, , ,F2
+Crxos1,16489300,chr7,g,SNP,Het,t,NM_001033638,3' UTR,Non-Coding, , ,G8
+Crxos1,16489300,chr7,g,SNP,Het,t,NM_001033638,3' UTR,Non-Coding, , ,Toomie
+Prkd2,17455383,chr7,c,SNP,Hom,a,NM_178900,3' UTR,Non-Coding, , ,C5
+Prkd2,17455383,chr7,c,SNP,Hom,a,NM_178900,3' UTR,Non-Coding, , ,C8
+Prkd2,17455383,chr7,c,SNP,Hom,a,NM_178900,3' UTR,Non-Coding, , ,D10
+Prkd2,17455383,chr7,c,SNP,Hom,a,NM_178900,3' UTR,Non-Coding, , ,G8
+Prkd2,17455383,chr7,c,SNP,Hom,a,NM_178900,3' UTR,Non-Coding, , ,Toomie
+Psg28,19008584,chr7,c,SNP,Het,t,NM_054063,Intron, , , ,C5
+Psg28,19008584,chr7,c,SNP,Het,t,NM_054063,Intron, , , ,C8
+Psg28,19008584,chr7,c,SNP,Het,t,NM_054063,Intron, , , ,F2
+Psg28,19008584,chr7,c,SNP,Het,t,NM_054063,Intron, , , ,G8
+Psg28,19008584,chr7,c,SNP,Het,t,NM_054063,Intron, , , ,G9
+Psg22,19310107,chr7,c,DEL,Het, ,NM_001004152,Intron, , , ,C5
+Psg22,19310107,chr7,c,DEL,Het, ,NM_001004152,Intron, , , ,C8
+Psg22,19310107,chr7,c,DEL,Het, ,NM_001004152,Intron, , , ,F2
+Psg22,19310107,chr7,c,DEL,Het, ,NM_001004152,Intron, , , ,G8
+Psg22,19310107,chr7,c,DEL,Het, ,NM_001004152,Intron, , , ,G9
+Psg19,19377657,chr7,g,DEL,Het, ,NM_011964,Intron, , , ,C5
+Psg19,19377657,chr7,g,DEL,Het, ,NM_011964,Intron, , , ,C8
+Psg19,19377657,chr7,g,DEL,Het, ,NM_011964,Intron, , , ,G8
+Psg19,19377657,chr7,g,DEL,Het, ,NM_011964,Intron, , , ,G9
+Psg19,19377657,chr7,g,DEL,Het, ,NM_011964,Intron, , , ,Toomie
+Psg19,19383754,chr7,c,SNP,Het,a,NM_011964,5' UTR,Non-Coding, , ,C5
+Psg19,19383754,chr7,c,SNP,Het,a,NM_011964,5' UTR,Non-Coding, , ,C8
+Psg19,19383754,chr7,c,SNP,Het,a,NM_011964,5' UTR,Non-Coding, , ,D10
+Psg19,19383754,chr7,c,SNP,Het,a,NM_011964,5' UTR,Non-Coding, , ,G8
+Psg19,19383754,chr7,c,SNP,Het,a,NM_011964,5' UTR,Non-Coding, , ,Toomie
+Dmpk,19669549,chr7,g,SNP,Hom,a,NM_032418,Intron, , , ,C5
+Dmpk,19669549,chr7,g,SNP,Hom,a,NM_032418,Intron, , , ,C8
+Dmpk,19669549,chr7,g,SNP,Hom,a,NM_032418,Intron, , , ,D10
+Dmpk,19669549,chr7,g,SNP,Hom,a,NM_032418,Intron, , , ,G8
+Dmpk,19669549,chr7,g,SNP,Hom,a,NM_032418,Intron, , , ,G9
+Nkpd1,20110169,chr7,gag,DEL,Hom, ,NM_027116,3' UTR,Non-Coding, , ,C5
+Nkpd1,20110169,chr7,gag,DEL,Hom, ,NM_027116,3' UTR,Non-Coding, , ,C8
+Nkpd1,20110169,chr7,gag,DEL,Hom, ,NM_027116,3' UTR,Non-Coding, , ,F2
+Nkpd1,20110169,chr7,gag,DEL,Hom, ,NM_027116,3' UTR,Non-Coding, , ,G8
+Nkpd1,20110169,chr7,g,DEL,Hom, ,NM_027116,3' UTR,Non-Coding, , ,Toomie
+Bcam,20354048,chr7,g,SNP,Hom,t,NM_020486,Intron, , , ,C5
+Bcam,20354048,chr7,g,SNP,Hom,t,NM_020486,Intron, , , ,C8
+Bcam,20354048,chr7,g,SNP,Hom,t,NM_020486,Intron, , , ,D10
+Bcam,20354048,chr7,g,SNP,Hom,t,NM_020486,Intron, , , ,G8
+Bcam,20354048,chr7,g,SNP,Hom,t,NM_020486,Intron, , , ,Toomie
+2210010C17Rik,20539555,chr7,a,SNP,Het,g, ,Upstream, , , ,C5
+2210010C17Rik,20539555,chr7,a,SNP,Het,g, ,Upstream, , , ,C8
+2210010C17Rik,20539555,chr7,a,SNP,Het,g, ,Upstream, , , ,D10
+2210010C17Rik,20539555,chr7,a,SNP,Het,g, ,Upstream, , , ,F2
+2210010C17Rik,20539555,chr7,a,SNP,Het,g, ,Upstream, , , ,G8
+Nlrp9b,20598985,chr7,c,SNP,Hom,a,NM_194058,Intron, , , ,C5
+Nlrp9b,20598985,chr7,c,SNP,Hom,a,NM_194058,Intron, , , ,F2
+Nlrp9b,20598985,chr7,c,SNP,Hom,a,NM_194058,Intron, , , ,G8
+Nlrp9b,20598985,chr7,c,SNP,Hom,a,NM_194058,Intron, , , ,G9
+Nlrp9b,20598985,chr7,c,SNP,Hom,a,NM_194058,Intron, , , ,Toomie
+Nlrp9b,20599015,chr7,t,SNP,Hom,a,NM_194058,Intron, , , ,C5
+Nlrp9b,20599015,chr7,t,SNP,Hom,a,NM_194058,Intron, , , ,F2
+Nlrp9b,20599015,chr7,t,SNP,Hom,a,NM_194058,Intron, , , ,G8
+Nlrp9b,20599015,chr7,t,SNP,Hom,a,NM_194058,Intron, , , ,G9
+Nlrp9b,20599015,chr7,t,SNP,Hom,a,NM_194058,Intron, , , ,Toomie
+V1rd7,24417675,chr7,t,SNP,Het,a,NM_030737,CDS,Non-Synonymous,L,H,C5
+V1rd7,24417675,chr7,t,SNP,Het,a,NM_030737,CDS,Non-Synonymous,L,H,C8
+V1rd7,24417675,chr7,t,SNP,Het,a,NM_030737,CDS,Non-Synonymous,L,H,G8
+V1rd7,24417675,chr7,t,SNP,Het,a,NM_030737,CDS,Non-Synonymous,L,H,G9
+V1rd7,24417675,chr7,t,SNP,Het,a,NM_030737,CDS,Non-Synonymous,L,H,Toomie
+Zfp93,25060461,chr7,gc,MNP,Het,at,NM_009567,CDS,Non-Synonymous,R,H,C5
+Zfp93,25060461,chr7,gc,MNP,Het,at,NM_009567,CDS,Non-Synonymous,R,H,D10
+Zfp93,25060461,chr7,gc,MNP,Het,at,NM_009567,CDS,Non-Synonymous,R,H,F2
+Zfp93,25060461,chr7,gc,MNP,Het,at,NM_009567,CDS,Non-Synonymous,R,H,G8
+Zfp93,25060461,chr7,gc,MNP,Het,at,NM_009567,CDS,Non-Synonymous,R,H,G9
+Zfp61,25075391,chr7,c,SNP,Het,a, ,Downstream, , , ,C5
+Zfp61,25075391,chr7,c,SNP,Het,a, ,Downstream, , , ,C8
+Zfp61,25075391,chr7,c,SNP,Het,a, ,Downstream, , , ,F2
+Zfp61,25075391,chr7,c,SNP,Het,a, ,Downstream, , , ,G8
+Zfp61,25075391,chr7,c,SNP,Het,a, ,Downstream, , , ,G9
+Zfp61,25075409,chr7,c,SNP,Het,t, ,Downstream, , , ,C5
+Zfp61,25075409,chr7,c,SNP,Het,t, ,Downstream, , , ,C8
+Zfp61,25075409,chr7,c,SNP,Het,t, ,Downstream, , , ,G8
+Zfp61,25075409,chr7,c,SNP,Het,t, ,Downstream, , , ,G9
+Zfp61,25075409,chr7,c,SNP,Het,t, ,Downstream, , , ,Toomie
+Cox6b1,31409433,chr7,c,SNP,Het,t,NM_025628,Intron, , , ,C5
+Cox6b1,31409433,chr7,c,SNP,Het,t,NM_025628,Intron, , , ,C8
+Cox6b1,31409433,chr7,c,SNP,Het,t,NM_025628,Intron, , , ,G8
+Cox6b1,31409433,chr7,c,SNP,Het,t,NM_025628,Intron, , , ,G9
+Cox6b1,31409433,chr7,c,SNP,Het,t,NM_025628,Intron, , , ,Toomie
+Etv2,31419080,chr7,g,SNP,Het,t,NM_007959,CDS,Non-Synonymous,H,Q,C5
+Etv2,31419080,chr7,g,SNP,Het,t,NM_007959,CDS,Non-Synonymous,H,Q,F2
+Etv2,31419080,chr7,g,SNP,Het,t,NM_007959,CDS,Non-Synonymous,H,Q,G8
+Etv2,31419080,chr7,g,SNP,Het,t,NM_007959,CDS,Non-Synonymous,H,Q,G9
+Etv2,31419080,chr7,g,SNP,Het,t,NM_007959,CDS,Non-Synonymous,H,Q,Toomie
+Atp4a,31509587,chr7,a,SNP,Het,g,NM_018731,Intron, , , ,C5
+Atp4a,31509587,chr7,a,SNP,Het,g,NM_018731,Intron, , , ,F2
+Atp4a,31509587,chr7,a,SNP,Het,g,NM_018731,Intron, , , ,G8
+Atp4a,31509587,chr7,a,SNP,Het,g,NM_018731,Intron, , , ,G9
+Atp4a,31509587,chr7,a,SNP,Het,g,NM_018731,Intron, , , ,Toomie
+Snord116,67009401,chr7,a,DEL,Het, , ,Downstream, , , ,C5
+Snord116,67009401,chr7,a,DEL,Het, , ,Downstream, , , ,C8
+Snord116,67009401,chr7,a,DEL,Het, , ,Downstream, , , ,F2
+Snord116,67009401,chr7,a,DEL,Het, , ,Downstream, , , ,G9
+Snord116,67009401,chr7,a,DEL,Het, , ,Downstream, , , ,Toomie
+Fus,135113301,chr7,ag,DEL,Het, ,NM_139149,CDS,Frameshift, , ,C5
+Fus,135113301,chr7,ag,DEL,Het, ,NM_139149,CDS,Frameshift, , ,C8
+Fus,135113301,chr7,ag,DEL,Het, ,NM_139149,CDS,Frameshift, , ,D10
+Fus,135113301,chr7,ag,DEL,Het, ,NM_139149,CDS,Frameshift, , ,G8
+Fus,135113301,chr7,a,DEL,Het, ,NM_139149,CDS,Frameshift, , ,Toomie
+Deaf1,148508741,chr7,gcac,DEL,Het, ,NM_016874,Intron, , , ,C5
+Deaf1,148508741,chr7,gcac,DEL,Het, ,NM_016874,Intron, , , ,C8
+Deaf1,148508741,chr7,gcac,DEL,Het, ,NM_016874,Intron, , , ,G8
+Deaf1,148508741,chr7,gcac,DEL,Het, ,NM_016874,Intron, , , ,G9
+Deaf1,148508741,chr7,g,DEL,Het, ,NR_027770,Intron, , , ,Toomie
+Col4a1,11222355,chr8,tcactt,DEL,Het, ,NM_009931,Intron, , , ,C5
+Col4a1,11222355,chr8,tcactt,DEL,Het, ,NM_009931,Intron, , , ,C8
+Col4a1,11222355,chr8,tcactt,DEL,Het, ,NM_009931,Intron, , , ,D10
+Col4a1,11222355,chr8,tcactt,DEL,Het, ,NM_009931,Intron, , , ,F2
+Col4a1,11222355,chr8,t,DEL,Het, ,NM_009931,Intron, , , ,Toomie
+Tubb3,125945279,chr8,g,SNP,Het,c,NM_023279,CDS,Non-Synonymous,K,N,C5
+Tubb3,125945279,chr8,g,SNP,Het,c,NM_023279,CDS,Non-Synonymous,K,N,D10
+Tubb3,125945279,chr8,g,SNP,Het,c,NM_023279,CDS,Non-Synonymous,K,N,F2
+Tubb3,125945279,chr8,g,SNP,Het,c,NM_023279,CDS,Non-Synonymous,K,N,G8
+Tubb3,125945279,chr8,g,SNP,Het,c,NM_023279,CDS,Non-Synonymous,K,N,G9
+Tubb3,125945285,chr8,c,SNP,Het,t,NM_023279,CDS,Synonymous,A,A,C5
+Tubb3,125945285,chr8,c,SNP,Het,t,NM_023279,CDS,Synonymous,A,A,D10
+Tubb3,125945285,chr8,c,SNP,Het,t,NM_023279,CDS,Synonymous,A,A,F2
+Tubb3,125945285,chr8,c,SNP,Het,t,NM_023279,CDS,Synonymous,A,A,G8
+Tubb3,125945285,chr8,c,SNP,Het,t,NM_023279,CDS,Synonymous,A,A,G9
