@@ -533,7 +533,7 @@ public class DataSet
 			boolean found = false;
 			int numFound = 0;
 			
-			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9", "Toomie" };
+			String[] labels = { "Toomie", "C5", "C8", "D10", "F2" , "G8", "G9" };
 			
 			String filename = fn+"\\mutation_shizzle";
 			/*
@@ -555,35 +555,67 @@ public class DataSet
 						if(i != k)
 						{
 							currTree = trees.get(k);
+							
 							if(currTree.get(currList.get(j)) != null)
 							{
 								
 								found = true;
 								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
+							else{found=false;}
 						}
 						else
-						{							
-							if(found)
+						{			
+							currTree = trees.get(k);
+							/*
+							if(currTree.get(currList.get(j)) != null)
 							{
-								currTree = trees.get(i);
+								
+								found = true;
+							}
+							else{found = false;}
+							*/
+							
+							if(labels[k] == "C5"){
+								//found = true;
 								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
-						}						
+							if(labels[k] == "G9"){
+								//found = true;
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+							if(found)
+							{
+								//currTree = trees.get(i);
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								utils.writeData.writeList(filename+"_any.txt", str);
+								numFound++;
+							}
+							else{found=false;}
+						}
+						
 					}
-					if(!found)
+					if((!found) && (numFound == 1))
 					{
+						//System.out.println("NOT FOUND you dummy");
+						
 						currTree = trees.get(i);
 						cmTmp = currTree.get(currList.get(j));
-						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 								cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
 						utils.writeData.writeList(filename+"_unique.txt", str);
 					}
@@ -597,7 +629,7 @@ public class DataSet
 							if(currTree.get(currList.get(j)) != null)
 							{
 								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
 								utils.writeData.writeList(filename+"_all.txt", str);
 							}				
@@ -631,7 +663,7 @@ public class DataSet
 			boolean found = false;
 			int numFound = 0;
 			
-			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9"};
+			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9", "stuff"};
 			
 			String filename = fn+"\\drug_effficacy_shizzle";
 			/*
@@ -644,22 +676,22 @@ public class DataSet
 			for(int i = 0; i < nTrees; i++)
 			{
 				currList = ids.get(i);
+				String theLbl = "";
 				for(int j = 0; j < currList.size(); j++)
 				{
 					numFound = 0;
 					found = false;
 					for(int k = 0; k < nTrees; k++)
 					{
-						if(i != k)
+						System.out.println("ITERATION # "+ (i+j+k));
+						if((i != k))
 						{
 							currTree = trees.get(k);
 							if(currTree.get(currList.get(j)) != null)
 							{								
 								found = true;
-								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								//else{val = deTmp.mech_drug.replaceAll(">",",");}
-								val = deTmp.combined_ID.replaceAll(">",  ",");
 								deTmp = currTree.get(currList.get(j));
+								val = deTmp.combined_ID.replaceAll(">",  ",");								
 								/*String tmp = "";
 								if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
 									tmp = deTmp.gene_sens;
@@ -670,16 +702,21 @@ public class DataSet
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
-						}
-						else
-						{							
-							if(found)
-							{
 								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
+								//else{val = deTmp.mech_drug.replaceAll(">",",");}
+							else{found = false;}
+							
+						}
+						if((i==k))
+						{		
+							currTree = trees.get(k);
+							if(currTree.get(currList.get(j)) != null)
+							{								
+								found = true;
+								deTmp = currTree.get(currList.get(j));
 								val = deTmp.combined_ID.replaceAll(">",  ",");
 								//else{val = deTmp.mech_drug.replaceAll(">",",");}
-								currTree = trees.get(i);
-								deTmp = currTree.get(currList.get(j));
+								//currTree = trees.get(i);								
 								//String tmp = "";
 								/*if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
 									tmp = deTmp.gene_sens;
@@ -690,10 +727,17 @@ public class DataSet
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
-						}						
+							else{found = false;}
+						}	
+						theLbl = labels[k];
 					}
-					if(!found)
+					if((!found) || (numFound == 1))
 					{
+						if(labels[i] == "G9"){
+							System.out.println("FOUND A G9 for Unique list");
+							//System.exit(0);
+						}
+						System.out.println("UNIQUE?  -> "+labels[i]+ ",    "+deTmp.sample_name);
 						//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
 						val = deTmp.combined_ID.replaceAll(">",  ",");
 						//else{val = deTmp.mech_drug.replaceAll(">",",");}
@@ -706,6 +750,7 @@ public class DataSet
 							tmp = "?";
 						}*/
 						str = val+","/*+ tmp */+","+labels[i];
+						
 						utils.writeData.writeList(filename+"_unique.txt", str);
 					}
 					
