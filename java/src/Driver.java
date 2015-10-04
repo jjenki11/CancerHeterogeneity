@@ -9,12 +9,12 @@ public class Driver
 	{		
 		//	mRNA Gene Expression data
 		
-		String basePath = "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\"; // JEFF
+		//String basePath = "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\"; // JEFF
 		
-		//String basePath = ""; // RUTGER
+		String basePath = "C:\\Users\\eveline\\Desktop\\cancer_code_repository\\CancerHeterogeneity\\java\\src\\"; // RUTGER
 		
 		DataSet genes = new DataSet("ge", basePath, "", null, null,null,null);
-	/*	
+		
 		//	Single Nucleotide Level data
 		DataSet mutationC5 = new DataSet("snl",  basePath+"snl\\C5.txt", "C5", null, null,null,null);
 		DataSet mutationC8 = new DataSet("snl",  basePath+"snl\\C8.txt", "C8", null, null,null,null);
@@ -61,7 +61,7 @@ public class Driver
 		DataSet bigboyCancer = new DataSet("macroCancer", basePath+"\\results\\mutations\\", "", null,null,treeList,mutationLists);
 		
 		
-		*/
+		
 		//	Drug Type data
 		DataSet drugTypes = new DataSet("dt", basePath+"drug_data\\type_of_drugs.txt","", null, null,null,null);
 		
