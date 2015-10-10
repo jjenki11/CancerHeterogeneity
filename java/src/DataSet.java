@@ -529,11 +529,11 @@ public class DataSet
 			BTree<String,CancerMutation> currTree = new BTree<String, CancerMutation>();
 			ArrayList<String> currList = new ArrayList<String>();
 			CancerMutation cmTmp = new CancerMutation();
-			
+			System.out.println("IM IN THE MUTATION FUNCTION");
 			boolean found = false;
 			int numFound = 0;
 			
-			String[] labels = { "Toomie", "C5", "C8", "D10", "F2" , "G8", "G9" };
+			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9","Toomie" };
 			
 			String filename = fn+"\\mutation_shizzle";
 			/*
@@ -580,6 +580,7 @@ public class DataSet
 							else{found = false;}
 							*/
 							
+							/*
 							if(labels[k] == "C5"){
 								//found = true;
 								cmTmp = currTree.get(currList.get(j));
@@ -596,6 +597,8 @@ public class DataSet
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
+							*/
+							
 							if(found)
 							{
 								//currTree = trees.get(i);

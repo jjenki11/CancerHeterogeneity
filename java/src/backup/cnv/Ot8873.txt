@@ -1,0 +1,3 @@
+"#chrom,left_cancer,left_normal,right_cancer,right_normal,ref_cancer,ref_normal,kind_cancer,kind_normal,var_seq_cancer,var_seq_normal,coverage_cancer,coverage_normal,conservation,gene,where_in_gene,annot_cancer,annot_normal,dbsnp"
+"chr19,47202569, ,47202570, ,c, ,SNP, ,t/c, ,31, , ,Pdcd11,CDS,P -> L (Pdcd11/NM_011053), ,"
+"chr6,145195291, ,145195292, ,c, ,SNP, ,t/c, ,41, , ,Kras,CDS,G -> D (Kras/NM_021284), ,"

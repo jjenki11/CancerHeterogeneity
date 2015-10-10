@@ -1,0 +1,4 @@
+"#chrom,left_cancer,left_normal,right_cancer,right_normal,ref_cancer,ref_normal,kind_cancer,kind_normal,var_seq_cancer,var_seq_normal,coverage_cancer,coverage_normal,conservation,gene,where_in_gene,annot_cancer,annot_normal,dbsnp"
+"chr6,145195291, ,145195292, ,c, ,SNP, ,t/c, ,48, , ,Kras,CDS,G -> D (Kras/NM_021284), ,"
+"chr17,25387359, ,25387360, ,g, ,SNP, ,t/g, ,103, , ,Baiap3,CDS,L -> I (Baiap3/NM_001163270), ,"
+"chr6,129624980, ,129624982, ,ag, ,MNP, ,ga/ag, ,67, , ,Klrc1,CDS,L -> S (Klrc1/NM_001136068; Klrc1/NM_010652), ,"
