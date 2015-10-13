@@ -13,6 +13,18 @@ public class Driver
 		
 		String basePath = "C:\\Users\\eveline\\Desktop\\cancer_code_repository\\CancerHeterogeneity\\java\\src\\"; // RUTGER
 		
+		boolean is_testing = true;
+		
+		if(is_testing == true)
+		{
+			basePath+="test_data\\";
+		}
+		else
+		{
+			basePath+="real_data\\";
+		}
+		
+		
 		DataSet genes = new DataSet("ge", basePath, "", null, null,null,null);
 		
 		//	Single Nucleotide Level data
@@ -82,7 +94,7 @@ public class Driver
 		DataSet effG9 = new DataSet("ef", "", "", sensG9, drugTypes,null,null);
 		
 		
-/*				
+			
 		ArrayList<ArrayList<String>> drugMechLists = new ArrayList<ArrayList<String>>();
 		drugMechLists.add(effC5.de.mech_list);
 		drugMechLists.add(effC8.de.mech_list);
@@ -98,7 +110,7 @@ public class Driver
 		mechTreeList.add(effG8.de.mechTree);
 		mechTreeList.add(effG9.de.mechTree);		
 		DataSet bigboyEfficacyMech = new DataSet("macroDrug", basePath+"\\results\\mech_drug_efficacy\\,mech", "", null, null, mechTreeList, drugMechLists);
-*/
+
 		ArrayList<BTree<String,DrugEfficacy>> combTreeList = new ArrayList<BTree<String, DrugEfficacy>>();
 		combTreeList.add(effC5.de.combinedTree);
 		combTreeList.add(effC8.de.combinedTree);

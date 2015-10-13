@@ -442,6 +442,7 @@ public class CHUtilities
 			{
 				System.out.println("BAD FILE WAS > " + filename+"mRNA_Gene_expression2.txt");
 			    System.out.println("File Read Error in writelist");
+			    e.printStackTrace();
 			    System.exit(0);
 			}			
 			System.out.println("UNIQUE-> : "+ counterUNIQUE);

@@ -1,1 +1,0 @@
-Klrc1,129624980,chr6,ag,MNP,Het,ga,NM_001136068,CDS,Non-Synonymous,L,S,D10

@@ -1,0 +1,4 @@
+"#var_index,chrom,left,right,ref_seq,var_type,zygosity,var_seq1,var_seq2,var_score,not_ref_score,coverage,read_count1,read_count2,conservation,gene_name,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,change_type2,ref_peptide2,var_peptide2,dbsnp,dbsnp_build"
+"84459,chr6,145195291,145195292,c,SNP,Het,t,c,35,35,55,34,20, ,Kras,NM_021284,CDS,Non-Synonymous,G,D, , , , ,"
+"79401,chr6,129624980,129624982,ag,MNP,Het,ga,ag,35,35,40,13,27, ,Klrc1,NM_001136068,CDS,Non-Synonymous,L,S, , , , ,"
+"98496,chr7,94462586,94462587,c,SNP,Het,t,c,35,35,32,12,20, ,Nox4,NM_015760,CDS,Non-Synonymous,T,M, , , , ,"

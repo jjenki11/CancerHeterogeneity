@@ -519,12 +519,172 @@ public class DataSet
 	
 	class MacroCancerDataObject
 	{
+		BTree<String, CloneArrayStruct> cloneTree;
 		
+		class CloneArrayStruct
+		{
+			String cloneName;
+			ArrayList<String> uniqueChrom;
+			ArrayList<String> uniqueRef;
+			ArrayList<String> allChrom;
+			ArrayList<String> anyChrom;
+			ArrayList<String> dataLines;
+			int numFound;
+			
+			
+			
+			public CloneArrayStruct(String name, ArrayList<String> lines)
+			{
+				this.uniqueChrom = new ArrayList<String>();
+				this.uniqueRef = new ArrayList<String>();
+				this.allChrom = new ArrayList<String>();
+				this.anyChrom = new ArrayList<String>();
+				
+				this.numFound = 0;
+				this.cloneName = name;
+				this.dataLines = lines;
+				
+			}			
+			
+			
+			public ArrayList<String> getData()
+			{
+				return this.dataLines;
+			}
+			public void setData(ArrayList<String> data)
+			{
+				this.dataLines = data;
+			}
+			public ArrayList<String> getAny()
+			{
+				return this.uniqueChrom;
+			}
+			public ArrayList<String> getAll()
+			{
+				return this.anyChrom;
+			}
+			public ArrayList<String> getUnique()
+			{
+				return this.allChrom;
+			}
+			public String getName()
+			{
+				return this.cloneName;
+			}
+			
+			public void evaluateChrom(String chrom, String line)
+			{
+				//if(this.)
+			}
+			
+			public boolean addChrom(String c)
+			{
+				if(this.anyChrom.contains(c))
+				{					
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+			
+			public boolean containsRef(String c)
+			{
+				if(this.uniqueRef.contains(c))
+				{
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+			
+		}
+		
+		/*
+		public ArrayList<CloneArrayStruct> CompareClones(ArrayList<CloneArrayStruct> clones)
+		{
+			ArrayList<CloneArrayStruct> results = new ArrayList<CloneArrayStruct>();
+			int nClo = clones.size();
+			CloneArrayStruct currentClone = null;
+			CloneArrayStruct tempClone = null;
+			ArrayList<String> currentMutations = new ArrayList<String>();
+			ArrayList<String> tempMutations = new ArrayList<String>();
+			for(int i = 0; i < nClo; i++)					
+			{
+				
+			}
+		}
+		*/
+		
+		public int GetNumInstancesInList(String query, ArrayList<String> list)
+		{
+			int count = 0;
+			//System.out.println("QUERY -> "+query);
+			for(int i = 0; i < list.size(); i++)
+			{
+				//System.out.println("i = "+list.get(i));
+				if(query.equals(list.get(i)))
+				{
+					
+					count++;
+				}
+			}
+			return count;
+		}
+		
+		public int findNumInstancesInGenes(ArrayList<CloneArrayStruct> clones, String query)
+		{
+			int count = 0;
+			String print = "";
+			for(int i = 0; i < clones.size(); i++)
+			{
+				count += GetNumInstancesInList(query, clones.get(i).getData());
+			}
+			//System.out.println("   GENE -> "+query+"    Count -> "+count);
+			return count;
+		}
+		
+		public String ArrayListToString(ArrayList<String> str)
+		{
+			String ret = "";
+			for(int i = 0; i < str.size(); i++)
+			{
+				ret+=str.get(i) + "\r\n";
+			}
+			return ret;
+		}
+		
+		public ArrayList<CloneArrayStruct> printIDList(ArrayList<ArrayList<String>> l, String[] names)
+		{
+			ArrayList<CloneArrayStruct> clone_list = new ArrayList<CloneArrayStruct>();
+			for(int i = 0; i < l.size(); i++)
+			{
+				CloneArrayStruct c = new CloneArrayStruct(names[i], l.get(i));
+				
+				ArrayList<String> chroms = new ArrayList<String>();
+				for(int j = 0; j < l.get(i).size(); j++)
+				{
+					//System.out.println("("+i+","+j+") -> "+l.get(i).get(j));
+					chroms.add(l.get(i).get(j));
+					//c.addChrom(l.get(i).get(j));
+					
+				}				
+				c.setData(chroms);
+				clone_list.add(c);
+			}
+			return clone_list;
+		}
 		
 		public MacroCancerDataObject(ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids, String fn) throws IOException
 		{
 			int nTrees = trees.size();
 			int nIDs = ids.size();
+			
+			
+			this.cloneTree = new BTree<String, CloneArrayStruct>();
 			
 			BTree<String,CancerMutation> currTree = new BTree<String, CancerMutation>();
 			ArrayList<String> currList = new ArrayList<String>();
@@ -540,16 +700,125 @@ public class DataSet
 			 * Key (Gene+Location ID)
 			     ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
 			 */
-			// iterate thru trees
+		
 			String str = "";
+			ArrayList<String> theValues = new ArrayList<String>();
+			
+			//ArrayList<String> unique = new ArrayList<String>();
+			//ArrayList<String> any = new ArrayList<String>();
+			//ArrayList<String> all = new ArrayList<String>();
+			
+			BTree<String, ArrayList<String>> unique = new BTree<String,ArrayList<String>>();
+			BTree<String, ArrayList<String>> any = new BTree<String,ArrayList<String>>();
+			BTree<String, ArrayList<String>> all = new BTree<String,ArrayList<String>>();
+			
+			String chr = "";
+			String cName = "";
+			
+			
+			
+			
+			
+			
+			CloneArrayStruct clone = null;
+			
+			
+			
+			for(int i = 0; i < nTrees; i++)
+			{
+				currList = ids.get(i);
+				for(int j = 0; j < currList.size(); j++)
+				{					
+						currTree = trees.get(i);
+						cmTmp = currTree.get(currList.get(j));
+						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+								cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
+						chr = cmTmp.Combined_ID;
+						cName = labels[i];
+						int nInst = findNumInstancesInGenes(printIDList(ids, labels),chr);
+						System.out.println("count: "+ nInst + " for clone: "+ cName + " GeneName: "+chr);	
+						
+						if(nInst == 1)
+						{
+							// unique
+							utils.writeData.writeList(filename+"_unique.txt", str);
+						}
+						if(nInst == nTrees)
+						{
+							// all
+							utils.writeData.writeList(filename+"_all.txt", str);
+						}
+						if(nInst == 0)
+						{
+							System.out.println("hmm...");
+						}
+						if( (nInst> 0) && (nInst <nTrees))
+						{
+							// any
+							utils.writeData.writeList(filename+"_any.txt", str);
+						}
+				}					
+			}
+			/*
+			////////////////////////////////
+			System.exit(0);
+			////////////////////////////////	
+			
+			//loop thru trees
+			for(int i = 0; i < nTrees; i++)
+			{
+				currList = ids.get(i);
+				//loop thru list in each tree
+				for(int j = 0; j < currList.size(); j++)
+				{
+					found = false;
+					numFound = 0;
+					for(int k = i; k < nTrees; k++)
+					{
+						if(currTree.get(currList.get(j)) != null)
+						{
+							if(i != k)
+							{
+								currTree = trees.get(k);
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								ArrayList<String> vals = any.get(labels[k]);
+								vals.add(str);
+								any.put(labels[k], vals);
+								numFound++;
+							}
+							else
+							{
+								currTree = trees.get(k);
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								ArrayList<String> vals = any.get(labels[k]);
+								vals.add(str);
+								any.put(labels[k], vals);
+								numFound++;
+							}
+						}
+					}
+					
+				}
+			}
+			
+			
+			*/
+			/*
+			// iterate thru trees
 			for(int i = 0; i < nTrees; i++)
 			{
 				
 				currList = ids.get(i);
+				// iterate thru list within each tree
 				for(int j = 0; j < currList.size(); j++)
 				{
 					numFound = 0;
 					found = false;
+					theValues = new ArrayList<String>();
 					for(int k = i; k < nTrees; k++)
 					{
 						if(i != k)
@@ -563,41 +832,28 @@ public class DataSet
 								cmTmp = currTree.get(currList.get(j));
 								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
+								numFound ++;							
+								if(!any.contains(str))
+								{
+									any.add(str);
+								}								
 							}
 							else{found=false;}
 						}
 						else
 						{			
 							currTree = trees.get(k);
-							/*
 							if(currTree.get(currList.get(j)) != null)
 							{
-								
-								found = true;
-							}
-							else{found = false;}
-							*/
+								//found = true;
+								cmTmp = currTree.get(currList.get(j));
+								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
+										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
+								numFound++;
+								//utils.writeData.writeList(filename+"_any.txt", str);
+							}										
 							
-							/*
-							if(labels[k] == "C5"){
-								//found = true;
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
-							}
-							if(labels[k] == "G9"){
-								//found = true;
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
-							}
-							*/
+							
 							
 							if(found)
 							{
@@ -605,22 +861,34 @@ public class DataSet
 								cmTmp = currTree.get(currList.get(j));
 								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
+								//utils.writeData.writeList(filename+"_any.txt", str);
+								
+								if(!any.contains(str))
+								{
+									any.add(str);
+								}
+								
+								//numFound++;
 							}
+							
 							else{found=false;}
 						}
 						
 					}
-					if((!found) && (numFound == 1))
+					
+					if(!found)
 					{
-						//System.out.println("NOT FOUND you dummy");
+						System.out.println("NOT FOUND you dummy");
 						
 						currTree = trees.get(i);
 						cmTmp = currTree.get(currList.get(j));
 						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 								cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
-						utils.writeData.writeList(filename+"_unique.txt", str);
+						if(!unique.contains(str))
+						{
+							unique.add(str);
+						}
+						//utils.writeData.writeList(filename+"_unique.txt", str);
 					}
 					
 					if(numFound == (nTrees-1))
@@ -634,13 +902,38 @@ public class DataSet
 								cmTmp = currTree.get(currList.get(j));
 								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
 										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								utils.writeData.writeList(filename+"_all.txt", str);
+								if(!all.contains(str))
+								{
+									all.add(str);
+								}
+								//utils.writeData.writeList(filename+"_all.txt", str);
 							}				
 						}
-					}					
+					}
+					
 				}
 				
-			}			
+				theValues = all;
+				int numValues = theValues.size();
+				if(numValues == (nTrees-1))
+				{
+					utils.writeData.writeList(filename+"_all.txt", ArrayListToString(all));
+				}
+				theValues = unique;
+				numValues = theValues.size();
+				if(numValues == 1)
+				{
+					utils.writeData.writeList(filename+"_unique.txt", ArrayListToString(unique));
+				}
+				
+				theValues = any;
+				numValues = theValues.size();
+				if(numValues > 0)
+				{
+					utils.writeData.writeList(filename+"_any.txt", ArrayListToString(any));
+				}
+			}	
+			*/		
 		}
 	} MacroCancerDataObject mdo;
 	

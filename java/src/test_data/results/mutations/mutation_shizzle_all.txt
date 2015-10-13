@@ -1,0 +1,7 @@
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,C5
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,C8
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,D10
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,F2
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,G8
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,G9
+Kras,145195291,chr6,c,SNP,Het,t,NM_021284,CDS,Non-Synonymous,G,D,Toomie
