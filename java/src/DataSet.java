@@ -1,9 +1,12 @@
 package cancer_heterogeneity;
 
+import java.awt.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class DataSet 
 {
@@ -729,6 +732,12 @@ public class DataSet
 			CloneArrayStruct clone = null;
 			
 			
+			//
+			 // Key (Gene+Location ID)
+			 //    ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
+			//
+			// iterate thru trees
+			
 			
 			for(int i = 0; i < nTrees; i++)
 			{
@@ -790,25 +799,26 @@ public class DataSet
 			boolean found = false;
 			int numFound = 0;
 			
-			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9", "stuff"};
+			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9"};	
 			
-			
-			String filename = fn+"\\drug_effficacy_shizzle";
-			
+			String filename = fn+"\\drug_effficacy_shizzle";			
 			
 			String str="";
 			String cName="";
 			String chr="";
 			String valz = "";
+			ArrayList<String> unique=new ArrayList<String>();
+			ArrayList<String> any=new ArrayList<String>();
+			ArrayList<String> all=new ArrayList<String>();
 			for(int i = 0; i < nTrees; i++)
 			{
 				currList = ids.get(i);
 				for(int j = 0; j < currList.size(); j++)
 				{					
 						currTree = trees.get(i);
-						deTmp = currTree.get(currList.get(j));						
-						valz = deTmp.combined_ID.replaceAll(">",  ",");
+						deTmp = currTree.get(currList.get(j));	
 						chr = deTmp.combined_ID;
+						valz = deTmp.combined_ID.replaceAll(">",  ",");						
 						str = valz+","+labels[i];
 						cName = labels[i];
 						int nInst = findNumInstancesInGenes(printIDList(ids, labels),chr);
@@ -817,12 +827,16 @@ public class DataSet
 						if(nInst == 1)
 						{
 							// unique
-							utils.writeData.writeList(filename+"_unique.txt", str);
+							if(!unique.contains(str)){
+								unique.add(str);
+							} 													
 						}
 						if(nInst == nTrees)
 						{
 							// all
-							utils.writeData.writeList(filename+"_all.txt", str);
+							if(!all.contains(str)){
+								all.add(str);								
+							} 												
 						}
 						if(nInst == 0)
 						{
@@ -831,89 +845,19 @@ public class DataSet
 						if( (nInst> 0) && (nInst <nTrees))
 						{
 							// any
-							utils.writeData.writeList(filename+"_any.txt", str);
+							if(!any.contains(str)){
+								any.add(str);								
+							} 
 						}
-				}					
+				}				
 			}
-			
-			
-			
-			//
-			 // Key (Gene+Location ID)
-			 //    ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
-			//
-			// iterate thru trees
+			Collections.sort(unique);
+			Collections.sort(any);
+			Collections.sort(all);
+			utils.writeData.writeList(filename+"_unique.txt", ArrayListToString(unique));
+			utils.writeData.writeList(filename+"_any.txt", ArrayListToString(any));
+			utils.writeData.writeList(filename+"_all.txt", ArrayListToString(all));
 
-			
-			/*
-			String str = "";
-			for(int i = 0; i < nTrees; i++)
-			{
-				currList = ids.get(i);
-				String theLbl = "";
-				for(int j = 0; j < currList.size(); j++)
-				{
-					numFound = 0;
-					found = false;
-					for(int k = 0; k < nTrees; k++)
-					{
-						System.out.println("ITERATION # "+ (i+j+k));
-						if((i != k))
-						{
-							currTree = trees.get(k);
-							if(currTree.get(currList.get(j)) != null)
-							{								
-								found = true;
-								deTmp = currTree.get(currList.get(j));
-								val = deTmp.combined_ID.replaceAll(">",  ",");								
-							
-								
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
-							}
-								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								//else{val = deTmp.mech_drug.replaceAll(">",",");}
-							else{found = false;}
-							
-						}
-						if((i==k))
-						{		
-							currTree = trees.get(k);
-							if(currTree.get(currList.get(j)) != null)
-							{								
-								found = true;
-								deTmp = currTree.get(currList.get(j));
-								val = deTmp.combined_ID.replaceAll(">",  ",");
-								//else{val = deTmp.mech_drug.replaceAll(">",",");}
-								//currTree = trees.get(i);								
-								//String tmp = "";
-							
-								utils.writeData.writeList(filename+"_any.txt", str);
-								numFound++;
-							}
-							else{found = false;}
-						}	
-						theLbl = labels[k];
-					}
-					if((!found) || (numFound == 1))
-					{
-				
-					}
-					
-					if(numFound == (nTrees-1))
-					{						
-						for(int k = 0; k < nTrees; k++)
-						{
-							currTree = trees.get(k);
-							if(currTree.get(currList.get(j)) != null)
-
-							}
-						}
-					}					
-				}
-								
-			}
-			*/
 		}
 	} MacroDrugDataObject mddo;
 

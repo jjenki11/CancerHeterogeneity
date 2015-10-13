@@ -14,9 +14,9 @@ public class Driver
 	public static void removeAllFiles(String basePath)
 	{
 		// Delete files in combined drug efficacy folder if present
-		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_all.txt");
-		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_any.txt");
-		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_unique.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_effficacy_shizzle_all.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_effficacy_shizzle_any.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_effficacy_shizzle_unique.txt");
 		
 		// Delete files in mutation folder if they're there
 		CHUtilities.deleteFile(basePath+"\\results\\mutations\\mutation_shizzle_all.txt");
