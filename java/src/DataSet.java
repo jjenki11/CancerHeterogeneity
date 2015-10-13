@@ -717,9 +717,10 @@ public class DataSet
 			//ArrayList<String> any = new ArrayList<String>();
 			//ArrayList<String> all = new ArrayList<String>();
 			
-			BTree<String, ArrayList<String>> unique = new BTree<String,ArrayList<String>>();
-			BTree<String, ArrayList<String>> any = new BTree<String,ArrayList<String>>();
-			BTree<String, ArrayList<String>> all = new BTree<String,ArrayList<String>>();
+			ArrayList<String> unique = new ArrayList<String>();
+			ArrayList<String> any = new ArrayList<String>();
+			ArrayList<String> all = new ArrayList<String>();
+			
 			
 			String chr = "";
 			String cName = "";
@@ -756,12 +757,17 @@ public class DataSet
 						if(nInst == 1)
 						{
 							// unique
-							utils.writeData.writeList(filename+"_unique.txt", str);
+							if(!unique.contains(str)){
+								unique.add(str);
+							} 
 						}
 						if(nInst == nTrees)
 						{
 							// all
-							utils.writeData.writeList(filename+"_all.txt", str);
+							if(!all.contains(str)){
+								all.add(str);
+							} 
+							
 						}
 						if(nInst == 0)
 						{
@@ -770,10 +776,18 @@ public class DataSet
 						if( (nInst> 0) && (nInst <nTrees))
 						{
 							// any
-							utils.writeData.writeList(filename+"_any.txt", str);
+							if(!any.contains(str)){
+								any.add(str);
+							} 
 						}
 				}					
-			}	
+			}
+			Collections.sort(unique);
+			Collections.sort(any);
+			Collections.sort(all);
+			utils.writeData.writeList(filename+"_unique.txt", ArrayListToString(unique));
+			utils.writeData.writeList(filename+"_any.txt", ArrayListToString(any));
+			utils.writeData.writeList(filename+"_all.txt", ArrayListToString(all));
 		}
 	} MacroCancerDataObject mdo;
 	

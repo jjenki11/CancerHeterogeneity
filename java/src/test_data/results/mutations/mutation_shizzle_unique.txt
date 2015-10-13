@@ -1,6 +1,7 @@
 Baiap3,25387359,chr17,g,SNP,Het,t,NM_001163270,CDS,Non-Synonymous,L,I,C5
-Olfr1157,87802181,chr2,g,SNP,Het,c,NM_146849,CDS,Non-Synonymous,I,M,C8
-Nox4,94462586,chr7,c,SNP,Het,t,NM_015760,CDS,Non-Synonymous,T,M,D10
 Eef2,80641844,chr10,a,SNP,Het,g,NM_007907,CDS,Non-Synonymous,T,A,F2
 Fgf16,102960129,chrX,a,SNP,Het,c,NM_030614,CDS,Non-Synonymous,T,P,G8
+Nox4,94462586,chr7,c,SNP,Het,t,NM_015760,CDS,Non-Synonymous,T,M,D10
+Olfr1157,87802181,chr2,g,SNP,Het,c,NM_146849,CDS,Non-Synonymous,I,M,C8
 Ret,118114804,chr6,c,SNP,Het,g,NM_001080780,CDS,Non-Synonymous,R,P,G9
+
