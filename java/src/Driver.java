@@ -1,19 +1,56 @@
 package cancer_heterogeneity;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.DirectoryNotEmptyException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Driver 
 {
+	
+	public static void removeAllFiles(String basePath)
+	{
+		// Delete files in combined drug efficacy folder if present
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_all.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_any.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\combined_drug_efficacy\\drug_efficacy_shizzle_unique.txt");
+		
+		// Delete files in mutation folder if they're there
+		CHUtilities.deleteFile(basePath+"\\results\\mutations\\mutation_shizzle_all.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\mutations\\mutation_shizzle_any.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\mutations\\mutation_shizzle_unique.txt");
+		
+		// Delete files in mutation folder if they're there
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_all.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_C5.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_C8.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_D10.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_F2.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_G8.txt");
+		CHUtilities.deleteFile(basePath+"\\results\\significant_expr\\significant_expr_unique_G9.txt");
+	}
+	
+	
 	public static void main(String[] args) throws IOException 
 	{		
-		//	mRNA Gene Expression data
 		
-		//String basePath = "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\"; // JEFF
-		
-		String basePath = "C:\\Users\\eveline\\Desktop\\cancer_code_repository\\CancerHeterogeneity\\java\\src\\"; // RUTGER
+		boolean is_eveline = true;
 		
 		boolean is_testing = true;
+		
+		String basePath = "";
+		
+		if(is_eveline)
+		{
+			basePath = "C:\\Users\\eveline\\Desktop\\cancer_code_repository\\CancerHeterogeneity\\java\\src\\";
+		}
+		else
+		{
+			basePath = "C:\\Users\\blackhole\\Desktop\\cancerRepo\\CancerHeterogeneity\\java\\src\\";
+		}
 		
 		if(is_testing == true)
 		{
@@ -24,6 +61,7 @@ public class Driver
 			basePath+="real_data\\";
 		}
 		
+		removeAllFiles(basePath);
 		
 		DataSet genes = new DataSet("ge", basePath, "", null, null,null,null);
 		
@@ -52,7 +90,10 @@ public class Driver
 		DataSet cmF2 = new DataSet("cm", "", "F2", mutationF2, cancerF2,null,null);
 		DataSet cmG8 = new DataSet("cm", "", "G8", mutationG8, cancerG8,null,null);
 		DataSet cmG9 = new DataSet("cm", "", "G9", mutationG9, cancerG9,null,null);
-		DataSet tumorrr = new DataSet("cm", "", "TUMOR", mutationOt8873, cancerOt8873,null,null);		
+		DataSet tumorrr = new DataSet("cm", "", "TUMOR", mutationOt8873, cancerOt8873,null,null);	
+		
+		
+		
 				
 		ArrayList<ArrayList<String>> mutationLists = new ArrayList<ArrayList<String>>();
 		mutationLists.add(cmC5.cmo.mutationIDs);
@@ -70,6 +111,9 @@ public class Driver
 		treeList.add(cmG8.cmo.cMutationTree);
 		treeList.add(cmG9.cmo.cMutationTree);
 		treeList.add(tumorrr.cmo.cMutationTree);		
+		
+		
+		
 		DataSet bigboyCancer = new DataSet("macroCancer", basePath+"\\results\\mutations\\", "", null,null,treeList,mutationLists);
 		
 		
@@ -109,6 +153,8 @@ public class Driver
 		mechTreeList.add(effF2.de.mechTree);
 		mechTreeList.add(effG8.de.mechTree);
 		mechTreeList.add(effG9.de.mechTree);		
+		
+		
 		DataSet bigboyEfficacyMech = new DataSet("macroDrug", basePath+"\\results\\mech_drug_efficacy\\,mech", "", null, null, mechTreeList, drugMechLists);
 
 		ArrayList<BTree<String,DrugEfficacy>> combTreeList = new ArrayList<BTree<String, DrugEfficacy>>();
@@ -126,6 +172,8 @@ public class Driver
 		drugCombinedLists.add(effF2.de.combined_id_list);
 		drugCombinedLists.add(effG8.de.combined_id_list);
 		drugCombinedLists.add(effG9.de.combined_id_list);
+		
+		
 				
 		DataSet bigboyEfficacyCombined = new DataSet("macroDrug", basePath+"\\results\\combined_drug_efficacy\\,combined", "", null, null, combTreeList, drugCombinedLists);
 		

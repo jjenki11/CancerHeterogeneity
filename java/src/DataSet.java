@@ -10,6 +10,149 @@ public class DataSet
 	
 	CHUtilities utils;	// define our utilities class to be used in DataSet file reading, etc
 	
+	class CloneArrayStruct
+	{
+		String cloneName;
+		ArrayList<String> uniqueChrom;
+		ArrayList<String> uniqueRef;
+		ArrayList<String> allChrom;
+		ArrayList<String> anyChrom;
+		ArrayList<String> dataLines;
+		int numFound;
+		
+		
+		
+		public CloneArrayStruct(String name, ArrayList<String> lines)
+		{
+			this.uniqueChrom = new ArrayList<String>();
+			this.uniqueRef = new ArrayList<String>();
+			this.allChrom = new ArrayList<String>();
+			this.anyChrom = new ArrayList<String>();
+			
+			this.numFound = 0;
+			this.cloneName = name;
+			this.dataLines = lines;
+			
+		}	
+		
+		
+		
+		
+		public ArrayList<String> getData()
+		{
+			return this.dataLines;
+		}
+		public void setData(ArrayList<String> data)
+		{
+			this.dataLines = data;
+		}
+		public ArrayList<String> getAny()
+		{
+			return this.uniqueChrom;
+		}
+		public ArrayList<String> getAll()
+		{
+			return this.anyChrom;
+		}
+		public ArrayList<String> getUnique()
+		{
+			return this.allChrom;
+		}
+		public String getName()
+		{
+			return this.cloneName;
+		}
+		
+		public void evaluateChrom(String chrom, String line)
+		{
+			//if(this.)
+		}
+		
+		public boolean addChrom(String c)
+		{
+			if(this.anyChrom.contains(c))
+			{					
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+		public boolean containsRef(String c)
+		{
+			if(this.uniqueRef.contains(c))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+	}
+	
+	public int GetNumInstancesInList(String query, ArrayList<String> list)
+	{
+		int count = 0;
+		//System.out.println("QUERY -> "+query);
+		for(int i = 0; i < list.size(); i++)
+		{
+			//System.out.println("i = "+list.get(i));
+			if(query.equals(list.get(i)))
+			{
+				
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	public int findNumInstancesInGenes(ArrayList<CloneArrayStruct> clones, String query)
+	{
+		int count = 0;
+		String print = "";
+		for(int i = 0; i < clones.size(); i++)
+		{
+			count += GetNumInstancesInList(query, clones.get(i).getData());
+		}
+		//System.out.println("   GENE -> "+query+"    Count -> "+count);
+		return count;
+	}
+	
+	public String ArrayListToString(ArrayList<String> str)
+	{
+		String ret = "";
+		for(int i = 0; i < str.size(); i++)
+		{
+			ret+=str.get(i) + "\r\n";
+		}
+		return ret;
+	}
+	
+	public ArrayList<CloneArrayStruct> printIDList(ArrayList<ArrayList<String>> l, String[] names)
+	{
+		ArrayList<CloneArrayStruct> clone_list = new ArrayList<CloneArrayStruct>();
+		for(int i = 0; i < l.size(); i++)
+		{
+			CloneArrayStruct c = new CloneArrayStruct(names[i], l.get(i));
+			
+			ArrayList<String> chroms = new ArrayList<String>();
+			for(int j = 0; j < l.get(i).size(); j++)
+			{
+				//System.out.println("("+i+","+j+") -> "+l.get(i).get(j));
+				chroms.add(l.get(i).get(j));
+				//c.addChrom(l.get(i).get(j));
+				
+			}				
+			c.setData(chroms);
+			clone_list.add(c);
+		}
+		return clone_list;
+	}
+	
 	
 	// This is the Drug Sensitivity Dataset object
 	class DrugSensitivityData
@@ -521,87 +664,7 @@ public class DataSet
 	{
 		BTree<String, CloneArrayStruct> cloneTree;
 		
-		class CloneArrayStruct
-		{
-			String cloneName;
-			ArrayList<String> uniqueChrom;
-			ArrayList<String> uniqueRef;
-			ArrayList<String> allChrom;
-			ArrayList<String> anyChrom;
-			ArrayList<String> dataLines;
-			int numFound;
-			
-			
-			
-			public CloneArrayStruct(String name, ArrayList<String> lines)
-			{
-				this.uniqueChrom = new ArrayList<String>();
-				this.uniqueRef = new ArrayList<String>();
-				this.allChrom = new ArrayList<String>();
-				this.anyChrom = new ArrayList<String>();
-				
-				this.numFound = 0;
-				this.cloneName = name;
-				this.dataLines = lines;
-				
-			}			
-			
-			
-			public ArrayList<String> getData()
-			{
-				return this.dataLines;
-			}
-			public void setData(ArrayList<String> data)
-			{
-				this.dataLines = data;
-			}
-			public ArrayList<String> getAny()
-			{
-				return this.uniqueChrom;
-			}
-			public ArrayList<String> getAll()
-			{
-				return this.anyChrom;
-			}
-			public ArrayList<String> getUnique()
-			{
-				return this.allChrom;
-			}
-			public String getName()
-			{
-				return this.cloneName;
-			}
-			
-			public void evaluateChrom(String chrom, String line)
-			{
-				//if(this.)
-			}
-			
-			public boolean addChrom(String c)
-			{
-				if(this.anyChrom.contains(c))
-				{					
-					return true;
-				}
-				else
-				{
-					return false;
-				}
-			}
-			
-			public boolean containsRef(String c)
-			{
-				if(this.uniqueRef.contains(c))
-				{
-					return true;
-				}
-				else
-				{
-					return false;
-				}
-			}
-			
-		}
+
 		
 		/*
 		public ArrayList<CloneArrayStruct> CompareClones(ArrayList<CloneArrayStruct> clones)
@@ -619,64 +682,7 @@ public class DataSet
 		}
 		*/
 		
-		public int GetNumInstancesInList(String query, ArrayList<String> list)
-		{
-			int count = 0;
-			//System.out.println("QUERY -> "+query);
-			for(int i = 0; i < list.size(); i++)
-			{
-				//System.out.println("i = "+list.get(i));
-				if(query.equals(list.get(i)))
-				{
-					
-					count++;
-				}
-			}
-			return count;
-		}
 		
-		public int findNumInstancesInGenes(ArrayList<CloneArrayStruct> clones, String query)
-		{
-			int count = 0;
-			String print = "";
-			for(int i = 0; i < clones.size(); i++)
-			{
-				count += GetNumInstancesInList(query, clones.get(i).getData());
-			}
-			//System.out.println("   GENE -> "+query+"    Count -> "+count);
-			return count;
-		}
-		
-		public String ArrayListToString(ArrayList<String> str)
-		{
-			String ret = "";
-			for(int i = 0; i < str.size(); i++)
-			{
-				ret+=str.get(i) + "\r\n";
-			}
-			return ret;
-		}
-		
-		public ArrayList<CloneArrayStruct> printIDList(ArrayList<ArrayList<String>> l, String[] names)
-		{
-			ArrayList<CloneArrayStruct> clone_list = new ArrayList<CloneArrayStruct>();
-			for(int i = 0; i < l.size(); i++)
-			{
-				CloneArrayStruct c = new CloneArrayStruct(names[i], l.get(i));
-				
-				ArrayList<String> chroms = new ArrayList<String>();
-				for(int j = 0; j < l.get(i).size(); j++)
-				{
-					//System.out.println("("+i+","+j+") -> "+l.get(i).get(j));
-					chroms.add(l.get(i).get(j));
-					//c.addChrom(l.get(i).get(j));
-					
-				}				
-				c.setData(chroms);
-				clone_list.add(c);
-			}
-			return clone_list;
-		}
 		
 		public MacroCancerDataObject(ArrayList<BTree<String,CancerMutation>> trees, ArrayList<ArrayList<String>> ids, String fn) throws IOException
 		{
@@ -758,182 +764,7 @@ public class DataSet
 							utils.writeData.writeList(filename+"_any.txt", str);
 						}
 				}					
-			}
-			/*
-			////////////////////////////////
-			System.exit(0);
-			////////////////////////////////	
-			
-			//loop thru trees
-			for(int i = 0; i < nTrees; i++)
-			{
-				currList = ids.get(i);
-				//loop thru list in each tree
-				for(int j = 0; j < currList.size(); j++)
-				{
-					found = false;
-					numFound = 0;
-					for(int k = i; k < nTrees; k++)
-					{
-						if(currTree.get(currList.get(j)) != null)
-						{
-							if(i != k)
-							{
-								currTree = trees.get(k);
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								ArrayList<String> vals = any.get(labels[k]);
-								vals.add(str);
-								any.put(labels[k], vals);
-								numFound++;
-							}
-							else
-							{
-								currTree = trees.get(k);
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								ArrayList<String> vals = any.get(labels[k]);
-								vals.add(str);
-								any.put(labels[k], vals);
-								numFound++;
-							}
-						}
-					}
-					
-				}
-			}
-			
-			
-			*/
-			/*
-			// iterate thru trees
-			for(int i = 0; i < nTrees; i++)
-			{
-				
-				currList = ids.get(i);
-				// iterate thru list within each tree
-				for(int j = 0; j < currList.size(); j++)
-				{
-					numFound = 0;
-					found = false;
-					theValues = new ArrayList<String>();
-					for(int k = i; k < nTrees; k++)
-					{
-						if(i != k)
-						{
-							currTree = trees.get(k);
-							
-							if(currTree.get(currList.get(j)) != null)
-							{
-								
-								found = true;
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								numFound ++;							
-								if(!any.contains(str))
-								{
-									any.add(str);
-								}								
-							}
-							else{found=false;}
-						}
-						else
-						{			
-							currTree = trees.get(k);
-							if(currTree.get(currList.get(j)) != null)
-							{
-								//found = true;
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								numFound++;
-								//utils.writeData.writeList(filename+"_any.txt", str);
-							}										
-							
-							
-							
-							if(found)
-							{
-								//currTree = trees.get(i);
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								//utils.writeData.writeList(filename+"_any.txt", str);
-								
-								if(!any.contains(str))
-								{
-									any.add(str);
-								}
-								
-								//numFound++;
-							}
-							
-							else{found=false;}
-						}
-						
-					}
-					
-					if(!found)
-					{
-						System.out.println("NOT FOUND you dummy");
-						
-						currTree = trees.get(i);
-						cmTmp = currTree.get(currList.get(j));
-						str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-								cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[i];
-						if(!unique.contains(str))
-						{
-							unique.add(str);
-						}
-						//utils.writeData.writeList(filename+"_unique.txt", str);
-					}
-					
-					if(numFound == (nTrees-1))
-					{
-						
-						for(int k = 0; k < nTrees; k++)
-						{
-							currTree = trees.get(k);
-							if(currTree.get(currList.get(j)) != null)
-							{
-								cmTmp = currTree.get(currList.get(j));
-								str = cmTmp.Combined_ID.replaceAll("_", ",")+","+cmTmp.chrom+","+cmTmp.ref_seq+","+cmTmp.var_type+","+cmTmp.zygosity+","+cmTmp.var_seq_1+","+cmTmp.transcript_name+","+
-										cmTmp.where_in_transcript.replaceAll(",", ".")+","+cmTmp.change_type_1+","+cmTmp.ref_peptide_1+","+cmTmp.var_peptide_1+","+labels[k];
-								if(!all.contains(str))
-								{
-									all.add(str);
-								}
-								//utils.writeData.writeList(filename+"_all.txt", str);
-							}				
-						}
-					}
-					
-				}
-				
-				theValues = all;
-				int numValues = theValues.size();
-				if(numValues == (nTrees-1))
-				{
-					utils.writeData.writeList(filename+"_all.txt", ArrayListToString(all));
-				}
-				theValues = unique;
-				numValues = theValues.size();
-				if(numValues == 1)
-				{
-					utils.writeData.writeList(filename+"_unique.txt", ArrayListToString(unique));
-				}
-				
-				theValues = any;
-				numValues = theValues.size();
-				if(numValues > 0)
-				{
-					utils.writeData.writeList(filename+"_any.txt", ArrayListToString(any));
-				}
 			}	
-			*/		
 		}
 	} MacroCancerDataObject mdo;
 	
@@ -961,13 +792,60 @@ public class DataSet
 			
 			String[] labels = { "C5", "C8", "D10", "F2" , "G8", "G9", "stuff"};
 			
+			
 			String filename = fn+"\\drug_effficacy_shizzle";
-			/*
-			 * Key (Gene+Location ID)
-			     ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
-			 */
+			
+			
+			String str="";
+			String cName="";
+			String chr="";
+			String valz = "";
+			for(int i = 0; i < nTrees; i++)
+			{
+				currList = ids.get(i);
+				for(int j = 0; j < currList.size(); j++)
+				{					
+						currTree = trees.get(i);
+						deTmp = currTree.get(currList.get(j));						
+						valz = deTmp.combined_ID.replaceAll(">",  ",");
+						chr = deTmp.combined_ID;
+						str = valz+","+labels[i];
+						cName = labels[i];
+						int nInst = findNumInstancesInGenes(printIDList(ids, labels),chr);
+						System.out.println("count: "+ nInst + " for clone: "+ cName + " GeneName: "+chr);	
+						
+						if(nInst == 1)
+						{
+							// unique
+							utils.writeData.writeList(filename+"_unique.txt", str);
+						}
+						if(nInst == nTrees)
+						{
+							// all
+							utils.writeData.writeList(filename+"_all.txt", str);
+						}
+						if(nInst == 0)
+						{
+							System.out.println("hmm...");
+						}
+						if( (nInst> 0) && (nInst <nTrees))
+						{
+							// any
+							utils.writeData.writeList(filename+"_any.txt", str);
+						}
+				}					
+			}
+			
+			
+			
+			//
+			 // Key (Gene+Location ID)
+			 //    ref_seq,var_type,zygosity,var_seq1,transcript_name,where_in_transcript,change_type1,ref_peptide1,var_peptide1,1 clone which has this unique mutation
+			//
 			// iterate thru trees
 
+			
+			/*
 			String str = "";
 			for(int i = 0; i < nTrees; i++)
 			{
@@ -988,13 +866,8 @@ public class DataSet
 								found = true;
 								deTmp = currTree.get(currList.get(j));
 								val = deTmp.combined_ID.replaceAll(">",  ",");								
-								/*String tmp = "";
-								if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
-									tmp = deTmp.gene_sens;
-								} else {
-									tmp = "?";
-								}*/
-								str = val+","/*+tmp+","*/+labels[k];
+							
+								
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -1014,12 +887,7 @@ public class DataSet
 								//else{val = deTmp.mech_drug.replaceAll(">",",");}
 								//currTree = trees.get(i);								
 								//String tmp = "";
-								/*if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
-									tmp = deTmp.gene_sens;
-								} else {
-									tmp = "?";
-								}*/
-								str = val+","/*+ tmp +","*/+labels[k];
+							
 								utils.writeData.writeList(filename+"_any.txt", str);
 								numFound++;
 							}
@@ -1029,25 +897,7 @@ public class DataSet
 					}
 					if((!found) || (numFound == 1))
 					{
-						if(labels[i] == "G9"){
-							System.out.println("FOUND A G9 for Unique list");
-							//System.exit(0);
-						}
-						System.out.println("UNIQUE?  -> "+labels[i]+ ",    "+deTmp.sample_name);
-						//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-						val = deTmp.combined_ID.replaceAll(">",  ",");
-						//else{val = deTmp.mech_drug.replaceAll(">",",");}
-						currTree = trees.get(i);
-						deTmp = currTree.get(currList.get(j));
-						/*String tmp = "";
-						if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
-							tmp = deTmp.gene_sens;
-						} else {
-							tmp = "?";
-						}*/
-						str = val+","/*+ tmp */+","+labels[i];
-						
-						utils.writeData.writeList(filename+"_unique.txt", str);
+				
 					}
 					
 					if(numFound == (nTrees-1))
@@ -1056,24 +906,14 @@ public class DataSet
 						{
 							currTree = trees.get(k);
 							if(currTree.get(currList.get(j)) != null)
-							{
-								//if(type == "combined"){val = deTmp.combined_ID.replaceAll(">",  ",");}
-								//else{val = deTmp.mech_drug.replaceAll(">",",");}
-								val = deTmp.combined_ID.replaceAll(">",  ",");
-								deTmp = currTree.get(currList.get(j));
-								/*String tmp = "";
-								if(((deTmp.gene_sens!="") && (deTmp.gene_sens!=null))){
-									tmp = deTmp.gene_sens;
-								} else {
-									tmp = "?";
-								}*/
-								str = val+","/*+tmp+","*/+labels[k];
-								utils.writeData.writeList(filename+"_all.txt", str);
+
 							}
 						}
 					}					
-				}				
-			}			
+				}
+								
+			}
+			*/
 		}
 	} MacroDrugDataObject mddo;
 

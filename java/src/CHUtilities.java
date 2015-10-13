@@ -2,6 +2,7 @@ package cancer_heterogeneity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -37,6 +38,22 @@ public class CHUtilities
 	MergeData mergeData = new  MergeData();
 	ReadData readData = new ReadData();
 	WriteData writeData = new WriteData();
+	
+	public static void deleteFile(String path)
+	{
+		try{
+    		File file = new File(path);
+        	
+    		if(file.delete()){
+    			System.out.println(file.getName() + " is deleted!");
+    		}else{
+    			System.out.println("Delete operation is failed.");
+    		}
+    	   
+    	}catch(Exception e){    		
+    		e.printStackTrace();    		
+    	}
+	}
 	
 	/**
 	 * FIltering class
@@ -397,6 +414,8 @@ public class CHUtilities
 			    	clones[5] = Double.parseDouble(values[7]);
 			    		    	
 			    	aGene.setCloneValues(clones);
+			    	
+			    	
 			    	
 			    	if(aGene.isSignificant())
 			    	{
